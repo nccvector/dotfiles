@@ -1,0 +1,12 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="C/C++">
+        <added pattern="glad_glVertexAttribPointer(index,size,type,normalized,stride,pointer)" />
+      </blacklist>
+    </blacklists>
+    <disabledLanguages>
+      <language id="ObjectiveC" />
+    </disabledLanguages>
+  </component>
+</application>

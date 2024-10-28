@@ -1,0 +1,18 @@
+<application>
+  <component name="DownloadModelConsentState">
+    <option name="lastNotificationTimestamps">
+      <map>
+        <entry language="CSS" lastNotificationTimestamp="1718094247709" />
+        <entry language="JavaScript" lastNotificationTimestamp="1718093461908" />
+      </map>
+    </option>
+  </component>
+  <component name="InlineShortcutChoice">
+    <option name="choiceShownTimes" value="50" />
+  </component>
+  <component name="MLServerCompletionSettings">
+    <LangState language_id="JupyterPython">
+      <option name="interruptContextInitialization" value="true" />
+    </LangState>
+  </component>
+</application>

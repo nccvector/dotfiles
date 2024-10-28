@@ -1,0 +1,11 @@
+<application>
+  <component name="NodeJsLocalInterpreterManager">
+    <local-interpreter path="/bin/node" />
+    <local-interpreter path="$USER_HOME$/workspaces/master/jhbuildappcontroller/install/bin/node">
+      <version-cache version="18.20.3" last-modified="1716255059000" />
+    </local-interpreter>
+    <local-interpreter path="/usr/bin/node">
+      <version-cache version="18.17.0" last-modified="1689681633000" />
+    </local-interpreter>
+  </component>
+</application>

@@ -1,0 +1,10 @@
+OpenGL-Plugin
+com.intellij.clion.runFile
+com.jetbrains.codeWithMe
+com.jetbrains.gateway
+com.jetbrains.gateway.terminal
+intellij.rider.cpp.debugger
+intellij.rider.plugins.clion.radler.cwm
+org.jetbrains.plugins.cidr-intelliLang
+org.jetbrains.plugins.clion.radler
+org.jetbrains.plugins.docker.gateway

@@ -1,0 +1,12 @@
+<templateSet group="Python">
+  <template name="pydev" value="# ================================================================================&#10;import sys&#10;sys.path.append('/tmp/')&#10;import pydevd_pycharm&#10;pydevd_pycharm.settrace('127.0.0.1', port=12345, stdoutToServer=True, stderrToServer=True)&#10;# ================================================================================" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="ipbreak" value="from IPython import embed; embed()" description="IPython break point" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

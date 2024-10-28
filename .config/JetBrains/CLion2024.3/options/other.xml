@@ -1,0 +1,145 @@
+<application>
+  <component name="AILicenseTypeStorage">
+    <option name="licenseId" value="AVV354SB2O" />
+    <option name="selectedType" value="PRO" />
+  </component>
+  <component name="ActionHistoryManager">
+    <ids>
+      <option value="OpenFile" />
+      <option value="WelcomeScreen.Settings" />
+      <option value="ChooseRunConfiguration" />
+      <option value="CloseProject" />
+      <option value="WebDeployment.Configuration" />
+      <option value="RunDashboard.GroupBy" />
+      <option value="editRunConfigurations" />
+      <option value="ExternalSystem.RefreshAllProjects" />
+      <option value="Generate" />
+      <option value="RenameElement" />
+      <option value="Makefile.ToolsMenu" />
+      <option value="ActivateAIAssistantToolWindow" />
+      <option value="ExternalSystem.ShowSettingsGroup" />
+      <option value="BuildMenu" />
+      <option value="CMake.OpenSettings" />
+      <option value="BuildProject" />
+      <option value="WelcomeScreen.Plugins" />
+      <option value="ActivateCMakeToolWindow" />
+      <option value="SwitchIdeScaleAction" />
+      <option value="XDebugger.AttachToProcess" />
+    </ids>
+  </component>
+  <component name="AipLicense">
+    <option name="licenseId" value="AVV354SB2O" />
+  </component>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="ObjectiveC" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="12.0" />
+    <option name="ideScale" value="1.1" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "AttachDialogCommandLine_Width": "286",
+    "AttachDialogDebuggers_Width": "139",
+    "AttachDialogExecutable_Width": "285",
+    "AttachDialogProcessId_Width": "79",
+    "AttachDialogProcessOwner_Width": "69",
+    "BEFORE.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT": "1",
+    "BEFORE.DISTRACTION.MODE.HIDE_TOOL_STRIPES": "false",
+    "BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN_ONLY_ON_HOVER": "true",
+    "BEFORE.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN": "true",
+    "BEFORE.DISTRACTION.MODE.IS_WHITESPACES_SHOWN": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_BREADCRUMBS": "true",
+    "BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR": "true",
+    "BEFORE.DISTRACTION.MODE.SHOW_NEW_MAIN_TOOLBAR": "false",
+    "BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR": "true",
+    "CMakeConfigurable.configurations": "0.28085107",
+    "DISTRACTION.MODE.ENTER.VALUE": "true",
+    "IdeErrorsDialog.LAST_OK_ACTION": "REPORT_AND_CLEAR_ALL",
+    "InstalledPluginsSearchHistory": "p",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "4",
+    "MarketplacePluginsSearchHistory": "which key\nidea vim\nidea",
+    "PluginConfigurable.selectionTab": "1",
+    "RunOnceActivity.Run Grazie Token Refresher": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
+    "RunOnceActivity.cidr.test.roots.only": "true",
+    "RunOnceActivity.ide.auto-popup.quick-doc.initialized": "true",
+    "SettingsSearchHistory": "ai assis\nspaces\ntoolchain\ntoolch",
+    "WelcomeFeature.SHORT_WELCOME_GUIDE_SHOWN": "true",
+    "ai.assistant.toolwindow.shown.at.start": "true",
+    "bundled.plugins.list.saved.version": "CL-233.14475.31",
+    "clion.initialConfigPerformed": "true",
+    "evlsprt3.233": "3",
+    "evlsprt3.242": "4",
+    "evlsprt3.CL-242.20224.66": "3",
+    "evlsprt3.CL-243.18137.40": "7",
+    "exception.accepted.notices": ":d4a3ab85",
+    "experimental.ui.first.promotion.localdate": "2024-04-04",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "243.18137.40",
+    "file.gist.reindex.count": "25",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "14.0",
+    "fontSizeToResetEditor": "14.0",
+    "ide.memory.adjusted": "true",
+    "ide.updates.old.dirs.scan.scheduled": "1729056851086",
+    "ide.updates.previous.build.number": "CL-243.18137.40",
+    "ideavim.statistics.timestamp": "1728452056288",
+    "ift.learning.panel.opened.in": "242.20224.66",
+    "ift.show.new.lessons.notification.session.counter": "0",
+    "input.method.disabler.muted": "true",
+    "last_opened_file_path": "/home/mujin/workspaces/master/checkoutroot/planningcommon",
+    "licl.day": "19939",
+    "licl.ticks": "16",
+    "llm.installer.last.toolwindow.state": "AI_ASSISTANT",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "previousColorScheme": "_@user_Gruvbox Dark Hard",
+    "qualified.names.node.provider.file.structure.state": "true",
+    "registry.to.advanced.settings.migration.build": "CL-243.18137.40",
+    "settings.code.style.selected.tab.CSS": "Other",
+    "settings.code.style.selected.tab.ObjectiveC": "Tabs and Indents",
+    "stats.collector.latest.sending.timestamp": "1728526068561",
+    "stats.collector.today.sent.data.size": "19530",
+    "structure.view.defaults.are.configured": "true",
+    "tab_selection_count": "5",
+    "ts.lib.d.ts.version": "5.4.3",
+    "whats.new.last.shown.version": "2024-3-18137-dbc1dc51085967b46c06289d3d3b2313ea4517db"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/mujin/workspaces/master/checkoutroot/planningcommon",
+      "/home/mujin/workspaces/master/checkoutroot/sensorbridges",
+      "/home/mujin/workspaces/master/checkoutroot/vzensesdk",
+      "/home/mujin/workdesk/rust-embree/external/embree",
+      "/home/mujin/workdesk/gl-renderer",
+      "/home/mujin/cmake-3.29.2-linux-x86_64/bin/cmake",
+      "/home/mujin/clang/bin/clang++",
+      "/home/mujin/clang/bin/clang",
+      "/home/mujin/workdesk/venom-renderer",
+      "/home/mujin/workspaces/master/checkoutroot/openrave/CMakeLists.txt",
+      "/home/mujin/pyembree",
+      "/home/mujin/workspaces/master/checkoutroot/app-camera-calibration-intrinsics",
+      "/home/mujin/workspaces/master/checkoutroot/openrave"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.docker.dockerFile.DockerFileTypeDetector",
+      "com.jetbrains.cidr.lang.OCHeaderFileTypeDetector",
+      "com.intellij.javascript.debugger.sourcemap.SourceMapFileType$MyFileTypeDetector",
+      "com.intellij.database.vfs.DbStorageFileType$Detector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$JavaScriptFileTypeDetector",
+      "com.jetbrains.nodejs.util.NodeFileTypeDetector$TypeScriptFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

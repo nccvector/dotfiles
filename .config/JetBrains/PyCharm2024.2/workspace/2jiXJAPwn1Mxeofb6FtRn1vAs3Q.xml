@@ -1,0 +1,246 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="calibrationdebugui" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf ideFingerprint="291yajsx4ghm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/main.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="646">
+                  <caret line="38" selection-start-line="38" selection-end-line="38" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"main.py","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,127,10,48,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,112,121,116,104,111,110,70,105,108,101,46,115,118,103,18,50,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,101,120,112,117,105,47,112,121,116,104,111,110,46,115,118,103,26,10,80,121,116,104,111,110,67,111,114,101,40,-53,-109,-42,-7,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/view.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="238">
+                  <caret line="81" selection-start-line="81" selection-end-line="81" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"view.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf ideFingerprint="291yajsx4ghm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file>
+            <entry file="file://$PROJECT_DIR$/main.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="425">
+                  <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"main.py","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,127,10,48,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,112,121,116,104,111,110,70,105,108,101,46,115,118,103,18,50,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,101,120,112,117,105,47,112,121,116,104,111,110,46,115,118,103,26,10,80,121,116,104,111,110,67,111,114,101,40,-53,-109,-42,-7,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+          <file current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/view.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="357">
+                  <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"view.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "QmlType": {
+      "usageCount": 4,
+      "lastUsed": 1721875395490
+    },
+    "Python": {
+      "usageCount": 4,
+      "lastUsed": 1721875395491
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/view.qml" />
+      <option value="$PROJECT_DIR$/main.py" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Python">
+      <summary usageCount="4" lastUsage="1721875395491" />
+    </language>
+    <language id="QmlLang">
+      <summary usageCount="4" lastUsage="1721875395490" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="calibrationdebugui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/calibrationdebugui}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="calibrationdebugui" />
+            <item name="calibrationdebugui" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="calibrationdebugui" />
+              <item name="dir{file:///home/mujin/calibrationdebugui}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/main.py" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="main.py" />
+                <item name="main.py" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/view.qml" />
+                  </map>
+                </attributes>
+                <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="view.qml" />
+                <item name="view.qml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TestHistory">
+    <history-entry file=" - 2024.07.25 at 10h 39m 38s.xml">
+      <configuration name="" configurationId="tests" />
+    </history-entry>
+    <history-entry file=" - 2024.07.25 at 10h 41m 46s.xml">
+      <configuration name="" configurationId="tests" />
+    </history-entry>
+    <history-entry file=" - 2024.07.25 at 10h 42m 44s.xml">
+      <configuration name="" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5224000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14557292" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="bottom" id="Run" order="7" show_stripe_button="false" weight="0.3300926" />
+      <window_info anchor="bottom" id="Mypy" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <unified_weights bottom="0.3300926" left="0.14557292" />
+    </layoutV2>
+    <recentWindows>
+      <value>Run</value>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1920" height="323" key="GridCell.Tab.0.bottom" timestamp="1721885210854">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="323" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721885210854" />
+    <state width="1920" height="323" key="GridCell.Tab.0.center" timestamp="1721885210854">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="323" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721885210854" />
+    <state width="1920" height="323" key="GridCell.Tab.0.left" timestamp="1721885210854">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="323" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721885210854" />
+    <state width="1920" height="323" key="GridCell.Tab.0.right" timestamp="1721885210854">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="323" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721885210854" />
+    <state width="640" height="273" key="ShowBookmarks" timestamp="1721871851884">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="640" height="273" key="ShowBookmarks/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721871851884" />
+    <state x="623" y="232" width="732" height="685" key="search.everywhere.popup" timestamp="1721872002232">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="232" width="732" height="685" key="search.everywhere.popup/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721872002232" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

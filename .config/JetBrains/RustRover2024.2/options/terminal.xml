@@ -1,0 +1,7 @@
+<application>
+  <component name="BlockTerminalUsage">
+    <shellToExecutedCommandsNumber>
+      <entry key="bash" value="2" />
+    </shellToExecutedCommandsNumber>
+  </component>
+</application>

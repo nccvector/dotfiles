@@ -1,0 +1,46 @@
+<templateSet group="React hooks">
+  <template name="useState" value="const [$state$, set$State$] = useState($END$)" description="const [state, setState] = useState()" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="State" expression="capitalize(state)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="useCallback" value="const $cachedFn$ = useCallback(() =&gt; {&#10;&#9;$END$&#10;}, []);" description="const name = useCallback(() =&gt; {}, [])" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="cachedFn" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="useContext" value="const $value$ = useContext($Context$)" description="const value = useContext(context)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Context" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="useEffect" value="useEffect(() =&gt; {&#10;&#9;$END$&#10;}, []);" description="useEffect(() =&gt; {}, [])" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context />
+  </template>
+  <template name="useLayoutEffect" value="useLayoutEffect(() =&gt; {&#10;&#9;$END$&#10;}, []);" description="useLayoutEffect(() =&gt; {}, [])" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context />
+  </template>
+  <template name="useMemo" value="const $cachedValue$ = useMemo(() =&gt; {&#10;&#9;$END$&#10;}, []);" description="const cachedValue = useMemo(() =&gt; {}, [])" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="cachedValue" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="useReducer" value="const [$state$, $dispatch$] = useReducer($PARAMS$)" description="const [state, dispatch] = useReducer(params)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="state" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dispatch" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="useRef" value="const $ref$ = useRef($END$);" description="const ref = useRef(initialValue)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="ref" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="lazyImport" value="const $name$ = lazy(() =&gt; import('$Path$'))" description="const Component = lazy(() =&gt; import('path'))" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Path" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="useTransition" value="const [$isPending$, $startTransition$] = useTransition()" description="const [isPending, startTransition] = useTransition()" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="isPending" expression="" defaultValue="&quot;isPending&quot;" alwaysStopAt="true" />
+    <variable name="startTransition" expression="" defaultValue="&quot;startTransition&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

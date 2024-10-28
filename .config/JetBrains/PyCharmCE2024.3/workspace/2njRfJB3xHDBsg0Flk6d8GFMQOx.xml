@@ -1,0 +1,212 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="orchestratorcalibration" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="3iu88a3lgrtp2" />
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Python": {
+      "usageCount": 30,
+      "lastUsed": 1729644458114
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration"><![CDATA[{}]]></component>
+  <component name="IdeDocumentHistory"><![CDATA[{
+  "changedPaths": [
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/setup.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/schema/visioncalibrationschema/calibrationParametersSchema.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/schema/visioncalibrationschema/calibrationBoardSchema.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationGatherObservationParametersSchema.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationParametersSchema.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationComputationParametersSchema.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationPoseGenerationResultSchema.py",
+    "/home/mujin/workspaces/master/checkoutroot/orchestratorcalibration/python/mujinorchestratorcalibration/apispec/__init__.py"
+  ]
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Python">
+      <summary usageCount="30" lastUsage="1729644458114" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11588542" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <unified_weights left="0.11588542" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2750" y="394" width="258" height="395" key="FuzzyMoverPopup.ideScale=125" timestamp="1729644504866">
+      <screen x="1920" y="25" width="1920" height="1080" />
+    </state>
+    <state x="2750" y="394" width="258" height="395" key="FuzzyMoverPopup.ideScale=125/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@1920.25.1920.1080" timestamp="1729644504866" />
+    <state x="2405" y="364" width="944" height="440" key="FuzzySearchPopup.ideScale=125" timestamp="1729644428346">
+      <screen x="1920" y="25" width="1920" height="1080" />
+    </state>
+    <state x="2405" y="364" width="944" height="440" key="FuzzySearchPopup.ideScale=125/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@1920.25.1920.1080" timestamp="1729644428346" />
+    <state x="2259" y="112" width="1241" height="912" key="SettingsEditor.ideScale=125" timestamp="1729644556674">
+      <screen x="1920" y="25" width="1920" height="1080" />
+    </state>
+    <state x="2259" y="112" width="1241" height="912" key="SettingsEditor.ideScale=125/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@1920.25.1920.1080" timestamp="1729644556674" />
+    <state x="2543" y="259" width="672" height="681" key="search.everywhere.popup.ideScale=110" timestamp="1729498347498">
+      <screen x="1920" y="25" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="259" width="672" height="681" key="search.everywhere.popup.ideScale=110/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@1920.25.1920.1080" timestamp="1729498347498" />
+    <state x="2459" y="66" width="840" height="1038" key="search.everywhere.popup.ideScale=125" timestamp="1729644583550">
+      <screen x="1920" y="25" width="1920" height="1080" />
+    </state>
+    <state x="2459" y="66" width="840" height="1038" key="search.everywhere.popup.ideScale=125/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@1920.25.1920.1080" timestamp="1729644583550" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/__init__.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/__init__.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/calibrationCommonSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/verificationParametersSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../binpickingui/python/mujinorchestratorcalibration/__init__.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationBoardSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationGatherObservationParametersSchema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationParametersSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationPoseGenerationParametersSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationComputationParametersSchema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/visioncalibrationschema/visionCalibrationPoseGenerationResultSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/apispec/__init__.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="e#58#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/__init__.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/apispec/generatorsettings.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/implementation/__init__.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/setup.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#55#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinorchestratorcalibration/schema/calibrationLogEntriesSchema.py" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

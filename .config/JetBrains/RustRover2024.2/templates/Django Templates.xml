@@ -1,0 +1,89 @@
+<templateSet group="Django Templates">
+  <template name="autoesc" value="{% autoescape $VAL$ %}&#10;&#9;$END$&#10;{% endautoescape %}&#10;" description="{% autoescape %} / {% endautoescape %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VAL" expression="enum(&quot;on&quot;, &quot;off&quot;)" defaultValue="on" alwaysStopAt="true" />
+  </template>
+  <template name="block" value="{% block $BLOCK$ %}&#10;&#9;$END$&#10;{% endblock %}" description="{% block %} / {% endblock %}" toReformat="false" toShortenFQNames="true">
+    <variable name="BLOCK" expression="djangoBlock()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="blocktrans" value="{% blocktranslate %}&#10;&#9;$END$&#10;{% endblocktranslate %}" description="{% blocktranslate %} / {% endblocktranslate %}" toReformat="false" toShortenFQNames="true" />
+  <template name="blocktranswith" value="{% blocktranslate with $NEW_VAR$=$VAR$ %}&#10;&#9;$END$&#10;{% endblocktranslate %}" description="{% blocktranslate with %} / {% endblocktranslate %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NEW_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="comment" value="{% comment %}&#10;&#9;$END$&#10;{% endcomment %}" description="{% comment %} / {% endcomment %}" toReformat="false" toShortenFQNames="true" />
+  <template name="csrf" value="{% csrf_token %}" description="{% csrf_token %}" toReformat="false" toShortenFQNames="true" />
+  <template name="cycle" value="{% cycle $END$ %}" description="{% cycle %}" toReformat="false" toShortenFQNames="true" />
+  <template name="debug" value="{% debug %}" description="{% debug %}" toReformat="false" toShortenFQNames="true" />
+  <template name="ext" value="{% extends '$PATH$' %}" description="{% extends %}" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="filter" value="{% filter $FILTER$ %}&#10;&#9;$END$&#10;{% endfilter %}" description="{% filter %} / {% endfilter %}" toReformat="false" toShortenFQNames="true">
+    <variable name="FILTER" expression="djangoFilter()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="firstof" value="{% firstof $VAR1$ $VAR2$ $VAR3$ %}" description="{% firstof %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="djangoVariable()" defaultValue="&quot;var1&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="djangoVariable()" defaultValue="&quot;var2&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="djangoVariable()" defaultValue="&quot;var3&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="for" value="{% for $VAR$ in $COLLECTION$ %}&#10;&#9;$END$&#10;{% endfor %}&#10;" description="{% for %} / {% endfor %}" toReformat="false" toShortenFQNames="true">
+    <variable name="COLLECTION" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(COLLECTION)" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="fore" value="{% for $VAR$ in $COLLECTION$ %}&#10;&#9;$END$&#10;{% empty %}&#10;&#9;&#10;{% endfor %}&#10;" description="{% for %} / {% empty %} / {% endfor %}" toReformat="false" toShortenFQNames="true">
+    <variable name="COLLECTION" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="collectionElementName(COLLECTION)" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="if" value="{% if $VARIABLE$ %}&#10;&#9;$END$&#10;{% endif %} " description="{% if %} / {% endif %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="ifch" value="{% ifchanged %}$END${% endifchanged %}" description="{% ifchanged %} / {% endifchanged %}" toReformat="false" toShortenFQNames="true" />
+  <template name="ifelse" value="{% if $VARIABLE$ %}&#10;&#9;$END$&#10;{% else %}&#10;&#9;&#10;{% endif %} " description="{% if %} / {% else %} / {% endif %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="inc" value="{% include '$PATH$' %}" description="{% include %}" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="load" value="{% load $TAGS$ %}" description="{% load %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TAGS" expression="djangoTemplateTags()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="now" value="{% now '$FORMAT$' %}" description="{% now %}" toReformat="false" toShortenFQNames="true">
+    <variable name="FORMAT" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="regroup" value="{% regroup $LIST$ by $ATTR$ as $RESULT$ %}" description="{% regroup %}" toReformat="false" toShortenFQNames="true">
+    <variable name="LIST" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTR" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESULT" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="spaceless" value="{% spaceless %}&#10;&#9;$END$&#10;{% endspaceless %}" description="{% spaceless %} / {% endspaceless %}" toReformat="false" toShortenFQNames="true" />
+  <template name="static" value="{% static '$PATH$' %}" description="{% static %}" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="templatetag" value="{% templatetag $NAME$ %}" description="{% templatetag %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="enum(&quot;openblock&quot;, &quot;closeblock&quot;, &quot;openvariable&quot;, &quot;closevariable&quot;, &quot;openbrace&quot;, &quot;closebrace&quot;, &quot;opencomment&quot;, &quot;closecomment&quot;)" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="trans" value="{% translate '$TEXT$' %}" description="{% translate %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="transas" value="{% translate '$TEXT$' as $VAR$ %}" description="{% translate as %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="url" value="{% url '$LINK$' %}" description="{% url %}" toReformat="false" toShortenFQNames="true">
+    <variable name="LINK" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="verbatim" value="{% verbatim %}&#10;&#9;$END$&#10;{% endverbatim %}" description="{% verbatim %} / {% endverbatim %}" toReformat="false" toShortenFQNames="true" />
+  <template name="widthratio" value="{% widthratio $THIS_VALUE$ $MAX_VALUE$ $MAX_WIDTH$ %}" description="{% widthratio %}" toReformat="false" toShortenFQNames="true">
+    <variable name="THIS_VALUE" expression="" defaultValue="&quot;this_value&quot;" alwaysStopAt="true" />
+    <variable name="MAX_VALUE" expression="" defaultValue="&quot;max_value&quot;" alwaysStopAt="true" />
+    <variable name="MAX_WIDTH" expression="" defaultValue="&quot;100&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="with" value="{% with $EXPR$ as $NAME$ %}&#10;&#9;$END$&#10;{% endwith %}" description="{% with %} / {% endwith %}" toReformat="false" toShortenFQNames="true">
+    <variable name="EXPR" expression="djangoVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="super" value="{{ block.super }}" description="{{ block.super }}" toReformat="false" toShortenFQNames="true" />
+  <template name="var" value="{{ $END$ }}" description="{{ }}" toReformat="false" toShortenFQNames="true" />
+  <template name="tag" value="{% $END$ %}" description="{% %}" toReformat="false" toShortenFQNames="true" />
+  <template name="staticu" value="{{ STATIC_URL }}" description="{{ STATIC_URL }}" toReformat="false" toShortenFQNames="true" />
+  <template name="media" value="{{ MEDIA_URL }}" description="{{ MEDIA_URL }}" toReformat="false" toShortenFQNames="true" />
+</templateSet>

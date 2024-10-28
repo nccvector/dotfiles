@@ -1,0 +1,456 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/dicom-storage-scp-app">
+          <value>
+            <RecentProjectMetaInfo frameTitle="dicom-storage-scp-app – app.py" projectWorkspaceId="2WBe4xfTmRc426ZRJ05RzY4feOu">
+              <option name="activationTimestamp" value="1696210510594" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372377638" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="260" y="53" width="1400" height="1000" extendedState="6" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1696210213131" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/controllercommon">
+          <value>
+            <RecentProjectMetaInfo frameTitle="controllercommon [~/workspaces/mujin/checkoutroot/controllercommon] – …/bin/mujin_controllercommon_analyzeprocessmonitorlog.py" projectWorkspaceId="2YQS2aX8IRQ5iac2WYmtFYptixs">
+              <option name="activationTimestamp" value="1700457061640" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372359551" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="260" y="53" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1700456103303" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/visioncommon">
+          <value>
+            <RecentProjectMetaInfo frameTitle="visioncommon [~/workspaces/mujin/checkoutroot/visioncommon] – …/src/include/mujinvisioncommon/mujincamera.h" projectWorkspaceId="2YjpjG8p2CP1T8FhRxwsQa7iSy0">
+              <option name="activationTimestamp" value="1701053067133" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372364829" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1701048976034" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/detectors">
+          <value>
+            <RecentProjectMetaInfo frameTitle="detectors [~/workspaces/mujin/checkoutroot/detectors] – …/python/mujindetection/shared/utils/camerautils.py" projectWorkspaceId="2Yjy3ugdh2ko6VHPIGhEJN47JLI">
+              <option name="activationTimestamp" value="1701308862892" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372364829" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1701053088356" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/PycharmProjects/pythonProject">
+          <value>
+            <RecentProjectMetaInfo displayName="pythonProject, jupyter-remote-localhost:8888" frameTitle="pythonProject [~/PycharmProjects/pythonProject] – …/main.ipynb [pythonProject]" projectWorkspaceId="2YpaUIMCrifslRvTgisfLqzHC33">
+              <option name="activationTimestamp" value="1701308863631" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372324364" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1701224988801" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/repos/binpickingui">
+          <value>
+            <RecentProjectMetaInfo frameTitle="binpickingui [~/repos/binpickingui]" projectWorkspaceId="2Z6KMYRectUEBZ0ibwEO9rUMGVE">
+              <option name="activationTimestamp" value="1701737074314" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372374579" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="260" y="53" width="1400" height="1000" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1701737041939" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/registration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="registration [~/workspaces/mujin/checkoutroot/registration] – …/python/mujinregistration/registrationmanager.py" projectWorkspaceId="2a4MQFfwPQmJq086Ab5IHlFFPNP">
+              <option name="activationTimestamp" value="1703723909926" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372362260" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="260" y="53" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1703573379790" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/detectorcalibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="detectorcalibration [~/workspaces/mujin/checkoutroot/detectorcalibration] – …/python/mujindetectorcalibration/calibrationboarddetector/pointcloudBasedCalibrationBoardDetector/pointcloudbasedcalibrationboarddetector.py" projectWorkspaceId="2YspsSJa7yFiIFqbIjPX1vPb8gs">
+              <option name="activationTimestamp" value="1704330819902" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372362260" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1703729546571" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/jhbuildappcontroller">
+          <value>
+            <RecentProjectMetaInfo frameTitle="jhbuildappcontroller [~/workspaces/mujin/jhbuildappcontroller] – …/setup.bash" projectWorkspaceId="2ahsKFW1NeqESJS6FoPwx14XPZg">
+              <option name="activationTimestamp" value="1704782122708" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372354811" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="260" y="53" width="1400" height="1000" extendedState="6" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1704782084465" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/webstack">
+          <value>
+            <RecentProjectMetaInfo frameTitle="webstack [~/workspaces/mujin/checkoutroot/webstack] – …/go/CHANGELOG.md" projectWorkspaceId="2b19uLHU7Ou9pNIM6ED9WCUGSdO">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372331409" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1705371938647" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/second/checkoutroot/planningcommon">
+          <value>
+            <RecentProjectMetaInfo frameTitle="planningcommon [~/workspaces/second/checkoutroot/planningcommon] – …/python/mujinplanningcommon/planning/handeyecalibrationtask.py" projectWorkspaceId="2bOHCGvB4t39mN7zZoDWyZFAKf2">
+              <option name="activationTimestamp" value="1706239357546" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372325925" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="2180" y="53" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1706079076173" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/second/checkoutroot/calibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="calibration [~/workspaces/second/checkoutroot/calibration] – …/python/mujincalibration/calibrationmanager.py" projectWorkspaceId="2b7IifgOWkhfY0iH7Lo8cgm0vLU">
+              <option name="activationTimestamp" value="1706239363090" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372325925" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="1920" y="0" width="1920" height="1080" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1706167772027" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/mujinwebstackclientpy">
+          <value>
+            <RecentProjectMetaInfo frameTitle="mujinwebstackclientpy [~/workspaces/mujin/checkoutroot/mujinwebstackclientpy] – …/CHANGELOG.md" projectWorkspaceId="2bw50JjWAtfnhtms1eXjuUzxLpl">
+              <option name="activationTimestamp" value="1707113097598" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372354416" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="4" />
+              </option>
+              <frame x="325" y="0" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1707113075964" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/mujinplanningclientpy">
+          <value>
+            <RecentProjectMetaInfo frameTitle="mujinplanningclientpy [~/workspaces/mujin/checkoutroot/mujinplanningclientpy] – …/python/mujinplanningclient/handeyecalibrationplanningclient.py" projectWorkspaceId="2bw585cpJUPdHPPVKsXbh1xAKxw">
+              <option name="activationTimestamp" value="1707197714227" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372354416" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1707184975133" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/planningcommon">
+          <value>
+            <RecentProjectMetaInfo frameTitle="mujinplanningcommon [~/workspaces/mujin/checkoutroot/planningcommon] – …/python/mujinplanningcommon/planning/handeyecalibrationtask.py" projectWorkspaceId="2c23G2h1ytK88HAXV1LZtdjjDna">
+              <option name="activationTimestamp" value="1707705276188" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372340908" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1707458129075" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/mujin/checkoutroot/calibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="calibration [~/workspaces/mujin/checkoutroot/calibration] – …/python/mujincalibration/calibrationmanager.py" projectWorkspaceId="2az43AlWS5p7cJkFdDKTxmUtf6F">
+              <option name="activationTimestamp" value="1708049780738" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-232.8660.197" />
+              <option name="buildTimestamp" value="1690372324246" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1708047672241" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/orchestrator/checkoutroot/planningcommon">
+          <value>
+            <RecentProjectMetaInfo frameTitle="planningcommon [~/workspaces/orchestrator/checkoutroot/planningcommon] – …/python/mujinplanningcommon/planning/handeyecalibrationtask.py" projectWorkspaceId="2cvgSMmL3g24BoxUouxDpLRQyvl">
+              <option name="activationTimestamp" value="1709255073405" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-233.13763.11" />
+              <option name="buildTimestamp" value="1706211180000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="154" y="1080" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1708997464684" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/orchestrator/checkoutroot/calibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="calibration [~/workspaces/orchestrator/checkoutroot/calibration] – …/python/mujincalibration/calibrationmanager.py" projectWorkspaceId="2ccPqyCNobNPtQzWyQsm6wlSzIT">
+              <option name="activationTimestamp" value="1709255065111" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-233.13763.11" />
+              <option name="buildTimestamp" value="1706211180000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="1920" y="0" width="1080" height="1920" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1709001036444" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/orchestrator">
+          <value>
+            <RecentProjectMetaInfo frameTitle="orchestrator [~/workspaces/master/checkoutroot/orchestrator] – …/python/mujinorchestrator/orchestratormaster.py" projectWorkspaceId="2dIsyMU3tXwR3kTuxgKmCosWwJy">
+              <option name="activationTimestamp" value="1709709685965" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-233.13763.11" />
+              <option name="buildTimestamp" value="1706211180000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="260" y="53" width="1400" height="1000" extendedState="6" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1709707179650" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/orchestrator/checkoutroot/binpickingui">
+          <value>
+            <RecentProjectMetaInfo frameTitle="binpickingui [~/workspaces/orchestrator/checkoutroot/binpickingui] – …/qt/Calibration/Components/FooterCalibrationDisplay.qml" projectWorkspaceId="2cvnNSlmZr3LrCnzuiRWR0VdpLU">
+              <option name="activationTimestamp" value="1710984683138" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-233.13763.11" />
+              <option name="buildTimestamp" value="1706211180000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1710924731831" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/detectorcalibration/python/mujindetectorcalibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="mujindetectorcalibration [~/workspaces/master/checkoutroot/detectorcalibration/python/mujindetectorcalibration] – …/calibrationboarddetector/calibrationpatterndetector/calibrationpatterndetectoropencv.py" projectWorkspaceId="2eIGopZn9Y6kIajBkXUECqevjPZ">
+              <option name="activationTimestamp" value="1711586068954" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-233.13763.11" />
+              <option name="buildTimestamp" value="1706211180000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="1920" y="0" width="1920" height="1056" extendedState="6" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1711585097723" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/paltac4d/checkoutroot/calibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="calibration [~/workspaces/paltac4d/checkoutroot/calibration] – …/python/mujincalibration/calibrationmanager.py" projectWorkspaceId="2dzRAULi4BD5SE2RBk6D3JfHMe9">
+              <option name="activationTimestamp" value="1712035576221" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.14494.200" />
+              <option name="buildTimestamp" value="1711321200000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="1919" y="-1" width="1922" height="1058" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1712018101930" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/mujinsimulator">
+          <value>
+            <RecentProjectMetaInfo frameTitle="mujinsimulator [~/workspaces/master/checkoutroot/mujinsimulator] – …/python/mujinsimulator/model/templateboxmodel.py" projectWorkspaceId="2ewbXyMxz4CQhCf1iSxlWRKajwZ">
+              <option name="activationTimestamp" value="1712818975106" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.14494.241" />
+              <option name="buildTimestamp" value="1711620600000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="1920" y="0" width="1920" height="1056" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1712818630849" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics">
+          <value>
+            <RecentProjectMetaInfo frameTitle="app-camera-calibration-intrinsics [~/workspaces/master/checkoutroot/app-camera-calibration-intrinsics] – …/src/views/TemplateHome/index.tsx" projectWorkspaceId="2f9vkv6aARY44sD0SLuRHD9Q9hc">
+              <option name="activationTimestamp" value="1713228981196" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.14494.241" />
+              <option name="buildTimestamp" value="1711620600000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="1" />
+              </option>
+              <frame x="1920" y="0" width="1920" height="1056" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1713227665313" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/webstack">
+          <value>
+            <RecentProjectMetaInfo frameTitle="webstack [~/workspaces/master/checkoutroot/webstack] – /home/mujin/workspaces/master/checkoutroot/webstack/go/util/schemas/knownschemas/knownschemas.go" projectWorkspaceId="2gA7poGlGkhm9DkP9mAXfgXiAhG">
+              <option name="activationTimestamp" value="1715241575836" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.15989.111" />
+              <option name="buildTimestamp" value="1713964440000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="137" y="0" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1715128713516" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/calibration">
+          <value>
+            <RecentProjectMetaInfo frameTitle="calibration [~/workspaces/master/checkoutroot/calibration] – /home/mujin/workspaces/master/checkoutroot/calibration/python/mujincalibration/calibrationmanager.py" opened="true" projectWorkspaceId="2ccILkXHGNbyZXddBHwKWx7XgeO">
+              <option name="activationTimestamp" value="1716194322787" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.15989.111" />
+              <option name="buildTimestamp" value="1713964440000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <frame x="262" y="-1090" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1715677130201" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/binpickingui">
+          <value>
+            <RecentProjectMetaInfo frameTitle="binpickingui [~/workspaces/master/checkoutroot/binpickingui] – /home/mujin/workspaces/master/checkoutroot/binpickingui/python/mujinorchestratorcalibration/implementation/calibrationorchestrator.py" opened="true" projectWorkspaceId="2ccLiUgiglwjJeK7up7i7lZmwgX">
+              <option name="activationTimestamp" value="1716196012722" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.15989.111" />
+              <option name="buildTimestamp" value="1713964440000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <frame x="260" y="40" width="1400" height="1000" extendedState="6" fullScreen="true" />
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1715748651723" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/master/checkoutroot/qmlui">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="2gZd9oqcWPbSErdVdlbyBFpLcdu">
+              <option name="activationTimestamp" value="1716250889008" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="PY-241.15989.111" />
+              <option name="buildTimestamp" value="1713964440000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <option name="productionCode" value="PY" />
+              <option name="projectOpenTimestamp" value="1716180038308" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/workspaces/master/checkoutroot/qmlui" />
+    <option name="lastProjectLocation" value="$USER_HOME$/PycharmProjects" />
+  </component>
+</application>

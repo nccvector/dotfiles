@@ -1,0 +1,10 @@
+<application>
+  <component name="com.mituuz.fuzzier.FuzzierSettings">
+    <option name="modules">
+      <map>
+        <entry key="orchestratorcalibration" value="$USER_HOME$/workspaces/master/checkoutroot/orchestratorcalibration" />
+      </map>
+    </option>
+    <option name="splitPosition" value="436" />
+  </component>
+</application>

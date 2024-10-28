@@ -1,0 +1,26 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/RustroverProjects/untitled">
+          <value>
+            <RecentProjectMetaInfo frameTitle="untitled [~/RustroverProjects/untitled] – /home/mujin/RustroverProjects/untitled/src/main.rs" projectWorkspaceId="2jx4shXjg8TjVk9dhs3FtsRxJnZ">
+              <option name="activationTimestamp" value="1722317607415" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-241.17890.43" />
+              <option name="buildTimestamp" value="1721452620000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="0" y="1080" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1722315602595" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/RustroverProjects/untitled" />
+    <option name="lastProjectLocation" value="$USER_HOME$/RustroverProjects" />
+  </component>
+</application>

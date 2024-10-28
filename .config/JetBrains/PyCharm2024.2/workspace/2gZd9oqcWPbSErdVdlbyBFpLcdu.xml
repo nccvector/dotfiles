@@ -1,0 +1,1367 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="qmlui" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf ideFingerprint="291yajsx4ghm" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+          <file>
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="575">
+                  <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#60#71#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"qcalibrationorchestratorproxy.py","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,127,10,48,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,112,121,116,104,111,110,70,105,108,101,46,115,118,103,18,50,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,101,120,112,117,105,47,112,121,116,104,111,110,46,115,118,103,26,10,80,121,116,104,111,110,67,111,114,101,40,-53,-109,-42,-7,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultPoseChange.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="187">
+                  <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"CalibrationResultPoseChange.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultCycleView.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="442">
+                  <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"CalibrationResultCycleView.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultDetailPage.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="343">
+                  <caret line="155" selection-start-line="155" selection-end-line="155" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"CalibrationResultDetailPage.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultSelectionList.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="612">
+                  <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"CalibrationResultSelectionList.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleSelectionList.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="408">
+                  <caret line="26" selection-start-line="26" selection-end-line="26" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"CalibrationCycleSelectionList.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+          <file current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Calibration.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="320">
+                  <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"Calibration.qml","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,13,105,99,111,110,115,47,113,109,108,46,115,118,103,18,19,105,99,111,110,115,47,101,120,112,117,105,47,113,109,108,46,115,118,103,26,21,99,111,109,46,105,110,116,101,108,108,105,106,46,108,97,110,103,46,113,109,108,34,19,105,110,116,101,108,108,105,106,46,113,109,108,46,99,111,109,109,111,110,40,-56,-60,-86,-83,5,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="442">
+                  <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#65#99#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"qcalibrationimageprovider.py","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,127,10,48,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,112,121,116,104,111,110,70,105,108,101,46,115,118,103,18,50,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,101,120,112,117,105,47,112,121,116,104,111,110,46,115,118,103,26,10,80,121,116,104,111,110,67,111,114,101,40,-53,-109,-42,-7,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qviewmanagers/qcalibrationviewmanager.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="306">
+                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"qcalibrationviewmanager.py","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,127,10,48,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,112,121,116,104,111,110,70,105,108,101,46,115,118,103,18,50,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,101,120,112,117,105,47,112,121,116,104,111,110,46,115,118,103,26,10,80,121,116,104,111,110,67,111,114,101,40,-53,-109,-42,-7,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf ideFingerprint="291yajsx4ghm">
+          <file current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="493">
+                  <caret line="114" column="13" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#60#71#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+            <tab><![CDATA[{"tabTitle":"qcalibrationorchestratorproxy.py","foregroundColor":-2104859,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,127,10,48,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,112,121,116,104,111,110,70,105,108,101,46,115,118,103,18,50,105,99,111,110,115,47,99,111,109,47,106,101,116,98,114,97,105,110,115,47,112,121,116,104,111,110,47,112,97,114,115,101,114,47,101,120,112,117,105,47,112,121,116,104,111,110,46,115,118,103,26,10,80,121,116,104,111,110,67,111,114,101,40,-53,-109,-42,-7,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "QmlType": {
+      "usageCount": 235,
+      "lastUsed": 1721876684514
+    },
+    "Markdown": {
+      "usageCount": 6,
+      "lastUsed": 1717468928070
+    },
+    "Python": {
+      "usageCount": 106,
+      "lastUsed": 1721876037800
+    },
+    "C++": {
+      "usageCount": 2,
+      "lastUsed": 1718002940002
+    },
+    "PLAIN_TEXT": {
+      "usageCount": 7,
+      "lastUsed": 1718245549268
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+      <find>onCali</find>
+      <find>unload</find>
+      <find>HasValid</find>
+      <find>HasValidCalibrationResultsFromLocation</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/qt/Calibration</dir>
+      <dir>$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="isProjectScope" value="true" />
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="RECENT" type="baf65d7a:GitBranchesTreeModel$RecentNode" />
+      </path>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="ae103dac:GitBranchType" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration">{}</component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/python/mujinqmlui/qimageproviders/qbaseimageprovider.py" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultFailedObservationView.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultIntrinsicErrorView.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultGlobalErrorView.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultObservationView.qml" />
+      <option value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/MasterCalibrationDisplay.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationLogEntryList.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationLocationNameComboBox.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/MasterCalibrationDisplay.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationCycleLogEntrySelectionView.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultList.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/qmldir" />
+      <option value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qmodels/qcalibrationmodels.py" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleSelectionList.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultSelectionView.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleResultSelectionList.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Calibration.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateResultDisplay.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultSelectionList.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultDetailPage.qml" />
+      <option value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Markdown">
+      <summary usageCount="6" lastUsage="1717468928070" />
+    </language>
+    <language id="Python">
+      <summary usageCount="106" lastUsage="1721876037801" />
+    </language>
+    <language id="QmlLang">
+      <summary usageCount="235" lastUsage="1721876684514" />
+    </language>
+    <language id="TEXT">
+      <summary usageCount="7" lastUsage="1718245549268" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qimageproviders}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qmodels}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qproxies}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qviewmanagers}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration/Components}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="qmlui" />
+            <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="qmlui" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitlab" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".gitlab" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/.gitlab}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/bin" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="bin" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/bin}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/devbin" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="devbin" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/devbin}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/etc" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="etc" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/etc}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/jhbuildqmlui" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="jhbuildqmlui" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/jhbuildqmlui}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/locale" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="locale" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/locale}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/python" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="python" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmlui" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmlui" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmlui}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmlui_uiprofiles" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmlui_uiprofiles" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmlui_uiprofiles}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluibasesystem" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluibasesystem" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluibasesystem}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluicameracalibration" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="qimageproviders" />
+                    <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qimageproviders}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/__init__.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="__init__.py" />
+                      <item name="__init__.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="qcalibrationimageprovider.py" />
+                      <item name="qcalibrationimageprovider.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qmodels" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="qmodels" />
+                    <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qmodels}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qmodels/__init__.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="__init__.py" />
+                      <item name="__init__.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="qproxies" />
+                    <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qproxies}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/__init__.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="__init__.py" />
+                      <item name="__init__.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="qcalibrationorchestratorproxy.py" />
+                      <item name="qcalibrationorchestratorproxy.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qviewmanagers" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="qviewmanagers" />
+                    <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qviewmanagers}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qviewmanagers/__init__.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="__init__.py" />
+                      <item name="__init__.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qviewmanagers/qcalibrationviewmanager.py" />
+                        </map>
+                      </attributes>
+                      <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="qcalibrationviewmanager.py" />
+                      <item name="qcalibrationviewmanager.py" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/__init__.py" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="__init__.py" />
+                    <item name="__init__.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/CHANGELOG.md" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/expui/markdown.svg" iconPlugin="org.intellij.plugins.markdown" isLeaf="true" text="CHANGELOG.md" />
+                    <item name="CHANGELOG.md" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/setup.py" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="setup.py" />
+                    <item name="setup.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluicameracalibration/version.py" />
+                      </map>
+                    </attributes>
+                    <data iconPath="icons/com/jetbrains/python/parser/expui/python.svg" iconPlugin="PythonCore" isLeaf="true" text="version.py" />
+                    <item name="version.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluiordercycle" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluiordercycle" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluiordercycle}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluipacking" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluipacking" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluipacking}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluipackingcluster" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluipackingcluster" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluipackingcluster}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluipackingexecution" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluipackingexecution" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluipackingexecution}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluiproductioncycle" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluiproductioncycle" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluiproductioncycle}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluiregistration" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluiregistration" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluiregistration}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluirobotmotorcontrol" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluirobotmotorcontrol" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluirobotmotorcontrol}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujinqmluiteachworker" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujinqmluiteachworker" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluiteachworker}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/qt" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="qt" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/basesystem" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="basesystem" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/basesystem}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Calibration" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Components" />
+                    <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration/Components}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/BodySensorCalibrateDisplay.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="BodySensorCalibrateDisplay.qml" />
+                      <item name="BodySensorCalibrateDisplay.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/BodySensorCalibrateResultDisplay.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="BodySensorCalibrateResultDisplay.qml" />
+                      <item name="BodySensorCalibrateResultDisplay.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/BodySensorCalibrationCameraSingleShotDisplay.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="BodySensorCalibrationCameraSingleShotDisplay.qml" />
+                      <item name="BodySensorCalibrationCameraSingleShotDisplay.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/BodySensorCalibrationSchema.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="BodySensorCalibrationSchema.qml" />
+                      <item name="BodySensorCalibrationSchema.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/BodySensorCalibrationVerificationSchema.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="BodySensorCalibrationVerificationSchema.qml" />
+                      <item name="BodySensorCalibrationVerificationSchema.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/BodySensorVerifyCalibrationDisplay.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="BodySensorVerifyCalibrationDisplay.qml" />
+                      <item name="BodySensorVerifyCalibrationDisplay.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleSelectionList.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationCycleSelectionList.qml" />
+                      <item name="CalibrationCycleSelectionList.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationLocationNameComboBox.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationLocationNameComboBox.qml" />
+                      <item name="CalibrationLocationNameComboBox.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultCycleView.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationResultCycleView.qml" />
+                      <item name="CalibrationResultCycleView.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultDetailPage.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationResultDetailPage.qml" />
+                      <item name="CalibrationResultDetailPage.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultImageTypeComboBox.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationResultImageTypeComboBox.qml" />
+                      <item name="CalibrationResultImageTypeComboBox.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultNoResultFallbackView.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationResultNoResultFallbackView.qml" />
+                      <item name="CalibrationResultNoResultFallbackView.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultPoseChange.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationResultPoseChange.qml" />
+                      <item name="CalibrationResultPoseChange.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultSelectionList.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="CalibrationResultSelectionList.qml" />
+                      <item name="CalibrationResultSelectionList.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/FooterCalibrationDisplay.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="FooterCalibrationDisplay.qml" />
+                      <item name="FooterCalibrationDisplay.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Components/MasterCalibrationDisplay.qml" />
+                        </map>
+                      </attributes>
+                      <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="MasterCalibrationDisplay.qml" />
+                      <item name="MasterCalibrationDisplay.qml" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/qt/Calibration/Calibration.qml" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="Calibration.qml" />
+                    <item name="Calibration.qml" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/Colibri" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Colibri" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Colibri}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/CommonCore" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="CommonCore" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/CommonCore}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/Components" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Components" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Components}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/JavaScript" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="JavaScript" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/JavaScript}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/LogView" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="LogView" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/LogView}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/Mujin" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Mujin" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Mujin}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/Packing" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Packing" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Packing}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/PackingCluster" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="PackingCluster" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/PackingCluster}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/PickWorker" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="PickWorker" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/PickWorker}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/Production" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="Production" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Production}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/RegistrationSystem" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="RegistrationSystem" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/RegistrationSystem}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/RemoteRegistrationSystem" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="RemoteRegistrationSystem" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/RemoteRegistrationSystem}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/RobotMotorControl" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="RobotMotorControl" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/RobotMotorControl}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/SceneDatabase" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="SceneDatabase" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/SceneDatabase}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/SceneEditor" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="SceneEditor" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/SceneEditor}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/SceneViewer" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="SceneViewer" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/SceneViewer}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/teachworker" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="teachworker" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/teachworker}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/TreeEditor" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="TreeEditor" />
+                  <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/TreeEditor}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/qt/baseapp.qml" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.qml.common" iconPath="icons/expui/qml.svg" iconPlugin="com.intellij.lang.qml" isLeaf="true" text="baseapp.qml" />
+                  <item name="baseapp.qml" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/resource" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="resource" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/resource}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/testqmlui" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="testqmlui" />
+                <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/testqmlui}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitlab-ci.yml" />
+                  </map>
+                </attributes>
+                <data iconPath="org/jetbrains/plugins/gitlab/gitLabLogo.svg" iconPlugin="org.jetbrains.plugins.gitlab" isLeaf="true" text=".gitlab-ci.yml" />
+                <item name=".gitlab-ci.yml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitmodules" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitmodules" />
+                <item name=".gitmodules" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/mujin_conf.bash.template" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="mujin_conf.bash.template" />
+                <item name="mujin_conf.bash.template" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/postinstall.bash" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/shell.svg" iconPlugin="com.intellij" isLeaf="true" text="postinstall.bash" />
+                <item name="postinstall.bash" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/README.md" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/markdown.svg" iconPlugin="org.intellij.plugins.markdown" isLeaf="true" text="README.md" />
+                <item name="README.md" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/ruff.toml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/newui/toml.svg" iconPlugin="org.toml.lang" isLeaf="true" text="ruff.toml" />
+                <item name="ruff.toml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/setuprepoenv.bash" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/shell.svg" iconPlugin="com.intellij" isLeaf="true" text="setuprepoenv.bash" />
+                <item name="setuprepoenv.bash" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/sonar-project.properties" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/properties.svg" iconPlugin="com.intellij" isLeaf="true" text="sonar-project.properties" />
+                <item name="sonar-project.properties" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="206169000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18046875" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="bottom" id="Mypy" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" show_stripe_button="false" weight="0.3300926" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <unified_weights bottom="0.3300926" left="0.18046875" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Find</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="663" y="276" width="424" height="495" key="FileChooserDialogImpl" timestamp="1721875394257">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="259" width="530" height="610" key="FileChooserDialogImpl.ideScale=125" timestamp="1716356106605">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="690" y="553" width="530" height="610" key="FileChooserDialogImpl.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716180037218" />
+    <state x="690" y="259" key="FileChooserDialogImpl.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716356106605" />
+    <state x="663" y="276" width="424" height="495" key="FileChooserDialogImpl/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.0.1920.1080" timestamp="1721875394257" />
+    <state x="663" y="1671" key="FileChooserDialogImpl/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.1395.1920.1080" timestamp="1717554256350" />
+    <state x="663" y="296" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1717550641273" />
+    <state x="167" y="1480" width="1536" height="901" key="MergeDialog.ideScale=125" timestamp="1716947315459">
+      <screen x="0" y="1395" width="1920" height="1080" />
+    </state>
+    <state x="167" y="1480" width="1536" height="901" key="MergeDialog.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716947315459" />
+    <state x="478" y="555" width="954" height="606" key="MultipleFileMergeDialog.ideScale=125" timestamp="1716947315462">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state x="478" y="555" width="954" height="606" key="MultipleFileMergeDialog.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716947315462" />
+    <state x="339" y="1482" width="1241" height="912" key="SettingsEditor" timestamp="1717554128418">
+      <screen x="0" y="1395" width="1920" height="1080" />
+    </state>
+    <state x="339" y="1482" key="SettingsEditor/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.1395.1920.1080" timestamp="1717554128418" />
+    <state x="339" y="402" width="1241" height="912" key="SettingsEditor/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1717484179658" />
+    <state width="567" height="755" key="SwitcherDM" timestamp="1718007596145">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="623" height="591" key="SwitcherDM.ideScale=125" timestamp="1717480657996">
+      <screen x="0" y="1395" width="1920" height="1080" />
+    </state>
+    <state width="623" height="591" key="SwitcherDM.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.1395.1920.1080" timestamp="1717480657996" />
+    <state width="623" height="590" key="SwitcherDM.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716793886564" />
+    <state width="623" height="576" key="SwitcherDM.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716861154029" />
+    <state width="567" height="774" key="SwitcherDM/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1717739588960" />
+    <state width="567" height="755" key="SwitcherDM/0.27.1920.1053@0.27.1920.1053" timestamp="1718007596145" />
+    <state x="627" y="176" width="655" height="735" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.ideScale=125" timestamp="1716860352794">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="627" y="176" width="655" height="735" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716860352794" />
+    <state x="659" y="117" width="796" height="963" key="find.popup.ideScale=125" timestamp="1716356081975">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="659" y="408" width="796" height="987" key="find.popup.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716193135613" />
+    <state x="659" y="117" width="796" height="963" key="find.popup.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716356081975" />
+    <state width="750" height="500" key="javadoc.popup.ideScale=125" timestamp="1717058401711">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="750" height="500" key="javadoc.popup.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1717058401711" />
+    <state x="623" y="232" width="795" height="685" key="search.everywhere.popup" timestamp="1719906954378">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="540" y="351" width="942" height="1043" key="search.everywhere.popup.ideScale=125" timestamp="1717484173504">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state x="539" y="1431" width="942" height="1044" key="search.everywhere.popup.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.1395.1920.1080" timestamp="1717480656486" />
+    <state x="540" y="351" width="942" height="1043" key="search.everywhere.popup.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1717484173504" />
+    <state x="539" y="62" width="942" height="1017" key="search.everywhere.popup.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1717058684701" />
+    <state x="623" y="1605" width="732" height="703" key="search.everywhere.popup/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.1395.1920.1080" timestamp="1717554123074" />
+    <state x="623" y="525" width="732" height="703" key="search.everywhere.popup/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1717986012777" />
+    <state x="623" y="232" width="795" height="685" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1719906954378" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/python/mujinqmlui/qimageproviders/qbaseimageprovider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmlui/qimageproviders/qstreamingimageprovider.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujinqmlui/qimageproviders/qbaseimageprovider.py" />
+    <entry file="file://$USER_HOME$/jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujinqmlui/qmodels/qcommonmodels.py" />
+    <entry file="file://$USER_HOME$/jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujincommon/basicmath.py" />
+    <entry file="file://$USER_HOME$/jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujincalibration/queries.py" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultDisplaySwitchView.qml" />
+    <entry file="file://$PROJECT_DIR$/python/mujinqmlui/qproxies/qsceneproxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9072">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujinqmlui/qproxies/qorchestratorproxy.py" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/qmldir" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/MasterCalibrationDisplay.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujinqmlui/qmodels/qcommonmodels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+          <folding>
+            <element signature="e#97#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrationSchema.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultImageTypeComboBox.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationSensorLinkNameComboBox.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationConfiguration/CalibrationConfigurationControlView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultIntrinsicErrorView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultControlView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationHeader.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultGlobalErrorView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrationCameraSingleShotDisplay.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationConfiguration/CalibrationConfigurationMainView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationLogEntryList.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleList.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationCycleLogEntrySelectionView.qml" />
+    <entry file="file://$PROJECT_DIR$/testqmlui/qt/plugins/Mujin/Tests/src/proxymodel.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultSelectionView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleResultSelectionList.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/qmldir" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateResultDisplay.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationSensorNameComboBox.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultObservationView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultNoResultsView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultFailedObservationView.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateDisplay.qml" />
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/MasterCalibrationDisplay.qml" />
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qmodels/qcalibrationmodels.py" />
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qmodels/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationLocationNameComboBox.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
+          <folding>
+            <element signature="e#65#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qviewmanagers/qcalibrationviewmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultPoseChange.qml" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultCycleView.qml" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultDetailPage.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
+          <folding>
+            <element signature="e#60#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationResultSelectionList.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Components/CalibrationCycleSelectionList.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Calibration.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

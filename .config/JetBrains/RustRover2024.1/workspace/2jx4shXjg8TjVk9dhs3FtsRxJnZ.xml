@@ -1,0 +1,196 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="untitled" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="33c9rcn80soam" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main.rs">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="255">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+              <folding>
+                <element signature="e#27#91#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cargo.toml">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Rust": {
+      "usageCount": 8,
+      "lastUsed": 1722316627095
+    },
+    "TOML": {
+      "usageCount": 3,
+      "lastUsed": 1722315861542
+    },
+    "WebPreview": {
+      "usageCount": 1,
+      "lastUsed": 1722315606508
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration"><![CDATA[{}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Cargo.toml" />
+      <option value="$PROJECT_DIR$/src/main.rs" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Rust">
+      <summary usageCount="8" lastUsage="1722316627095" />
+    </language>
+    <language id="TOML">
+      <summary usageCount="3" lastUsage="1722315861542" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/RustroverProjects/untitled}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="RunConfigurationStartHistory">
+    <history>
+      <element setting="Cargo.Run" />
+    </history>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="$PROJECT_DIR$" commandHistoryFileName="untitled-history">
+        <shellCommand>
+          <arg value="/bin/bash" />
+          <arg value="-i" />
+        </shellCommand>
+      </TerminalTabState>
+    </option>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1990000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1783854" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3300926" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Messages" order="5" />
+      <window_info anchor="bottom" id="Run" order="5" show_stripe_button="false" weight="0.3300926" />
+      <window_info anchor="bottom" id="Build" order="5" visible="true" weight="0.3300926" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="5" weight="0.2" />
+      <window_info anchor="right" x="1524" y="1153" width="280" height="944" id="RustCargo" order="6" weight="0.20035714" />
+      <unified_weights bottom="0.3300926" left="0.1783854" right="0.20035714" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Build</value>
+      <value>Terminal</value>
+      <value>Run</value>
+      <value>RustCargo</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1920" height="324" key="GridCell.Tab.0.bottom" timestamp="1722315726462">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="324" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.1080.1920.1080" timestamp="1722315726462" />
+    <state width="1920" height="324" key="GridCell.Tab.0.center" timestamp="1722315726462">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="324" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.1080.1920.1080" timestamp="1722315726462" />
+    <state width="1920" height="324" key="GridCell.Tab.0.left" timestamp="1722315726462">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="324" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.1080.1920.1080" timestamp="1722315726462" />
+    <state width="1920" height="324" key="GridCell.Tab.0.right" timestamp="1722315726462">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1920" height="324" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.1080.1920.1080" timestamp="1722315726462" />
+    <state width="600" height="400" key="javadoc.popup" timestamp="1722315896768">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="600" height="400" key="javadoc.popup/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.1080.1920.1080" timestamp="1722315896768" />
+    <state x="623" y="1312" width="672" height="685" key="search.everywhere.popup" timestamp="1722317182629">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="623" y="1312" width="672" height="685" key="search.everywhere.popup/0.1080.1920.1080/0.0.1920.1080/1920.25.1920.1080@0.1080.1920.1080" timestamp="1722317182629" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cgmath-0.17.0/src/vector.rs" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.cargo/registry/src/index.crates.io-6f17d22bba15001f/embree-rs-0.3.6/src/triangle_mesh.rs" preview="true">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cargo.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="e#27#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

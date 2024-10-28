@@ -1,0 +1,25 @@
+<application>
+  <component name="SettingsSyncSettings">
+    <option name="disabledSubcategories">
+      <map>
+        <entry key="PLUGINS">
+          <value>
+            <list>
+              <option value="IdeaVIM" />
+              <option value="com.firsttimeinforever.intellij.pdf.viewer.intellij-pdf-viewer" />
+              <option value="com.github.lonre.gruvbox-intellij-theme" />
+              <option value="com.intellij.mermaid" />
+              <option value="com.intellij.ml.llm" />
+              <option value="com.leinardi.pycharm.mypy" />
+              <option value="dev.slint.ideaplugin" />
+              <option value="io.github.xiaopihai7256" />
+              <option value="org.jetbrains.uncrustify" />
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="migrationFromOldStorageChecked" value="true" />
+    <option name="syncEnabled" value="true" />
+  </component>
+</application>

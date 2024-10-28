@@ -1,0 +1,181 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="mujinsimulator" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="vv8798z94tw3">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]" selected="true">
+            <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/mujinsimulator/model/model.py">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="875">
+              <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/python/mujinsimulator/model/templateboxmodel.py">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="455">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#83#113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/mujinsimulator/model/boxmodel.py">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="340">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Markdown": {
+      "usageCount": 1,
+      "lastUsed": 1712818631237
+    },
+    "Python": {
+      "usageCount": 3,
+      "lastUsed": 1712818837968
+    }
+  }
+}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Markdown">
+      <summary usageCount="1" lastUsage="1712818631237" />
+    </language>
+    <language id="Python">
+      <summary usageCount="3" lastUsage="1712818837968" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mujinsimulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mujinsimulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/ci}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mujinsimulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/python}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mujinsimulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/python/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mujinsimulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/python/mujinsimulator}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/mujinsimulator/python/mujinsimulator/model}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="470000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12682292" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <unified_weights left="0.12682292" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinsimulator/model/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinsimulator/model/boxmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinsimulator/model/templateboxmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#83#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

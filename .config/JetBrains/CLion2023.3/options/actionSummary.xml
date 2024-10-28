@@ -1,0 +1,157 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="ActivateProjectToolWindow">
+      <i c="5" l="1712209978015" />
+    </e>
+    <e n="Annotate">
+      <i c="2" l="1713226629737" />
+    </e>
+    <e n="Back">
+      <i c="4" l="1712205113786" />
+    </e>
+    <e n="CMake.OpenSettings">
+      <i c="2" d="2" l="1714551987949" k="1714551987949" />
+    </e>
+    <e n="CPP.NewModuleFile">
+      <i c="2" l="1713770913772" />
+    </e>
+    <e n="ChangeView">
+      <i c="1" l="1712199528779" />
+    </e>
+    <e n="ChooseRunConfiguration">
+      <i c="2" d="2" l="1713226990462" k="1713226990462" />
+    </e>
+    <e n="CloseProject">
+      <i c="3" d="1" l="1713771503303" k="1713771474433" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="52" l="1713771634265" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="4" l="1713771275783" />
+    </e>
+    <e n="EditorContextInfo">
+      <i c="4" l="1712205118200" />
+    </e>
+    <e n="EditorEnter">
+      <i c="7" l="1713771281072" />
+    </e>
+    <e n="EditorEscape">
+      <i c="60" l="1714552100435" />
+    </e>
+    <e n="ExternalSystem.ShowCommonSettings">
+      <i c="1" l="1713771366556" />
+    </e>
+    <e n="ExternalSystem.ShowSettingsGroup">
+      <i c="1" d="1" l="1713771365117" k="1713771365117" />
+    </e>
+    <e n="FindInPath">
+      <i c="3" l="1712204880513" />
+    </e>
+    <e n="GotoAction">
+      <i c="20" l="1714551982181" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="10" l="1712204908343" />
+    </e>
+    <e n="GotoFile">
+      <i c="7" l="1714552107034" />
+    </e>
+    <e n="HideActiveWindow">
+      <i c="2" l="1712209978304" />
+    </e>
+    <e n="Makefile.ToolsMenu">
+      <i c="1" d="1" l="1713771630193" k="1713771630193" />
+    </e>
+    <e n="MethodUp">
+      <i c="1" l="1712205119238" />
+    </e>
+    <e n="OpenFile">
+      <i c="2" d="2" l="1713226523063" k="1713226523063" />
+    </e>
+    <e n="QuickJavaDoc">
+      <i c="8" l="1712204914980" />
+    </e>
+    <e n="QuickPreview">
+      <i c="1" l="1712199534317" />
+    </e>
+    <e n="ReformatCode">
+      <i c="1" l="1713771287107" />
+    </e>
+    <e n="Resume">
+      <i c="2" l="1713226655393" />
+    </e>
+    <e n="Run">
+      <i c="7" l="1714552110175" />
+    </e>
+    <e n="RunDashboard.GroupBy">
+      <i c="1" d="1" l="1713771640549" k="1713771640549" />
+    </e>
+    <e n="SaveAll">
+      <i c="23" l="1714552108838" />
+    </e>
+    <e n="SaveDocument">
+      <i c="25" l="1714552109102" />
+    </e>
+    <e n="ShowErrorDescription">
+      <i c="2" l="1713226633820" />
+    </e>
+    <e n="Stop">
+      <i c="2" l="1713227125914" />
+    </e>
+    <e n="ToggleDistractionFreeMode">
+      <i c="1" l="1712199531689" />
+    </e>
+    <e n="WebDeployment.Configuration">
+      <i c="1" d="1" l="1713771635753" k="1713771635753" />
+    </e>
+    <e n="WelcomeScreen.OpenDirectoryProject">
+      <i c="1" l="1712199429590" />
+    </e>
+    <e n="WelcomeScreen.Settings">
+      <i c="2" d="2" l="1713226604284" k="1713226604284" />
+    </e>
+    <e n="com.intellij.codeInsight.hint.LineTooltipRenderer$ReloadHintAction">
+      <i c="1" l="1713226639059" />
+    </e>
+    <e n="com.intellij.execution.actions.CreateAction">
+      <i c="1" l="1713227082161" />
+    </e>
+    <e n="com.intellij.find.impl.FindPopupPanel$MyEnterAction">
+      <i c="1" l="1712199869623" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
+      <i c="11" l="1713771293144" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
+      <i c="1" l="1713227080555" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="26" l="1714552107657" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="5" l="1713771930451" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$6">
+      <i c="3" l="1713771505848" />
+    </e>
+    <e n="com.intellij.terminal.TerminalExecutionConsole$ClearAction">
+      <i c="2" l="1713227127878" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="2" l="1714552114734" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveDownAction">
+      <i c="41" l="1714551987634" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveUpAction">
+      <i c="5" l="1714551986843" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="52" l="1714552108834" />
+    </e>
+    <e n="editRunConfigurations">
+      <i c="1" d="1" l="1713771643866" k="1713771643866" />
+    </e>
+  </component>
+</application>

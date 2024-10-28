@@ -1,0 +1,413 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="qmlui" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf ideFingerprint="12k3615ur5s5o">
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="435">
+                  <caret line="482" column="37" selection-start-line="482" selection-start-column="37" selection-end-line="482" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#60#71#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateDisplay.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="294">
+                  <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file>
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateResultDisplay.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="285">
+                  <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultObservationView.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="349">
+                  <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Calibration.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state>
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultNoResultsView.qml">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="252">
+                  <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf ideFingerprint="12k3615ur5s5o">
+          <file>
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="441">
+                  <caret line="373" column="56" selection-start-line="373" selection-start-column="56" selection-end-line="373" selection-end-column="56" />
+                  <folding>
+                    <element signature="e#60#71#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py">
+              <provider editor-type-id="text-editor" selected="true">
+                <state relative-caret-position="432">
+                  <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#65#76#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "QmlType": {
+      "usageCount": 8,
+      "lastUsed": 1716193099355
+    },
+    "Markdown": {
+      "usageCount": 1,
+      "lastUsed": 1715908885789
+    },
+    "Python": {
+      "usageCount": 10,
+      "lastUsed": 1716189562389
+    }
+  }
+}]]></component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find />
+      <find>onCali</find>
+      <find>unload</find>
+      <find>HasValid</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/qt/Calibration</dir>
+    </dirStrings>
+  </component>
+  <component name="FindInProjectScope">
+    <option name="directoryName" value="$PROJECT_DIR$/qt/Calibration" />
+  </component>
+  <component name="GitBranchesPopupTreeState">
+    <expand>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="RECENT" type="baf65d7a:GitBranchesTreeModel$RecentNode" />
+      </path>
+      <path>
+        <item name="TreeRoot" type="41d8a9c2:GitBranchesTreeModel$TreeRoot" />
+        <item name="LOCAL" type="ae103dac:GitBranchType" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="GitSEFilterConfiguration"><![CDATA[{}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Calibration.qml" />
+      <option value="$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateResultDisplay.qml" />
+      <option value="$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Markdown">
+      <summary usageCount="1" lastUsage="1715908885790" />
+    </language>
+    <language id="Python">
+      <summary usageCount="10" lastUsage="1716189562389" />
+    </language>
+    <language id="QmlLang">
+      <summary usageCount="8" lastUsage="1716193099355" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qimageproviders}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/python/mujinqmluicameracalibration/qproxies}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration/Containers}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qmlui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration/Containers}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/workspaces/master/checkoutroot/qmlui/qt/Calibration/Containers/CalibrationResults}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="20943000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18255208" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="bottom" id="Find" order="6" show_stripe_button="false" weight="0.3300926" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <unified_weights bottom="0.3300926" left="0.18255208" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Find</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="553" width="530" height="610" key="FileChooserDialogImpl.ideScale=125" timestamp="1716180037218">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state x="690" y="553" width="530" height="610" key="FileChooserDialogImpl.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716180037218" />
+    <state x="167" y="1480" width="1536" height="901" key="MergeDialog.ideScale=125" timestamp="1715909288076">
+      <screen x="0" y="1395" width="1920" height="1080" />
+    </state>
+    <state x="167" y="1480" width="1536" height="901" key="MergeDialog.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1715909288076" />
+    <state x="478" y="555" width="954" height="606" key="MultipleFileMergeDialog.ideScale=125" timestamp="1715909288082">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state x="478" y="555" width="954" height="606" key="MultipleFileMergeDialog.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1715909288082" />
+    <state width="623" height="590" key="SwitcherDM.ideScale=125" timestamp="1716185532450">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state width="623" height="590" key="SwitcherDM.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716185532450" />
+    <state x="659" y="408" width="796" height="987" key="find.popup.ideScale=125" timestamp="1716193135613">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state x="659" y="408" width="796" height="987" key="find.popup.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716193135613" />
+    <state x="539" y="351" width="840" height="1043" key="search.everywhere.popup.ideScale=125" timestamp="1716189468445">
+      <screen x="0" y="315" width="1920" height="1080" />
+    </state>
+    <state x="539" y="351" width="840" height="1043" key="search.everywhere.popup.ideScale=125/0.1395.1920.1080/0.315.1920.1080/1920.0.1080.1920@0.315.1920.1080" timestamp="1716189468445" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SHOW_PREVIEW" is_vertical_split="false">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/MasterCalibrationDisplay.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujinqmlui/qimageproviders/qbaseimageprovider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="178" column="27" selection-start-line="178" selection-start-column="27" selection-end-line="178" selection-end-column="27" />
+          <folding>
+            <element signature="e#32#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujincommonsystemmanagers/managers/imageplotmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+          <folding>
+            <element signature="e#55#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateDisplay.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Calibration.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultNoResultsView.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qimageproviders/qcalibrationimageprovider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+          <folding>
+            <element signature="e#65#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../jhbuildappcontroller/install.2/lib/python3.9/site-packages/mujinorchestratorcalibrationclient/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="689" column="8" selection-start-line="689" selection-start-column="8" selection-end-line="689" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/CalibrationResults/CalibrationResultObservationView.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujinqmluicameracalibration/qproxies/qcalibrationorchestratorproxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="482" column="37" selection-start-line="482" selection-start-column="37" selection-end-line="482" selection-end-column="37" />
+          <folding>
+            <element signature="e#60#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt/Calibration/Containers/BodySensorCalibrateResultDisplay.qml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

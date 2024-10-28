@@ -1,0 +1,6 @@
+<templateSet group="flask">
+  <template name="route" value="@app.route('/$ROUTE_NAME$')&#10;def $METHOD_NAME$():&#10;    pass" description="Flask route" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE_NAME" expression="" defaultValue="METHOD_NAME" alwaysStopAt="true" />
+  </template>
+</templateSet>

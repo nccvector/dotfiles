@@ -1,0 +1,112 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/faizan/workbench/bbb">
+          <value>
+            <RecentProjectMetaInfo frameTitle="bbb [~/faizan/workbench/bbb] – /home/mujin/faizan/workbench/bbb/src/main.rs" projectWorkspaceId="2mrw08SMksF2mQhKRRV1IJYnCJC">
+              <option name="activationTimestamp" value="1727848792970" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-243.15521.46" />
+              <option name="buildTimestamp" value="1727278140000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <option name="eap" value="true" />
+              <frame x="337" y="0" width="1400" height="1000" extendedState="6" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1727847777261" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/faizan/workbench/ned">
+          <value>
+            <RecentProjectMetaInfo frameTitle="ned [~/faizan/workbench/ned] – /home/mujin/faizan/workbench/ned/src/main.rs" projectWorkspaceId="2nTBy07FioNeAEDK52Ct5MuDDVC">
+              <option name="activationTimestamp" value="1729175747416" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-243.16718.66" />
+              <option name="buildTimestamp" value="1728464220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="6" />
+              </option>
+              <option name="eap" value="true" />
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1729150020253" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/faizan/workbench/todo-axum">
+          <value>
+            <RecentProjectMetaInfo frameTitle="todo-axum [~/faizan/workbench/todo-axum]" projectWorkspaceId="2nc8Bk6g729hN7gzAZeCESg3lUJ">
+              <option name="activationTimestamp" value="1729262901536" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-243.16718.66" />
+              <option name="buildTimestamp" value="1728464220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <option name="eap" value="true" />
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1729260870028" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/faizan/workbench/todo-actix">
+          <value>
+            <RecentProjectMetaInfo frameTitle="todo-actix [~/faizan/workbench/todo-actix] – /home/mujin/faizan/workbench/todo-actix/src/main.rs" projectWorkspaceId="2ncCLV0WYoN0PdZJB4Mmld7UV4W">
+              <option name="activationTimestamp" value="1729313037220" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-243.16718.66" />
+              <option name="buildTimestamp" value="1728464220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" />
+              </option>
+              <option name="eap" value="true" />
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1729262921689" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/faizan/workbench/pAST">
+          <value>
+            <RecentProjectMetaInfo frameTitle="pAST [~/faizan/workbench/pAST] – /home/mujin/faizan/workbench/pAST/src/main.rs" projectWorkspaceId="2ndpzwRIVxD336UBZGWEJSFcYbQ">
+              <option name="activationTimestamp" value="1729401744041" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-243.16718.66" />
+              <option name="buildTimestamp" value="1728464220000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <option name="eap" value="true" />
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1729313072449" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/faizan/workbench/helix">
+          <value>
+            <RecentProjectMetaInfo frameTitle="helix [~/faizan/workbench/helix] – /home/mujin/faizan/workbench/helix/helix-term/src/ui/statusline.rs" projectWorkspaceId="2nrWxJNY1sd8S0GUnVlUfaFx6VF">
+              <option name="activationTimestamp" value="1729734405997" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="RR-243.19420.51" />
+              <option name="buildTimestamp" value="1729168320000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <option name="eap" value="true" />
+              <frame x="0" y="0" width="1920" height="1080" fullScreen="true" />
+              <option name="productionCode" value="RR" />
+              <option name="projectOpenTimestamp" value="1729731920365" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/faizan/workbench/helix" />
+    <option name="lastProjectLocation" value="$USER_HOME$/faizan/workbench" />
+  </component>
+</application>

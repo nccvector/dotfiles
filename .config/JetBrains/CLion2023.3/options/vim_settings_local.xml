@@ -1,0 +1,246 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">R2V0Q2FtZXJhSW1hZ2U=</entry>
+        <entry encoding="base64">Z2V0bWVzaA==</entry>
+        <entry encoding="base64">Z2V0dmU=</entry>
+        <entry encoding="base64">dHJpbWVzaGZyb20=</entry>
+        <entry encoding="base64">dHJpbWVzaA==</entry>
+        <entry encoding="base64">XDxfbWVzaGNvbGxpc2lvblw+</entry>
+        <entry encoding="base64">bWVzaA==</entry>
+        <entry encoding="base64">XDxncmFwaGljc1w+</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="$USER_HOME$/workspaces/master/checkoutroot/openrave">
+      <jump line="0" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/python/bindings/openravepy_viewer.cpp" />
+      <jump line="5" column="16" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/python/bindings/openravepy_viewer.cpp" />
+      <jump line="6" column="37" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/python/bindings/openravepy_viewer.cpp" />
+      <jump line="320" column="20" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/python/bindings/openravepy_viewer.cpp" />
+      <jump line="48" column="38" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/sensor.h" />
+      <jump line="46" column="22" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/sensor.h" />
+      <jump line="968" column="6" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/geometry.h" />
+      <jump line="61" column="17" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtosgrave/qtosgviewer.h" />
+      <jump line="1427" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtosgrave/qtosgviewer.cpp" />
+      <jump line="0" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinrave.h" />
+      <jump line="13" column="26" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinrave.h" />
+      <jump line="153" column="17" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.h" />
+      <jump line="810" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="811" column="31" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="791" column="30" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="793" column="13" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="794" column="4" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="798" column="23" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="796" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="795" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="788" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" />
+      <jump line="24" column="6" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/src/libopenrave/kinbodylink.cpp" />
+      <jump line="993" column="20" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="668" column="30" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="588" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="1261" column="13" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="1264" column="33" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="1821" column="13" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="1822" column="13" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="1345" column="31" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="15" column="1" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="462" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="638" column="36" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="791" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="0" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="51" column="10" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="365" column="47" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="402" column="83" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="404" column="26" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="476" column="20" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="522" column="74" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="524" column="22" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="529" column="17" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="543" column="95" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="544" column="63" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="601" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="619" column="57" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+      <jump line="627" column="29" filename="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" />
+    </project>
+    <project id="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics">
+      <jump line="0" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" />
+      <jump line="10" column="10" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" />
+      <jump line="13" column="45" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" />
+      <jump line="5" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" />
+      <jump line="0" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/views/TemplateHome/index.tsx" />
+      <jump line="3" column="29" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/views/TemplateHome/index.tsx" />
+      <jump line="12" column="19" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/views/TemplateHome/index.tsx" />
+      <jump line="13" column="7" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/views/TemplateHome/index.tsx" />
+      <jump line="7" column="22" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/views/TemplateHome/index.tsx" />
+      <jump line="11" column="2" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" />
+      <jump line="12" column="0" filename="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" />
+    </project>
+    <project id="$USER_HOME$/CLionProjects/cpp20modulestest">
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/CMakeLists.txt" />
+      <jump line="1" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="5" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/graphics.ixx" />
+      <jump line="7" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/graphics.ixx" />
+      <jump line="5" column="4" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="11" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/graphics.ixx" />
+      <jump line="4" column="7" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="2" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="7" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="3" column="11" filename="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" />
+      <jump line="6" column="0" filename="$USER_HOME$/CLionProjects/cpp20modulestest/CMakeLists.txt" />
+    </project>
+    <project id="$USER_HOME$/CLionProjects/untitled">
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled/CMakeLists.txt" />
+      <jump line="0" column="0" filename="$USER_HOME$/CLionProjects/untitled/main.cpp" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="$USER_HOME$/CLionProjects/cpp20modulestest/graphics.ixx" timestamp="1713771474525">
+        <mark key="&quot;" line="11" column="0" />
+        <mark key="[" line="10" column="5" />
+        <mark key="]" line="10" column="1" />
+        <mark key="^" line="10" column="1" />
+        <mark key="." line="10" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/untitled/main.cpp" timestamp="1713771503377">
+        <mark key="&quot;" line="5" column="0" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/geometry.h" timestamp="1713226540831">
+        <mark key="&quot;" line="968" column="6" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/python/bindings/openravepy_viewer.cpp" timestamp="1713226540821">
+        <mark key="&quot;" line="320" column="20" />
+        <mark key="'" line="320" column="20" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/src/libopenrave/units.cpp" timestamp="1712204883522">
+        <mark key="&quot;" line="5" column="42" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.h" timestamp="1713226540854">
+        <mark key="&quot;" line="153" column="17" />
+        <mark key="'" line="153" column="17" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinrave.h" timestamp="1713226540852">
+        <mark key="&quot;" line="13" column="26" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/sensor.h" timestamp="1713226540826">
+        <mark key="&quot;" line="46" column="22" />
+        <mark key="'" line="46" column="22" />
+        <mark key="[" line="46" column="67" />
+        <mark key="]" line="46" column="67" />
+        <mark key="^" line="46" column="67" />
+        <mark key="." line="46" column="66" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/untitled/CMakeLists.txt" timestamp="1713771503374">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/cpp20modulestest/CMakeLists.txt" timestamp="1713771474511">
+        <mark key="&quot;" line="6" column="0" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/index.tsx" timestamp="1713227137523">
+        <mark key="&quot;" line="13" column="4" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtosgrave/qtosgviewer.cpp" timestamp="1713226540848">
+        <mark key="&quot;" line="1427" column="0" />
+        <mark key="[" line="1427" column="156" />
+        <mark key="]" line="1427" column="156" />
+        <mark key="^" line="1427" column="156" />
+        <mark key="." line="1427" column="155" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/include/openrave/kinbody.h" timestamp="1713226540812">
+        <mark key="&quot;" line="613" column="37" />
+        <mark key="'" line="544" column="63" />
+        <mark key="[" line="585" column="76" />
+        <mark key="]" line="585" column="76" />
+        <mark key="^" line="585" column="76" />
+        <mark key="." line="585" column="75" />
+      </file>
+      <file name="$USER_HOME$/CLionProjects/cpp20modulestest/main.cpp" timestamp="1713771474521">
+        <mark key="&quot;" line="5" column="12" />
+        <mark key="'" line="4" column="4" />
+        <mark key="[" line="4" column="5" />
+        <mark key="]" line="4" column="6" />
+        <mark key="^" line="4" column="6" />
+        <mark key="." line="4" column="5" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtcoinrave/qtcoinviewer.cpp" timestamp="1713226540787">
+        <mark key="&quot;" line="788" column="0" />
+        <mark key="'" line="811" column="31" />
+        <mark key="[" line="790" column="113" />
+        <mark key="]" line="790" column="113" />
+        <mark key="^" line="790" column="113" />
+        <mark key="." line="790" column="112" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/src/libopenrave/CMakeLists.txt" timestamp="1712204883928">
+        <mark key="&quot;" line="11" column="16" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/src/libopenrave/kinbodylink.cpp" timestamp="1713226540800">
+        <mark key="&quot;" line="24" column="6" />
+        <mark key="'" line="24" column="6" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/app-camera-calibration-intrinsics/src/views/TemplateHome/index.tsx" timestamp="1713227137527">
+        <mark key="&quot;" line="7" column="22" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/plugins/qtosgrave/qtosgviewer.h" timestamp="1713226540844">
+        <mark key="&quot;" line="61" column="17" />
+        <mark key="'" line="61" column="17" />
+        <mark key="[" line="61" column="156" />
+        <mark key="]" line="61" column="156" />
+        <mark key="^" line="61" column="156" />
+        <mark key="." line="61" column="155" />
+      </file>
+      <file name="$USER_HOME$/workspaces/master/checkoutroot/openrave/src/libopenrave/configurationspecification.cpp" timestamp="1712204883236">
+        <mark key="&quot;" line="0" column="13" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">fQo=</text>
+      </register>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">fQo=</text>
+      </register>
+      <register name="2" type="CHARACTER_WISE">
+        <text encoding="base64">dm9pZCBIZWxsb0dyYXBoaWNzKCl7CiAgICBzdGQ6OmNvdXQgPDwgIkhlbGxvIGdyYXBoaWNzXG4iOwp9</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgIHN0ZDo6Y291dCA8PCAiSGVsbG8sIFdvcmxkISIgPDwgc3RkOjplbmRsOwo=</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">dw==</text>
+      </register>
+      <register name="+" type="LINE_WISE">
+        <text encoding="base64">fQo=</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">Og==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">cg==</text>
+      </register>
+      <register name="/" type="CHARACTER_WISE">
+        <text encoding="base64">XDxncmFwaGljc1w+</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

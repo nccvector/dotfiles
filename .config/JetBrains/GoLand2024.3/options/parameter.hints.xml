@@ -1,0 +1,17 @@
+<application>
+  <component name="ParameterNameHintsSettings">
+    <blacklists>
+      <blacklist language="C/C++">
+        <added pattern="glad_glVertexAttribPointer(index,size,type,normalized,stride,pointer)" />
+      </blacklist>
+    </blacklists>
+    <option id="SMART_HINTS" value="false" />
+    <option id="go.return.parameters" value="false" />
+    <option id="go.struct.unnamed.struct.fields" value="false" />
+    <disabledLanguages>
+      <language id="Rust" />
+      <language id="ObjectiveC" />
+      <language id="go" />
+    </disabledLanguages>
+  </component>
+</application>

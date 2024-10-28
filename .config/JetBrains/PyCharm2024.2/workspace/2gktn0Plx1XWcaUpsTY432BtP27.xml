@@ -1,0 +1,575 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="calibration" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="23oi47nm6j0fs">
+      <file current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/mujin_calibration_calibrateregistrationcell.py">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="730">
+              <caret line="46" column="120" selection-start-line="46" selection-start-column="120" selection-end-line="46" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/python/mujincalibration/cubecalibrationmanager.py">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="399">
+              <caret line="652" column="45" selection-start-line="652" selection-start-column="45" selection-end-line="652" selection-end-column="45" />
+              <folding>
+                <element signature="e#56#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Python": {
+      "usageCount": 3,
+      "lastUsed": 1716253663388
+    }
+  }
+}]]></component>
+  <component name="GitSEFilterConfiguration"><![CDATA[{}]]></component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/bin/mujin_calibration_calibrateregistrationcell.py" />
+      <option value="$PROJECT_DIR$/python/mujincalibration/cubecalibrationmanager.py" />
+    </changedPaths>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="Python">
+      <summary usageCount="3" lastUsage="1716253663388" />
+    </language>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="calibration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/repos/calibration}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calibration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/repos/calibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/repos/calibration/bin}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calibration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/repos/calibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/repos/calibration/python}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calibration" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/mujin/repos/calibration}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/repos/calibration/python}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindow/project.svg" iconPlugin="com.intellij" isLeaf="false" text="calibration" />
+            <item name="calibration" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="calibration" />
+              <item name="dir{file:///home/mujin/repos/calibration}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitlab" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".gitlab" />
+                <item name="dir{file:///home/mujin/repos/calibration/.gitlab}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.vscode" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".vscode" />
+                <item name="dir{file:///home/mujin/repos/calibration/.vscode}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/bin" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="bin" />
+                <item name="dir{file:///home/mujin/repos/calibration/bin}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bin/mujin_calibration_calibrateregistrationcell.py" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="mujin_calibration_calibrateregistrationcell.py" />
+                  <item name="mujin_calibration_calibrateregistrationcell.py" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bin/mujin_calibration_calibratestationaryregistrationcell.py" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="mujin_calibration_calibratestationaryregistrationcell.py" />
+                  <item name="mujin_calibration_calibratestationaryregistrationcell.py" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bin/mujin_calibration_checksharpness.py" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="mujin_calibration_checksharpness.py" />
+                  <item name="mujin_calibration_checksharpness.py" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bin/mujin_calibration_validateimagematchespointcloud.py" />
+                    </map>
+                  </attributes>
+                  <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="mujin_calibration_validateimagematchespointcloud.py" />
+                  <item name="mujin_calibration_validateimagematchespointcloud.py" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/cmake" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="cmake" />
+                <item name="dir{file:///home/mujin/repos/calibration/cmake}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/conf" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="conf" />
+                <item name="dir{file:///home/mujin/repos/calibration/conf}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/devbin" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="devbin" />
+                <item name="dir{file:///home/mujin/repos/calibration/devbin}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/jhbuildcalibration" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="true" text="jhbuildcalibration" />
+                <item name="dir{file:///home/mujin/repos/calibration/jhbuildcalibration}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/locale" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="locale" />
+                <item name="dir{file:///home/mujin/repos/calibration/locale}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/patterns" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="patterns" />
+                <item name="dir{file:///home/mujin/repos/calibration/patterns}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/python" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="python" />
+                <item name="dir{file:///home/mujin/repos/calibration/python}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="mujincalibration" />
+                  <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/common" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="common" />
+                    <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration/common}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/devcommon" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="devcommon" />
+                    <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration/devcommon}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/icon" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="icon" />
+                    <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration/icon}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/migrations" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="migrations" />
+                    <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration/migrations}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/schema" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="schema" />
+                    <item name="dir{file:///home/mujin/repos/calibration/python/mujincalibration/schema}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/__init__.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="__init__.py" />
+                    <item name="__init__.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/affinecameracalibration.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="affinecameracalibration.py" />
+                    <item name="affinecameracalibration.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/calibrationmanager.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="calibrationmanager.py" />
+                    <item name="calibrationmanager.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/calibrationplotting.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="calibrationplotting.py" />
+                    <item name="calibrationplotting.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/calibrationtypes.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="calibrationtypes.py" />
+                    <item name="calibrationtypes.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/cameracalibration.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="cameracalibration.py" />
+                    <item name="cameracalibration.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/controllersettingsgui.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="controllersettingsgui.py" />
+                    <item name="controllersettingsgui.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/cubecalibrationmanager.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="cubecalibrationmanager.py" />
+                    <item name="cubecalibrationmanager.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/fixedcubecalibrationmanager.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="fixedcubecalibrationmanager.py" />
+                    <item name="fixedcubecalibrationmanager.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/rui.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="rui.py" />
+                    <item name="rui.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/verification.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="verification.py" />
+                    <item name="verification.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/python/mujincalibration/version.py" />
+                      </map>
+                    </attributes>
+                    <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="version.py" />
+                    <item name="version.py" type="ab9368bb:PsiFileNode" />
+                  </presentation>
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/test" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="test" />
+                <item name="dir{file:///home/mujin/repos/calibration/test}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/testcalibration" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="true" text="testcalibration" />
+                <item name="dir{file:///home/mujin/repos/calibration/testcalibration}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitlab-ci.yml" />
+                  </map>
+                </attributes>
+                <data iconPath="org/jetbrains/plugins/gitlab/gitLabLogo.svg" iconPlugin="org.jetbrains.plugins.gitlab" isLeaf="true" text=".gitlab-ci.yml" />
+                <item name=".gitlab-ci.yml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitmodules" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitmodules" />
+                <item name=".gitmodules" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/CHANGELOG.md" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/markdown.svg" iconPlugin="org.intellij.plugins.markdown" isLeaf="true" text="CHANGELOG.md" />
+                <item name="CHANGELOG.md" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/mujin_conf.bash.template" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/unknown.svg" iconPlugin="com.intellij" isLeaf="true" text="mujin_conf.bash.template" />
+                <item name="mujin_conf.bash.template" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/preparerepobackup.bash" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/shell.svg" iconPlugin="com.intellij" isLeaf="true" text="preparerepobackup.bash" />
+                <item name="preparerepobackup.bash" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/README.rst" />
+                  </map>
+                </attributes>
+                <data iconModule="intellij.python.reStructuredText" iconPath="com/intellij/python/reStructuredText/icons/rest/rst.png" iconPlugin="Pythonid" isLeaf="true" text="README.rst" />
+                <item name="README.rst" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/setup.py" />
+                  </map>
+                </attributes>
+                <data iconModule="intellij.python.community.impl" iconPath="icons/com/jetbrains/python/psi/expui/python.svg" iconPlugin="Pythonid" isLeaf="true" text="setup.py" />
+                <item name="setup.py" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/setuprepoenv.bash" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/shell.svg" iconPlugin="com.intellij" isLeaf="true" text="setuprepoenv.bash" />
+                <item name="setuprepoenv.bash" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="false" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4278000" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20807292" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Python Packages" order="5" weight="0.1" />
+      <window_info anchor="bottom" id="Python Console" order="6" weight="0.1" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Plots" order="5" weight="0.1" />
+      <unified_weights left="0.20807292" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="238" width="530" height="610" key="FileChooserDialogImpl.ideScale=125" timestamp="1716254191366">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="690" y="238" width="530" height="610" key="FileChooserDialogImpl.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716254191366" />
+    <state x="187" y="163" key="com.intellij.webcore.packaging.PackagingErrorDialog.DimensionServiceKey.ideScale=125" timestamp="1716253610174">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="187" y="163" key="com.intellij.webcore.packaging.PackagingErrorDialog.DimensionServiceKey.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716253610174" />
+    <state x="539" y="36" width="840" height="1043" key="search.everywhere.popup.ideScale=125" timestamp="1716265391353">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="539" y="36" width="840" height="1043" key="search.everywhere.popup.ideScale=125/0.27.1920.1053@0.27.1920.1053" timestamp="1716265391353" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/python/mujincalibration/calibrationmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#56#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/mujin_calibration_calibrateregistrationcell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="46" column="120" selection-start-line="46" selection-start-column="120" selection-end-line="46" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/mujincalibration/cubecalibrationmanager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="652" column="45" selection-start-line="652" selection-start-column="45" selection-end-line="652" selection-end-column="45" />
+          <folding>
+            <element signature="e#56#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

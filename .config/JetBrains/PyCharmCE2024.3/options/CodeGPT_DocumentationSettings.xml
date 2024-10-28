@@ -1,0 +1,48 @@
+<application>
+  <component name="CodeGPT_DocumentationSettings">
+    <option name="documentations">
+      <list>
+        <DocumentationDetailsState>
+          <option name="name" value="Astro Runtime API" />
+          <option name="url" value="https://docs.astro.build/en/reference/api-reference/" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="Flask API" />
+          <option name="url" value="https://flask.palletsprojects.com/en/3.0.x/api/" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="Flutter API" />
+          <option name="url" value="https://api.flutter.dev/" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="IPFS Kubo CLI" />
+          <option name="url" value="https://docs.ipfs.tech/reference/kubo/cli/#ipfs" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="Kotlin Coding Conventions" />
+          <option name="url" value="https://kotlinlang.org/docs/coding-conventions.html" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="Next.js Authentication" />
+          <option name="url" value="https://nextjs.org/docs/app/building-your-application/authentication" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="SolidJS Documentation" />
+          <option name="url" value="https://www.solidjs.com/docs" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="SvelteKit Modules" />
+          <option name="url" value="https://kit.svelte.dev/docs/modules" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="SwiftUI Updates" />
+          <option name="url" value="https://developer.apple.com/documentation/updates/swiftui" />
+        </DocumentationDetailsState>
+        <DocumentationDetailsState>
+          <option name="name" value="Zapier CLI Documentation" />
+          <option name="url" value="https://platform.zapier.com/reference/cli-docs" />
+        </DocumentationDetailsState>
+      </list>
+    </option>
+  </component>
+</application>

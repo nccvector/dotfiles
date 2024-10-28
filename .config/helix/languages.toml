@@ -1,0 +1,15 @@
+[[language]]
+name = "python"
+
+[language-server.pylsp.config.pylsp]
+plugins.flake8.maxLineLength = 120
+plugins.pycodestyle.maxLineLength = 120
+
+[language.formatter]
+command = "black"
+args = [
+  "-", # strdin
+  "--quiet",
+  "--line-length=120",
+]
+

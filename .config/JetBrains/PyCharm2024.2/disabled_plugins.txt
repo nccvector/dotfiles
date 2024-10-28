@@ -1,0 +1,5 @@
+OpenGL-Plugin
+com.jetbrains.codeWithMe
+com.jetbrains.gateway.terminal
+com.leinardi.pycharm.mypy
+org.jetbrains.plugins.docker.gateway

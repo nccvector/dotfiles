@@ -1,0 +1,211 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="ActivateProjectToolWindow">
+      <i c="7" l="1728808492890" />
+    </e>
+    <e n="AutoIndentLines">
+      <i c="64" l="1728813015394" />
+    </e>
+    <e n="Back">
+      <i c="2" l="1728812508238" />
+    </e>
+    <e n="BraceOrQuoteOut">
+      <i c="1" l="1728797266983" />
+    </e>
+    <e n="ChangeIdeScale">
+      <i c="2" d="2" l="1728571182624" k="1728571182624" />
+    </e>
+    <e n="ChangeView">
+      <i c="3" l="1728636700959" />
+    </e>
+    <e n="ChooseDebugConfiguration">
+      <i c="1" l="1728556017540" />
+    </e>
+    <e n="CloseAllEditors">
+      <i c="2" l="1728811819805" />
+    </e>
+    <e n="CloseContent">
+      <i c="23" l="1728813634776" />
+    </e>
+    <e n="CloseProject">
+      <i c="2" l="1728863064339" />
+    </e>
+    <e n="CommentByLineComment">
+      <i c="13" l="1728806749264" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="541" l="1728813237405" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="10" l="1728811529858" />
+    </e>
+    <e n="EditorChooseLookupItemReplace">
+      <i c="75" l="1728813334816" />
+    </e>
+    <e n="EditorDown">
+      <i c="9" l="1728811529613" />
+    </e>
+    <e n="EditorEnter">
+      <i c="295" l="1728813171562" />
+    </e>
+    <e n="EditorEscape">
+      <i c="1646" l="1728813697338" />
+    </e>
+    <e n="EditorPasteFromX11">
+      <i c="2" l="1728637267619" />
+    </e>
+    <e n="EditorStartNewLine">
+      <i c="1" l="1728610881462" />
+    </e>
+    <e n="EditorTab">
+      <i c="9" l="1728809068158" />
+    </e>
+    <e n="EditorToggleShowWhitespaces">
+      <i c="4" d="3" l="1728638004918" k="1728638004918" />
+    </e>
+    <e n="EditorToggleUseSoftWraps">
+      <i c="2" d="2" l="1728809348844" k="1728809348844" />
+    </e>
+    <e n="EditorUnindentSelection">
+      <i c="1" l="1728637213669" />
+    </e>
+    <e n="ExpandLiveTemplateByTab">
+      <i c="7" l="1728812449125" />
+    </e>
+    <e n="GotoAction">
+      <i c="15" l="1728809347750" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="1" l="1728635794553" />
+    </e>
+    <e n="GotoFile">
+      <i c="132" l="1728813695321" />
+    </e>
+    <e n="GotoNextError">
+      <i c="1" l="1728812597478" />
+    </e>
+    <e n="HideActiveWindow">
+      <i c="43" l="1728813633579" />
+    </e>
+    <e n="InsertInlineCompletionAction">
+      <i c="93" l="1728813250639" />
+    </e>
+    <e n="JumpToLastWindow">
+      <i c="1" l="1728804660607" />
+    </e>
+    <e n="MoveEditorToOppositeTabGroup">
+      <i c="1" l="1728798227701" />
+    </e>
+    <e n="NewFile">
+      <i c="1" l="1728637851444" />
+    </e>
+    <e n="NewHtmlFile">
+      <i c="1" l="1728796523603" />
+    </e>
+    <e n="NextTemplateVariable">
+      <i c="6" l="1728640054548" />
+    </e>
+    <e n="OpenFile">
+      <i c="2" l="1728610191081" />
+    </e>
+    <e n="QuickJavaDoc">
+      <i c="17" l="1728800125542" />
+    </e>
+    <e n="RecentFiles">
+      <i c="2" l="1728636678413" />
+    </e>
+    <e n="ReformatCode">
+      <i c="104" l="1728812810754" />
+    </e>
+    <e n="Run">
+      <i c="243" l="1728813341573" />
+    </e>
+    <e n="SaveAll">
+      <i c="713" l="1728814726230" />
+    </e>
+    <e n="SaveDocument">
+      <i c="1488" l="1728813818878" />
+    </e>
+    <e n="SearchEverywhere">
+      <i c="3" l="1728636694909" />
+    </e>
+    <e n="ShowBookmarks">
+      <i c="4" l="1728804375839" />
+    </e>
+    <e n="ShowErrorDescription">
+      <i c="33" l="1728809291164" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="24" l="1728812600226" />
+    </e>
+    <e n="ShowSettings">
+      <i c="8" l="1728637978792" />
+    </e>
+    <e n="SplitVertically">
+      <i c="3" l="1728808850325" />
+    </e>
+    <e n="Stop">
+      <i c="27" l="1728809368387" />
+    </e>
+    <e n="SwitchIdeScaleAction">
+      <i c="2" d="2" l="1728571182624" k="1728571182624" />
+    </e>
+    <e n="TextEditorWithPreview.Layout.EditorOnly">
+      <i c="1" l="1728610214541" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="1" l="1728556000637" />
+    </e>
+    <e n="ToggleZenMode">
+      <i c="3" l="1728636701061" />
+    </e>
+    <e n="com.intellij.diagnostic.IdeMessagePanel$IdeMessageAction">
+      <i c="1" l="1728555697906" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeIdeScaleAction$ChangeScaleAction">
+      <i c="2" l="1728571183494" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.productChooser.JbChooserAction">
+      <i c="1" l="1728555628104" />
+    </e>
+    <e n="com.intellij.ide.startup.importSettings.chooser.settingChooser.SettingChooserItemAction">
+      <i c="1" l="1728555630983" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1728555765651" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.AnActionWrapper">
+      <i c="615" l="1728813237404" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="157" l="1728813695999" />
+    </e>
+    <e n="com.intellij.openapi.project.LightEditActionFactory$SimpleLightEditCompatibleAction">
+      <i c="2" l="1728636679275" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="148" l="1728813341879" />
+    </e>
+    <e n="com.intellij.openapi.ui.impl.DialogWrapperPeerImpl$AnCancelAction">
+      <i c="1" l="1728555915442" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.welcomeScreen.ActionGroupPanelWrapper$6">
+      <i c="1" l="1728555715513" />
+    </e>
+    <e n="com.intellij.terminal.TerminalExecutionConsole$ClearAction">
+      <i c="1" l="1728640000052" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="4" l="1728796484698" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveDownAction">
+      <i c="12" l="1728805855062" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveUpAction">
+      <i c="5" l="1728636542148" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="727" l="1728814726222" />
+    </e>
+  </component>
+</application>

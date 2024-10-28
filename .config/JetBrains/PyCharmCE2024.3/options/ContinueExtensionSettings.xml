@@ -1,0 +1,7 @@
+<application>
+  <component name="com.github.continuedev.continueintellijextension.services.ContinueExtensionSettings">
+    <option name="remoteConfigServerUrl" value="" />
+    <option name="shownWelcomeDialog" value="true" />
+    <option name="userToken" value="" />
+  </component>
+</application>
