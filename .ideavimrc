@@ -1,0 +1,22 @@
+source ~/.config/nvim/ideavim/.intellimacs/spacemacs.vim
+
+" (Optional) Enable other Intellimacs modules
+source ~/.config/nvim/ideavim/.intellimacs/extra.vim
+source ~/.config/nvim/ideavim/.intellimacs/major.vim
+source ~/.config/nvim/ideavim/.intellimacs/hybrid.vim
+
+" (Optional) Enable which-key plugin
+source ~/.config/nvim/ideavim/.intellimacs/which-key.vim
+
+" Custom options
+set scrolloff=10
+nnoremap [m :action MethodUp<CR>
+nnoremap ]m :action MethodDown<CR>
+
+nnoremap za :action ExpandRegion<CR>
+nnoremap zz :action CollapseRegion<CR>
+
+" nnoremap p P
+vnoremap p P
+
+set clipboard=unnamedplus
