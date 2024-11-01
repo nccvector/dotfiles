@@ -1,1 +1,6 @@
 theme = "gruvbox_dark_hard"
+
+[keys.normal]
+"*" = ["select_textobject_inner_word_faizan", "search_selection", "search_next"]
+"#" = ["select_textobject_inner_word_faizan", "search_selection", "search_prev"]
+

@@ -2,6 +2,8 @@
 name = "python"
 
 [language-server.pylsp.config.pylsp]
+plugins.ruff.enabled = true
+plugins.black.enabled = true
 plugins.flake8.maxLineLength = 120
 plugins.pycodestyle.maxLineLength = 120
 
