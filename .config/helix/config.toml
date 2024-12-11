@@ -1,6 +1,26 @@
 theme = "gruvbox_dark_hard"
 
 [keys.normal]
-"*" = ["select_textobject_inner_word_faizan", "search_selection", "search_next"]
-"#" = ["select_textobject_inner_word_faizan", "search_selection", "search_prev"]
+"*" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_next"]
+"#" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_prev"]
+"0" = ["goto_line_start"]
+"$" = ["goto_line_end"]
+
+"[" = { m = "goto_prev_function" }
+"]" = { m = "goto_next_function" }
+
+"G" = "goto_file_end"
+
+
+[keys.select]
+"*" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_next"]
+"#" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_prev"]
+"0" = ["goto_line_start"]
+"$" = ["goto_line_end"]
+
+"[" = { m = "goto_prev_function" }
+"]" = { m = "goto_next_function" }
+
+"G" = "goto_file_end"
+
 

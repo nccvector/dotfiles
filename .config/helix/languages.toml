@@ -1,11 +1,14 @@
 [[language]]
 name = "python"
+language-servers = ["pylsp"]
 
 [language-server.pylsp.config.pylsp]
 plugins.ruff.enabled = true
 plugins.black.enabled = true
 plugins.flake8.maxLineLength = 120
 plugins.pycodestyle.maxLineLength = 120
+plugins.pylsp_mypy.enabled = true
+plugins.pylsp_mypy.live_mode = true
 
 [language.formatter]
 command = "black"
@@ -14,4 +17,10 @@ args = [
   "--quiet",
   "--line-length=120",
 ]
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer]
+config = { checkOnSave = { command = "clippy" }, cargo = { allFeatures = true }}
 
