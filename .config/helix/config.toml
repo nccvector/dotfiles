@@ -1,5 +1,20 @@
 theme = "gruvbox_dark_hard"
 
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
 [keys.normal]
 "*" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_next"]
 "#" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_prev"]
