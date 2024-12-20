@@ -9,8 +9,8 @@ theme = "gruvbox_dark_hard"
 "[" = { m = "goto_prev_function" }
 "]" = { m = "goto_next_function" }
 
+# vim_goto_file_end
 "G" = "goto_file_end"
-
 
 [keys.select]
 "*" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_next"]
