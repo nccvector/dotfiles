@@ -39,8 +39,10 @@ newline = "⏎"
 tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
-"*" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_next"]
-"#" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_prev"]
+"A-C-s" = "search_selection"
+"*" = "@miw<C-s><A-C-s>n"
+"*" = "@miw<C-s><A-C-s>p"
+
 "0" = ["goto_line_start"]
 "$" = ["goto_line_end"]
 
@@ -51,8 +53,9 @@ tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 "G" = "goto_file_end"
 
 [keys.select]
-"*" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_next"]
-"#" = ["select_textobject_inner_word_faizan", "save_selection", "search_selection", "search_prev"]
+"*" = "@miw<C-s><A-C-s>n"
+"*" = "@miw<C-s><A-C-s>p"
+
 "0" = ["goto_line_start"]
 "$" = ["goto_line_end"]
 
