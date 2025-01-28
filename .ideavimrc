@@ -35,6 +35,9 @@ set clipboard=unnamedplus
 " Must be done first to tell other plugins that <space> is the leader key
 let mapleader=" "
 
+" minus is underscore while coding
+inoremap - _
+
 set clipboard+=unnamed
 set clipboard+=ideaput
 set ideajoin
