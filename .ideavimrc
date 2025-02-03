@@ -37,6 +37,7 @@ let mapleader=" "
 
 " minus is underscore while coding
 inoremap - _
+inoremap _ -
 
 set clipboard+=unnamed
 set clipboard+=ideaput
@@ -273,8 +274,8 @@ map <a-s-k> <a-s-up>
 " vmap <C-p> <Action>(UnselectPreviousOccurrence)
 
 " map m to v for 'miw' and similar actions
-nnoremap m v
 nnoremap mm %
+vnoremap mm %
 
 " Simulate % behavior
 nnoremap % ggVG
