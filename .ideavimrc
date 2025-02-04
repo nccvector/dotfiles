@@ -38,6 +38,8 @@ let mapleader=" "
 " minus is underscore while coding
 inoremap - _
 inoremap _ -
+vnoremap - _
+vnoremap _ -
 
 set clipboard+=unnamed
 set clipboard+=ideaput
