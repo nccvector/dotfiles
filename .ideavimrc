@@ -280,10 +280,10 @@ nnoremap mim :action EditorMatchBrace<CR>v%:action EditorUnSelectWord<CR>
 nnoremap miw :action EditorSelectWord<CR>
 nnoremap maw :action EditorSelectWord<CR>
 
-nnoremap ms" :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i"<ESC>p
-nnoremap ms' :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i'<ESC>p
-nnoremap ms{ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i{<ESC>p
-nnoremap ms[ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i[<ESC>p
+nnoremap ms" :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i""<ESC>hp
+nnoremap ms' :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i''<ESC>hp
+nnoremap ms{ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i{}<ESC>hp
+nnoremap ms[ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i[]<ESC>hp
 
 " Simulate % behavior
 nnoremap % ggVG
