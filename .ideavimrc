@@ -270,8 +270,20 @@ map <a-s-k> <a-s-up>
 " vmap <C-p> <Action>(UnselectPreviousOccurrence)
 
 " map m to v for 'miw' and similar actions
-nnoremap mm %
+" nnoremap mm %
+" vnoremap mm %
+nnoremap mm :action EditorMatchBrace<CR>
 vnoremap mm %
+nnoremap mam :action EditorMatchBrace<CR>v%
+nnoremap mim :action EditorMatchBrace<CR>v%:action EditorUnSelectWord<CR>
+
+nnoremap miw :action EditorSelectWord<CR>
+nnoremap maw :action EditorSelectWord<CR>
+
+nnoremap ms" :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i"<ESC>p
+nnoremap ms' :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i'<ESC>p
+nnoremap ms{ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i{<ESC>p
+nnoremap ms[ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i[<ESC>p
 
 " Simulate % behavior
 nnoremap % ggVG
