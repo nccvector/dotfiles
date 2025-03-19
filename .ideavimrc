@@ -272,6 +272,7 @@ map <a-s-k> <a-s-up>
 " map m to v for 'miw' and similar actions
 " nnoremap mm %
 " vnoremap mm %
+" Match and Surround actions
 nnoremap mm :action EditorMatchBrace<CR>
 vnoremap mm %
 nnoremap mam :action EditorMatchBrace<CR>v%
@@ -284,6 +285,11 @@ nnoremap ms" :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<C
 nnoremap ms' :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i''<ESC>hp
 nnoremap ms{ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i{}<ESC>hp
 nnoremap ms[ :action EditorSelectWord<CR>:action $Copy<CR>:action EditorDelete<CR>i[]<ESC>hp
+
+vnoremap ms" :action $Copy<CR>:action EditorDelete<CR>i""<ESC>hp
+vnoremap ms' :action $Copy<CR>:action EditorDelete<CR>i''<ESC>hp
+vnoremap ms{ :action $Copy<CR>:action EditorDelete<CR>i{}<ESC>hp
+vnoremap ms[ :action $Copy<CR>:action EditorDelete<CR>i[]<ESC>hp
 
 " Simulate % behavior
 nnoremap % ggVG
