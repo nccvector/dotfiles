@@ -13,8 +13,9 @@ set scrolloff=10
 nnoremap [m :action MethodUp<CR>
 nnoremap ]m :action MethodDown<CR>
 
-nnoremap za :action ExpandRegion<CR>
-nnoremap zz :action CollapseRegion<CR>
+nnoremap za :action ExpandCollapseToggleAction<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap zc :action CollapseRegion<CR>
 
 " nnoremap p P
 vnoremap p P
@@ -290,6 +291,19 @@ vnoremap ms" :action $Copy<CR>:action EditorDelete<CR>i""<ESC>hp
 vnoremap ms' :action $Copy<CR>:action EditorDelete<CR>i''<ESC>hp
 vnoremap ms{ :action $Copy<CR>:action EditorDelete<CR>i{}<ESC>hp
 vnoremap ms[ :action $Copy<CR>:action EditorDelete<CR>i[]<ESC>hp
+
+" Harpoon
+nnoremap <leader>m1 :action SetHarpoon1<CR>
+nnoremap <leader>m2 :action SetHarpoon2<CR>
+nnoremap <leader>m3 :action SetHarpoon3<CR>
+nnoremap <leader>m4 :action SetHarpoon4<CR>
+nnoremap <leader>m5 :action SetHarpoon5<CR>
+
+nnoremap <leader>1 :action GotoHarpoon1<CR>
+nnoremap <leader>2 :action GotoHarpoon2<CR>
+nnoremap <leader>3 :action GotoHarpoon3<CR>
+nnoremap <leader>4 :action GotoHarpoon4<CR>
+nnoremap <leader>5 :action GotoHarpoon5<CR>
 
 " Simulate % behavior
 nnoremap % ggVG
