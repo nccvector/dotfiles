@@ -39,33 +39,33 @@ newline = "⏎"
 tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
-"A-C-s" = "search_selection"
-"*" = "@miw<C-s><A-C-s>n"
-"#" = "@miw<C-s><A-C-s>N"
-
+# "A-C-s" = "search_selection"
+# # "*" = "@miw<C-s><A-C-s>n"
+# # "#" = "@miw<C-s><A-C-s>N"
+# 
 "0" = ["goto_line_start"]
 "$" = ["goto_line_end"]
-
+# 
 "A-C-p" = "goto_prev_function"
 "A-C-n" = "goto_next_function"
 "[" = { m = "@kmafj<A-C-p>;" }
 "]" = { m = "@<A-C-n>jmafj<A-C-p>;" }
-
+# 
 "G" = "goto_file_end"
 
 [keys.select]
-"A-C-s" = "search_selection"
-"*" = "@miw<C-s><A-C-s>n"
-"#" = "@miw<C-s><A-C-s>N"
-
+# "A-C-s" = "search_selection"
+# "*" = "@miw<C-s><A-C-s>n"
+# "#" = "@miw<C-s><A-C-s>N"
+# 
 "0" = ["goto_line_start"]
 "$" = ["goto_line_end"]
-
+# 
 "A-C-p" = "goto_prev_function"
 "A-C-n" = "goto_next_function"
 "[" = { m = "@kmafj<A-C-p>" }
 "]" = { m = "@<A-C-n>jmafj<A-C-p>" }
-
+# 
 "G" = "goto_file_end"
 
 [editor.statusline]

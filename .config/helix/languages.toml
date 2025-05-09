@@ -26,6 +26,12 @@ plugins.pycodestyle.maxLineLength = 120
 plugins.pylsp_mypy.enabled = true
 plugins.pylsp_mypy.live_mode = true
 
+[language.debugger]
+name = "debugpy"
+transport = "stdio"
+command = "python3"
+args = ["-m",  "debugpy.adapter"]
+
 [language.formatter]
 command = "black"
 args = [
@@ -33,6 +39,12 @@ args = [
   "--quiet",
   "--line-length=120",
 ]
+
+[[language.debugger.templates]]
+name = "source"
+request = "launch"
+completion = [ { name = "entrypoint", completion = "filename", default = "." } ]
+args = { mode = "debug", program = "{0}"}
 
 [[language]]
 name = "rust"
