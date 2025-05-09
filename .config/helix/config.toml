@@ -48,8 +48,8 @@ tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 # 
 "A-C-p" = "goto_prev_function"
 "A-C-n" = "goto_next_function"
-"[" = { m = "@kmafj<A-C-p>;" }
-"]" = { m = "@<A-C-n>jmafj<A-C-p>;" }
+"[" = { m = "@<C-s>kmafj<A-C-p>;" }
+"]" = { m = "@<C-s><A-C-n>jmafj<A-C-p>;" }
 # 
 "G" = "goto_file_end"
 
@@ -63,8 +63,8 @@ tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 # 
 "A-C-p" = "goto_prev_function"
 "A-C-n" = "goto_next_function"
-"[" = { m = "@kmafj<A-C-p>" }
-"]" = { m = "@<A-C-n>jmafj<A-C-p>" }
+"[" = { m = "@<C-s>kmafj<A-C-p>" }
+"]" = { m = "@<C-s><A-C-n>jmafj<A-C-p>" }
 # 
 "G" = "goto_file_end"
 
