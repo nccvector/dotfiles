@@ -39,9 +39,12 @@ newline = "⏎"
 tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
-# "A-C-s" = "search_selection"
-# # "*" = "@miw<C-s><A-C-s>n"
-# # "#" = "@miw<C-s><A-C-s>N"
+"A-C-]" = "search_next"
+"A-C-[" = "search_prev"
+"n" = "@<C-s><A-C-]>"
+"N" = "@<C-s><A-C-[>"
+"A-C-s" = "search_selection"
+"#" = "@miw<A-C-s>"
 # 
 "0" = ["goto_line_start"]
 "$" = ["goto_line_end"]
@@ -54,9 +57,12 @@ tabpad = "→" # Tabs will look like "→···" (depending on tab width)
 "G" = "goto_file_end"
 
 [keys.select]
-# "A-C-s" = "search_selection"
-# "*" = "@miw<C-s><A-C-s>n"
-# "#" = "@miw<C-s><A-C-s>N"
+"A-C-]" = "search_next"
+"A-C-[" = "search_prev"
+"n" = "@<C-s><A-C-]>"
+"N" = "@<C-s><A-C-[>"
+"A-C-s" = "search_selection"
+"#" = "@miw<A-C-s>"
 # 
 "0" = ["goto_line_start"]
 "$" = ["goto_line_end"]
