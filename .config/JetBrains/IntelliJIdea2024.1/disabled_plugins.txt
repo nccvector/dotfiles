@@ -1,4 +1,0 @@
-com.jetbrains.codeWithMe
-com.jetbrains.gateway
-com.jetbrains.gateway.terminal
-org.jetbrains.plugins.docker.gateway

@@ -1,7 +1,0 @@
-<application>
-  <component name="CPPToolchains" version="9">
-    <toolchains detectedVersion="5">
-      <toolchain name="Default" toolSetKind="SYSTEM_UNIX_TOOLSET" customCMakePath="$USER_HOME$/cmake-3.29.2-linux-x86_64/bin/cmake" customCCompilerPath="$USER_HOME$/clang/bin/clang" debuggerKind="BUNDLED_LLDB" />
-    </toolchains>
-  </component>
-</application>

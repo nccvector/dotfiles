@@ -1,5 +1,0 @@
-<templateSet group="HTTP Request">
-  <template name="jsonPath" value="{% client.log(jsonPath(response.body, &quot;$END$&quot;)) %}" description="Filter response with JSON Path" toReformat="false" toShortenFQNames="true">
-    <context />
-  </template>
-</templateSet>

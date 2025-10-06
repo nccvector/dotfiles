@@ -1,5 +1,0 @@
-<templateSet group="Zen HTML">
-  <template name="h1" value="&lt;h1&gt;$END$&lt;/h1&gt;" description="&lt;h1&gt;...&lt;/h1&gt;" toReformat="false" toShortenFQNames="true">
-    <context />
-  </template>
-</templateSet>
