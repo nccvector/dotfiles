@@ -1,0 +1,93 @@
+theme = "gruvbox_dark_hard"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor]
+mouse = false
+end-of-line-diagnostics = "hint"
+# gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 20 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = "↪"  # set wrap-indicator to "" to hide it
+
+[editor.inline-diagnostics]
+cursor-line = "disable" # show warnings and errors on the cursorline inline
+
+[editor.indent-guides]
+render = true
+character = "┊"  # Some characters that work well: "▏", "┆", "┊", "⸽"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
+
+[editor.whitespace.characters]
+space = " "
+nbsp = "⍽"
+nnbsp = "␣"
+tab = " " #"→"
+newline = "⏎"
+tabpad = " " # "→" # Tabs will look like "→···" (depending on tab width)
+
+[keys.normal]
+"A-C-]" = "search_next"
+"A-C-[" = "search_prev"
+"n" = "@<C-s><A-C-]>"
+"N" = "@<C-s><A-C-[>"
+"A-C-s" = "search_selection"
+"#" = "@miw<A-C-s>"
+# 
+"0" = ["goto_line_start"]
+"$" = ["goto_line_end"]
+# 
+"A-C-p" = "goto_prev_function"
+"A-C-n" = "goto_next_function"
+"[" = { m = "@<C-s>kmafj<A-C-p>;" }
+"]" = { m = "@<C-s><A-C-n>jmafj<A-C-p>;" }
+# 
+"G" = "goto_file_end"
+
+[keys.select]
+"A-C-]" = "search_next"
+"A-C-[" = "search_prev"
+"n" = "@<C-s><A-C-]>"
+"N" = "@<C-s><A-C-[>"
+"A-C-s" = "search_selection"
+"#" = "@miw<A-C-s>"
+# 
+"0" = ["goto_line_start"]
+"$" = ["goto_line_end"]
+# 
+"A-C-p" = "goto_prev_function"
+"A-C-n" = "goto_next_function"
+"[" = { m = "@<C-s>kmafj<A-C-p>" }
+"]" = { m = "@<C-s><A-C-n>jmafj<A-C-p>" }
+# 
+"G" = "goto_file_end"
+
+[editor.statusline]
+left = ["mode", "file-name", "file-modification-indicator"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-inlay-hints = false
+
+[editor.file-picker]
+git-ignore = true
+
