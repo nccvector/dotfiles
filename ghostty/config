@@ -1,0 +1,8 @@
+theme = Gruvbox Dark Hard
+fullscreen = true
+macos-titlebar-style = tabs
+font-family = "JetBrains Mono"
+custom-shader = ~/.config/ghostty/shaders/shader.glsl
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
