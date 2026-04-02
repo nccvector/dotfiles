@@ -21,5 +21,10 @@
         "repo": "skills-directory/skill-codex"
       }
     }
-  }
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "includeCoAuthoredBy": false
 }
