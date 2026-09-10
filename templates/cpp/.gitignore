@@ -23,9 +23,3 @@
 **/__pycache__/
 *.py[cod]
 **/.DS_Store
-
-# Downloaded runtimes and application-generated state.
-**/runtime/
-**/session-costs.jsonl
-home/.config/lazygit/state.yml
-home/.config/nvim/plugin/packer_compiled.lua

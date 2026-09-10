@@ -1,0 +1,21 @@
+# Project-local: matches the debug CMake preset.
+CompileFlags:
+  CompilationDatabase: builds/debug
+  Add: [-Weverything]
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  Includes:
+    AnalyzeAngledIncludes: true
+  ClangTidy:
+    # Include slower checks such as const-correctness.
+    FastCheckFilter: None
+    Add: ["*"]
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DeducedTypes: true
+  Designators: true
+  BlockEnd: true
