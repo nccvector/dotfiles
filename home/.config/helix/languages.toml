@@ -16,6 +16,7 @@ config.diagnosticSeverity = "Warning"
 
 [[language]]
 name = "python"
+diagnostic-severity = "hint"
 language-servers = ["pylsp", "typos"]
 
 [language-server.pylsp.config.pylsp]
@@ -48,9 +49,30 @@ args = { mode = "debug", program = "{0}"}
 
 [[language]]
 name = "rust"
+diagnostic-severity = "hint"
 language-servers = ["rust-analyzer", "typos"]
 formatter = { command = "rustfmt" , args = ["+nightly"] }
 
 [language-server.rust-analyzer]
 config = { checkOnSave = { command = "clippy" }, cargo = { allFeatures = true }}
 
+
+# Homebrew LLVM, rather than Apple's older clangd.
+[language-server.clangd]
+command = "/opt/homebrew/opt/llvm/bin/clangd"
+args = ["--clang-tidy", "--enable-config", "--fallback-style=none"]
+
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+diagnostic-severity = "hint"
+auto-format = true
+formatter = { command = "clang-format", args = ["--style=file", "--assume-filename=.c"] }
+
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+diagnostic-severity = "hint"
+file-types = ["cpp", "hpp", "h", "cc", "metal", "msl"]
+auto-format = true
+formatter = { command = "clang-format", args = ["--style=file", "--assume-filename=.cpp"] }

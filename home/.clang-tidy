@@ -1,0 +1,8 @@
+# All available checks, including style checks; no automatic fixes.
+Checks: '*'
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*'
+FormatStyle: file
+CheckOptions:
+  misc-const-correctness.WarnPointersAsValues: 'true'
+  misc-const-correctness.WarnPointersAsPointers: 'true'

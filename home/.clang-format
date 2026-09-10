@@ -1,0 +1,19 @@
+---
+BasedOnStyle: LLVM
+ColumnLimit: 100
+IndentWidth: 2
+ContinuationIndentWidth: 4
+UseTab: Never
+DerivePointerAlignment: false
+PointerAlignment: Left
+SortIncludes: CaseSensitive
+ReflowComments: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: false
+BinPackArguments: false
+BinPackParameters: true
+BreakBeforeBraces: Attach
+AlignAfterOpenBracket: BlockIndent
+BracedInitializerIndentWidth: 2
+QualifierAlignment: Left

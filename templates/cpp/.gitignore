@@ -1,0 +1,25 @@
+# Build outputs (including build/, builds/, build-debug/, and build.ninja).
+**/build*
+**/cmake-build*
+
+# IDE and editor-local state.
+**/.idea*
+**/.vscode
+**/.vs/
+**/.cache/
+*.swp
+*.swo
+*~
+
+# Generated compiler/CMake files and machine-local presets.
+**/compile_commands.json
+**/CMakeUserPresets.json
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/CTestTestfile.cmake
+
+# Generated Python caches and macOS metadata.
+**/__pycache__/
+*.py[cod]
+**/.DS_Store
