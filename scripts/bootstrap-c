@@ -47,7 +47,7 @@ while [[ $# -gt 0 ]]; do
     --name) need_value "$@"; project_name=$2; shift 2 ;;
     --no-configure) configure=false; shift ;;
     -h|--help) usage; exit 0 ;;
-    --version) printf 'bootstrap-c 1.0.0\n'; exit 0 ;;
+    --version) printf 'bootstrap-c 1.0.1\n'; exit 0 ;;
     --) shift; break ;;
     -*) die "unknown option: $1 (see --help)" ;;
     *) [[ -z $destination ]] || die 'only one destination is allowed'
@@ -188,18 +188,17 @@ cat > CMakePresets.json <<PRESETS
       "name": "base",
       "hidden": true,
       "generator": "Unix Makefiles",
+      "binaryDir": "\${sourceDir}/build/\${presetName}",
       "cacheVariables": { "CMAKE_EXPORT_COMPILE_COMMANDS": true }
     },
     {
       "name": "debug",
       "inherits": "base",
-      "binaryDir": "\${sourceDir}/builds/debug",
       "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
     },
     {
       "name": "release",
       "inherits": "base",
-      "binaryDir": "\${sourceDir}/build/release",
       "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
     }
   ],
@@ -219,7 +218,7 @@ CLANG_TIDY ?= clang-tidy
 ARGS ?=
 
 ifeq ($(PRESET),debug)
-BUILD_DIR := builds/debug
+BUILD_DIR := build/debug
 else ifeq ($(PRESET),release)
 BUILD_DIR := build/release
 else
@@ -267,7 +266,7 @@ SOURCE
 cat > .clangd <<'CLANGD'
 # Matches the Debug CMake preset. Configure once before opening the editor.
 CompileFlags:
-  CompilationDatabase: builds/debug
+  CompilationDatabase: build/debug
   Add: [-Weverything, -Werror]
 
 Diagnostics:
@@ -365,8 +364,9 @@ Run \`make run\`; build Release with \`make release\` or run it with
 - Override tools with \`CLANG_FORMAT=/path/to/clang-format\` and
   \`CLANG_TIDY=/path/to/clang-tidy\` when invoking Make.
 
-Debug uses builds/debug/; Release uses build/release/. Both export
-compile_commands.json. The project .clangd selects builds/debug/.
+All generated build files live under build/: Debug in build/debug/ and Release
+in build/release/. Both export compile_commands.json. The project .clangd
+selects build/debug/.
 After a scaffold-only bootstrap, run \`make debug\` to create that database.
 Select a compiler on the first configure via CC (C) or CXX (C++).
 
@@ -390,9 +390,8 @@ if $configure; then
       printf 'Fix the toolchain/diagnostic above, then run make debug and make release there.\n' >&2
       exit 1
     fi
-    [[ -s builds/debug/compile_commands.json ]] || die 'Debug compilation database was not generated'
+    [[ -s "build/$preset/compile_commands.json" ]] || die "$preset compilation database was not generated"
   done
-  [[ -s build/release/compile_commands.json ]] || die 'Release compilation database was not generated'
   printf '\nReady: %s (%s%s); both presets built and compiler databases generated.\n' "$PWD" "$language" "$standard"
 else
   printf '\nScaffold created: %s (%s%s). Run make debug to generate the clangd database.\n' "$PWD" "$language" "$standard"

@@ -1,6 +1,6 @@
 # Project-local: matches the debug CMake preset.
 CompileFlags:
-  CompilationDatabase: builds/debug
+  CompilationDatabase: build/debug
   Add: [-Weverything]
 
 Diagnostics:

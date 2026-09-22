@@ -64,14 +64,19 @@ class BootstrapTest(unittest.TestCase):
                                       input_text="invalid\n" + language_choice + "\n\n")
                 self.assertIn("Choose a number", result.stdout)
                 self.assertIn("both presets built", result.stdout)
-                for build in ("builds/debug", "build/release"):
+                self.assertFalse((project / "builds").exists())
+                self.assertEqual(
+                    {entry.name for entry in (project / "build").iterdir()},
+                    {"debug", "release"},
+                )
+                for build in ("build/debug", "build/release"):
                     database = json.loads((project / build / "compile_commands.json").read_text())
                     self.assertEqual(len(database), 1)
                     self.assertTrue(database[0]["file"].endswith("main." + extension))
                     self.assertIn("-Werror", database[0]["command"])
                     self.assertIn("-std=", database[0]["command"])
                     self.run_tool([str(project / build / "demo")], project)
-                self.assertIn("CompilationDatabase: builds/debug", (project / ".clangd").read_text())
+                self.assertIn("CompilationDatabase: build/debug", (project / ".clangd").read_text())
                 self.assertEqual((project / ".gitignore").read_bytes(), (project / ".ignore").read_bytes())
                 self.assertFalse((project / ".clang-format").is_symlink())
                 if shutil.which("clang-format"):
@@ -101,6 +106,26 @@ class BootstrapTest(unittest.TestCase):
                     self.assertIn(f"{cmake_language}_STANDARD {standard}\n", cmake)
                     self.assertIn(f"{cmake_language}_STANDARD_REQUIRED YES", cmake)
                     self.assertFalse((project / "builds").exists())
+                    self.assertFalse((project / "build").exists())
+
+    def test_manual_template_and_cli_share_the_layout(self):
+        project = self.root / "manual-template"
+        shutil.copytree(SCRIPT.parents[1] / "templates" / "cpp", project)
+        generated = self.root / "generated"
+        self.run_cli("--no-configure", "--language", "c++", "--standard", "23", generated)
+        for root in (project, generated):
+            presets = json.loads((root / "CMakePresets.json").read_text())
+            base, debug, release = presets["configurePresets"]
+            self.assertEqual(base["binaryDir"], "${sourceDir}/build/${presetName}")
+            self.assertNotIn("binaryDir", debug)
+            self.assertNotIn("binaryDir", release)
+            self.assertIn("CompilationDatabase: build/debug", (root / ".clangd").read_text())
+        for preset in ("debug", "release"):
+            self.run_tool(["make", "run", "PRESET=" + preset], project)
+            database = json.loads((project / "build" / preset / "compile_commands.json").read_text())
+            self.assertTrue(database)
+            self.assertEqual(Path(database[0]["directory"]).resolve(), (project / "build" / preset).resolve())
+        self.assertFalse((project / "builds").exists())
 
     def test_existing_files_and_symlinks_are_untouched(self):
         for filename in ("README.md", ".clangd", "src", "dangling"):
