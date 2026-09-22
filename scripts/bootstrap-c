@@ -1,0 +1,400 @@
+#!/usr/bin/env bash
+# Standalone C/C++ bootstrap. Keep embedded styles in sync with home/ when editing.
+set -euo pipefail
+
+usage() {
+  cat <<'HELP'
+Usage: bootstrap-c [options] [directory]
+
+Create a C or C++ project, then configure and build Debug and Release.
+Directory defaults to the current directory. Existing files are never replaced;
+the destination must be empty, apart from an optional .git entry.
+Without --language/--standard, numbered menus select the language and standard.
+
+Options:
+  --language c|c++     Select the language without prompting
+  --standard VERSION  C: 90, 99, 11, 17, 23; C++: 98, 11, 14, 17, 20, 23, 26
+  --name NAME         Project/executable name (default: directory basename)
+  --no-configure      Only write files; no compilation database until configured
+  -h, --help          Show this help
+  --version           Show the CLI version
+  --                  End option parsing (for a directory starting with '-')
+
+Requires Bash 3.2+, CMake 3.21+ (3.25+ for C++26), Make, and Clang or GCC.
+Uses Clang by default; override with CC/CXX when bootstrapping.
+Editor tools: clangd, clang-format, clang-tidy (install separately).
+Make overrides: CLANG_FORMAT=/path/to/clang-format CLANG_TIDY=/path/to/clang-tidy
+
+Examples:
+  bootstrap-c my-project
+  bootstrap-c --language c --standard 23 my-project
+  CXX=g++ bootstrap-c --language c++ --standard 20 my-project
+HELP
+}
+
+die() { printf 'bootstrap-c: %s\n' "$*" >&2; exit 1; }
+need_value() { [[ $# -ge 2 && -n $2 ]] || die "$1 requires a value"; }
+
+language=''
+standard=''
+project_name=''
+destination=''
+configure=true
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --language) need_value "$@"; language=$2; shift 2 ;;
+    --standard) need_value "$@"; standard=$2; shift 2 ;;
+    --name) need_value "$@"; project_name=$2; shift 2 ;;
+    --no-configure) configure=false; shift ;;
+    -h|--help) usage; exit 0 ;;
+    --version) printf 'bootstrap-c 1.0.0\n'; exit 0 ;;
+    --) shift; break ;;
+    -*) die "unknown option: $1 (see --help)" ;;
+    *) [[ -z $destination ]] || die 'only one destination is allowed'
+       destination=$1; shift ;;
+  esac
+done
+if [[ $# -gt 0 ]]; then
+  [[ $# -eq 1 && -z $destination ]] || die 'only one destination is allowed'
+  destination=$1
+fi
+destination=${destination:-.}
+[[ $destination = /* ]] || destination="$PWD/$destination"
+if [[ -e $destination || -L $destination ]]; then
+  [[ -d $destination ]] || die "not a directory: $destination"
+  # Globs include hidden files and dangling symlinks. An existing Git repo is OK.
+  shopt -s dotglob nullglob
+  for entry in "$destination"/*; do
+    [[ ${entry##*/} = .git ]] || die "destination is not empty: $destination"
+  done
+  shopt -u dotglob nullglob
+fi
+
+choose() {
+  local title=$1 default=$2 answer i
+  shift 2
+  printf '\n%s\n' "$title" >&2
+  i=1
+  for option in "$@"; do
+    printf '  %d) %s\n' "$i" "$option" >&2
+    i=$((i + 1))
+  done
+  while true; do
+    printf 'Selection [%s]: ' "$default" >&2
+    IFS= read -r answer || die 'input ended; use --language and --standard for noninteractive use'
+    answer=${answer:-$default}
+    # Compare strings, avoiding octal parsing or arithmetic on user input.
+    i=1
+    for option in "$@"; do
+      if [[ $answer = "$i" ]]; then printf '%s' "$option"; return; fi
+      i=$((i + 1))
+    done
+    printf 'Choose a number from 1 to %d.\n' "$#" >&2
+  done
+}
+
+[[ -n $language ]] || language=$(choose 'Project language' 2 C C++)
+case "$language" in
+  c|C)
+    language=C; cmake_language=C; extension=c
+    compiler=${CC:-clang}; compiler_env=CC
+    [[ -n $standard ]] || standard=$(choose 'C standard' 1 C23 C17 C11 C99 C90)
+    standard=${standard#C}
+    case "$standard" in 90|99|11|17|23) ;; *) die "unsupported C standard: $standard" ;; esac
+    ;;
+  c++|C++|cpp)
+    language=C++; cmake_language=CXX; extension=cpp
+    compiler=${CXX:-clang++}; compiler_env=CXX
+    [[ -n $standard ]] || standard=$(choose 'C++ standard' 1 C++23 C++20 C++17 C++14 C++11 C++98 C++26)
+    standard=${standard#C++}
+    case "$standard" in 98|11|14|17|20|23|26) ;; *) die "unsupported C++ standard: $standard" ;; esac
+    ;;
+  *) die "unsupported language: $language (use c or c++)" ;;
+esac
+cmake_minor=21
+[[ $standard != 26 ]] || cmake_minor=25
+
+if [[ -z $project_name ]]; then
+  if [[ -d $destination ]]; then
+    project_name=$(cd "$destination" && basename "$PWD")
+  else
+    project_name=$(basename "$destination")
+  fi
+  project_name=$(printf '%s' "$project_name" | LC_ALL=C tr -c 'A-Za-z0-9_-' '_')
+  case "$project_name" in [A-Za-z]*) ;; *) project_name="app_$project_name" ;; esac
+fi
+[[ $project_name =~ ^[A-Za-z][A-Za-z0-9_-]*$ ]] || die '--name must start with a letter and contain only letters, digits, underscores or hyphens'
+# Reserved build targets cannot be executable names in CMake/Make.
+case "$project_name" in
+  all|help|clean|test|install|package|edit_cache|rebuild_cache|configure|build|run|debug|release|lint|format|format-check|check)
+    die "reserved project name: $project_name; supply --name app"
+    ;;
+esac
+
+if $configure; then
+  command -v cmake >/dev/null || die 'cmake is missing; install it or use --no-configure'
+  command -v make >/dev/null || die 'make is missing; install it or use --no-configure'
+  command -v "$compiler" >/dev/null || die "compiler not found: $compiler (set $compiler_env to a compiler executable)"
+  cmake_version=$(cmake --version)
+  cmake_version=${cmake_version#cmake version }
+  cmake_version=${cmake_version%%$'\n'*}
+  cmake_major=${cmake_version%%.*}
+  cmake_rest=${cmake_version#*.}
+  installed_minor=${cmake_rest%%.*}
+  (( cmake_major > 3 || (cmake_major == 3 && installed_minor >= cmake_minor) )) ||
+    die "CMake 3.$cmake_minor+ is required for this selection"
+fi
+
+mkdir -p "$destination"
+cd "$destination"
+# Never truncate a file if another process creates it after the empty-dir check.
+set -o noclobber
+mkdir src include
+cat > CMakeLists.txt <<CMAKE
+cmake_minimum_required(VERSION 3.$cmake_minor)
+# Explicit SDK selection avoids host /usr/local headers on macOS. Respect overrides.
+if(CMAKE_HOST_APPLE AND NOT DEFINED CMAKE_OSX_SYSROOT AND "\$ENV{SDKROOT}" STREQUAL "")
+  set(CMAKE_OSX_SYSROOT macosx CACHE STRING "macOS SDK")
+endif()
+project($project_name LANGUAGES $cmake_language)
+
+# Also export the database when configuring without presets.
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE BOOL "Export compiler commands" FORCE)
+
+add_executable($project_name src/main.$extension)
+target_include_directories($project_name PRIVATE include)
+set_target_properties($project_name PROPERTIES
+  ${cmake_language}_STANDARD $standard
+  ${cmake_language}_STANDARD_REQUIRED YES
+  ${cmake_language}_EXTENSIONS NO
+)
+
+# Deliberately literal all-warnings policy, including compatibility warnings.
+if(CMAKE_${cmake_language}_COMPILER_ID MATCHES "Clang")
+  target_compile_options($project_name PRIVATE -Weverything -Werror)
+elseif(CMAKE_${cmake_language}_COMPILER_ID STREQUAL "GNU")
+  target_compile_options($project_name PRIVATE -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror)
+else()
+  message(FATAL_ERROR "This bootstrap's warning policy requires Clang or GCC")
+endif()
+CMAKE
+
+cat > CMakePresets.json <<PRESETS
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": $cmake_minor, "patch": 0 },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Unix Makefiles",
+      "cacheVariables": { "CMAKE_EXPORT_COMPILE_COMMANDS": true }
+    },
+    {
+      "name": "debug",
+      "inherits": "base",
+      "binaryDir": "\${sourceDir}/builds/debug",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
+    },
+    {
+      "name": "release",
+      "inherits": "base",
+      "binaryDir": "\${sourceDir}/build/release",
+      "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    }
+  ],
+  "buildPresets": [
+    { "name": "debug", "configurePreset": "debug" },
+    { "name": "release", "configurePreset": "release" }
+  ]
+}
+PRESETS
+
+printf 'APP := %s\n' "$project_name" > Makefile
+cat >> Makefile <<'MAKEFILE'
+.DEFAULT_GOAL := build
+PRESET ?= debug
+CLANG_FORMAT ?= clang-format
+CLANG_TIDY ?= clang-tidy
+ARGS ?=
+
+ifeq ($(PRESET),debug)
+BUILD_DIR := builds/debug
+else ifeq ($(PRESET),release)
+BUILD_DIR := build/release
+else
+$(error PRESET must be debug or release)
+endif
+
+.PHONY: configure build run debug release clean lint format format-check check
+configure:
+	cmake --preset $(PRESET)
+
+build: configure
+	cmake --build --preset $(PRESET)
+
+run: build
+	./$(BUILD_DIR)/$(APP) $(ARGS)
+
+debug:
+	$(MAKE) build PRESET=debug
+
+release:
+	$(MAKE) build PRESET=release
+
+clean:
+	cmake --build --preset $(PRESET) --target clean
+
+# Add new translation units to CMakeLists.txt before linting them.
+lint: configure
+	find src -type f \( -name '*.c' -o -name '*.cpp' \) -exec "$(CLANG_TIDY)" -p "$(BUILD_DIR)" {} +
+
+format:
+	find src include -type f \( -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' \) -exec "$(CLANG_FORMAT)" -i {} +
+
+format-check:
+	find src include -type f \( -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' \) -exec "$(CLANG_FORMAT)" --dry-run --Werror {} +
+
+check: build format-check
+MAKEFILE
+
+cat > "src/main.$extension" <<'SOURCE'
+int main(void) {
+  return 0;
+}
+SOURCE
+
+cat > .clangd <<'CLANGD'
+# Matches the Debug CMake preset. Configure once before opening the editor.
+CompileFlags:
+  CompilationDatabase: builds/debug
+  Add: [-Weverything, -Werror]
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  Includes:
+    AnalyzeAngledIncludes: true
+  ClangTidy:
+    FastCheckFilter: None
+    Add: ["*"]
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DeducedTypes: true
+  Designators: true
+  BlockEnd: true
+CLANGD
+
+cat > .clang-format <<'FORMAT'
+---
+BasedOnStyle: LLVM
+ColumnLimit: 100
+IndentWidth: 2
+ContinuationIndentWidth: 4
+UseTab: Never
+DerivePointerAlignment: false
+PointerAlignment: Left
+SortIncludes: CaseSensitive
+ReflowComments: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: false
+BinPackArguments: false
+BinPackParameters: true
+BreakBeforeBraces: Attach
+AlignAfterOpenBracket: BlockIndent
+BracedInitializerIndentWidth: 2
+# Put value/pointee qualifiers left: const T*. Pointer const stays T* const.
+QualifierAlignment: Left
+FORMAT
+
+cat > .clang-tidy <<'TIDY'
+# All available checks, including competing style advice; no automatic fixes.
+Checks: '*'
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*'
+FormatStyle: file
+CheckOptions:
+  misc-const-correctness.WarnPointersAsValues: 'true'
+  misc-const-correctness.WarnPointersAsPointers: 'true'
+TIDY
+
+cat > .gitignore <<'IGNORE'
+# Build outputs (including build/, builds/, build-debug/, and build.ninja).
+**/build*
+**/cmake-build*
+
+# IDE and editor-local state.
+**/.idea*
+**/.vscode
+**/.vs/
+**/.cache/
+*.swp
+*.swo
+*~
+
+# Generated compiler/CMake files and machine-local presets.
+**/compile_commands.json
+**/CMakeUserPresets.json
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/CTestTestfile.cmake
+
+# Generated Python caches and macOS metadata.
+**/__pycache__/
+*.py[cod]
+**/.DS_Store
+IGNORE
+cat .gitignore > .ignore
+
+cat > README.md <<PROJECT_README
+# $project_name
+
+$language$standard project generated by bootstrap-c.
+
+Run \`make run\`; build Release with \`make release\` or run it with
+\`make run PRESET=release\`. Add new source files to CMakeLists.txt.
+
+- \`make check\`: build and verify formatting.
+- \`make format\`: format source/header files in src/ and include/.
+- \`make lint\`: run all clang-tidy checks, treating their warnings as errors.
+- \`make clean\`: clean the selected preset's compiled outputs.
+- Override tools with \`CLANG_FORMAT=/path/to/clang-format\` and
+  \`CLANG_TIDY=/path/to/clang-tidy\` when invoking Make.
+
+Debug uses builds/debug/; Release uses build/release/. Both export
+compile_commands.json. The project .clangd selects builds/debug/.
+After a scaffold-only bootstrap, run \`make debug\` to create that database.
+Select a compiler on the first configure via CC (C) or CXX (C++).
+
+Clang uses -Weverything -Werror, including older-standard compatibility warnings;
+modern C++ syntax may therefore require deliberate adjustments to the warning
+policy. GCC uses -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror.
+All clang-tidy checks are enabled, including competing style rules; lint is a
+separate, deliberately noisy review command and can reject even the starter.
+The editor enables the same checks, but clangd can display tidy advice as warnings.
+
+The inherited **/build* ignore rule also matches names such as builder.cpp.
+Formatting and linting require installed LLVM tools. The embedded formatting
+style was copied from dotfiles; it needs a recent clang-format (tested with 23).
+PROJECT_README
+
+if $configure; then
+  export "$compiler_env=$compiler"
+  for preset in debug release; do
+    if ! cmake --preset "$preset" || ! cmake --build --preset "$preset"; then
+      printf '\nFiles are saved in %s, but %s configuration/build failed.\n' "$PWD" "$preset" >&2
+      printf 'Fix the toolchain/diagnostic above, then run make debug and make release there.\n' >&2
+      exit 1
+    fi
+    [[ -s builds/debug/compile_commands.json ]] || die 'Debug compilation database was not generated'
+  done
+  [[ -s build/release/compile_commands.json ]] || die 'Release compilation database was not generated'
+  printf '\nReady: %s (%s%s); both presets built and compiler databases generated.\n' "$PWD" "$language" "$standard"
+else
+  printf '\nScaffold created: %s (%s%s). Run make debug to generate the clangd database.\n' "$PWD" "$language" "$standard"
+fi
+printf 'Next: cd %q && make run\n' "$PWD"

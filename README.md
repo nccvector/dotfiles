@@ -6,6 +6,7 @@ installed automatically.
 | Directory | Purpose |
 | --- | --- |
 | `home/` | Mirrors `$HOME`: `.config/`, `.zshrc`, `.ideavimrc`, `.intellimacs/`, `.claude/`, `.clang-format`, `.clang-tidy`, clangd user config |
+| `scripts/bootstrap-c` | Standalone interactive C/C++ project bootstrap; install anywhere on PATH |
 | `templates/cpp/` | Standalone C++23 demo with CMake presets, Makefile, formatting, and clangd |
 | `archive/` | Alternative Helix config and the old Vim setup; not installation defaults |
 
@@ -34,7 +35,87 @@ is kept in `archive/helix-alternative/`.
   are external and are not included here.
 - Intellimacs is retained with its upstream documentation and license.
 
-## Start a C++ project
+## Bootstrap a C or C++ project
+
+Run the standalone CLI from any working directory:
+
+```sh
+/path/to/dotfiles/scripts/bootstrap-c my-project
+```
+
+Choose **C or C++**, then a language standard from numbered menus (defaults:
+C++, then C++23; C defaults to C23). It supports C90/99/11/17/23 and
+C++98/11/14/17/20/23/26. Compiler support is checked by configuring/building;
+selecting a standard does not promise every feature is implemented by a compiler.
+
+The destination defaults to the current directory and must be empty, except for
+an optional `.git` entry. Existing files are never overwritten. Directory names
+are sanitized into executable names; use `--name` to choose one explicitly.
+
+```sh
+bootstrap-c --language c --standard 23 my-project
+bootstrap-c --language c++ --standard 20 --name demo "project with spaces"
+bootstrap-c --no-configure my-project  # scaffold only; asks the same questions
+bootstrap-c --help
+```
+
+The script writes CMakeLists, Debug/Release presets, a Makefile, a minimal main,
+`include/`, `.clangd`, `.clang-format`, `.clang-tidy`, matching `.gitignore` and
+`.ignore`, and a short project README. It then configures and builds **both**
+presets so the compilation databases exist immediately. Debug stays at
+`builds/debug/`, Release at `build/release/`; clangd reads the Debug database.
+The language standard is required, extensions are disabled, and compilation
+database export is forced ON even without presets. With `--no-configure`, run
+`make debug` later before relying on clangd's project flags.
+
+Requires Bash 3.2+, CMake 3.21+ (3.25+ for C++26), Make, and Clang or GCC.
+Defaults to `clang`/`clang++`; set `CC`/`CXX` to another compiler executable on the
+bootstrap invocation. On macOS the generated CMakeLists selects the active macOS
+SDK explicitly unless SDKROOT/CMAKE_OSX_SYSROOT is supplied, avoiding accidental
+host include paths under strict warnings. It does not install dependencies or
+initialize Git.
+Install clangd, clang-format and clang-tidy separately for editor/quality tools.
+The embedded format style matches `home/.clang-format` and was tested with
+clang-format 23. Tool overrides work with Make, for example:
+
+```sh
+make run
+make release
+make check                 # build + formatting check
+make format                # format src/ and include/
+make lint CLANG_TIDY=/opt/homebrew/opt/llvm/bin/clang-tidy
+```
+
+Unlike the older manual template below, generated projects enable **warnings as
+errors**: Clang gets `-Weverything -Werror`; GCC gets
+`-Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror`. This includes Clang's
+old-standard compatibility diagnostics: modern C++ syntax can need a deliberate
+policy adjustment. clang-tidy keeps all checks enabled and treats its warnings
+as errors in `make lint`. Some style checks compete, so this separate review
+command can reject even the starter; it is not part of `make check`.
+clangd runs the same check set, though it may still display tidy advice as warnings.
+
+### Install globally later
+
+The script embeds its templates and uses no runtime files from this checkout.
+To install it for your user (once `~/.local/bin` is on PATH):
+
+```sh
+mkdir -p ~/.local/bin
+install -m 755 scripts/bootstrap-c ~/.local/bin/bootstrap-c
+```
+
+No installation is performed by the bootstrap. Embedded formatting, lint, and
+ignore defaults are snapshots: synchronize them when changing the corresponding
+`home/` or `templates/cpp/` configs. The older templates remain unchanged.
+
+Regression checks (Python 3 plus the build dependencies):
+
+```sh
+python3 tests/test-bootstrap-c.py
+```
+
+## Start a C++ project manually
 
 Requires CMake 3.21+, Make, and a C++23 compiler. From this repository:
 
