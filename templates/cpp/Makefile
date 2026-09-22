@@ -5,7 +5,7 @@ CLANG_TIDY ?= clang-tidy
 ARGS ?=
 
 ifeq ($(PRESET),debug)
-BUILD_DIR := builds/debug
+BUILD_DIR := build/debug
 else ifeq ($(PRESET),release)
 BUILD_DIR := build/release
 else

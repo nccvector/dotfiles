@@ -62,8 +62,10 @@ bootstrap-c --help
 The script writes CMakeLists, Debug/Release presets, a Makefile, a minimal main,
 `include/`, `.clangd`, `.clang-format`, `.clang-tidy`, matching `.gitignore` and
 `.ignore`, and a short project README. It then configures and builds **both**
-presets so the compilation databases exist immediately. Debug stays at
-`builds/debug/`, Release at `build/release/`; clangd reads the Debug database.
+presets so the compilation databases exist immediately. All generated build
+files live under one `build/` directory: `build/debug/` and `build/release/`.
+Both presets inherit `binaryDir: "${sourceDir}/build/${presetName}"` from the base
+preset; clangd reads `build/debug/compile_commands.json`.
 The language standard is required, extensions are disabled, and compilation
 database export is forced ON even without presets. With `--no-configure`, run
 `make debug` later before relying on clangd's project flags.
@@ -107,7 +109,8 @@ install -m 755 scripts/bootstrap-c ~/.local/bin/bootstrap-c
 
 No installation is performed by the bootstrap. Embedded formatting, lint, and
 ignore defaults are snapshots: synchronize them when changing the corresponding
-`home/` or `templates/cpp/` configs. The older templates remain unchanged.
+`home/` or `templates/cpp/` configs. The manual C++ template uses the same build
+layout as the CLI.
 
 Regression checks (Python 3 plus the build dependencies):
 
@@ -134,10 +137,11 @@ when naming your executable.
 
 | Preset | Build directory | Compiler database |
 | --- | --- | --- |
-| `debug` | `builds/debug/` | `builds/debug/compile_commands.json` |
+| `debug` | `build/debug/` | `build/debug/compile_commands.json` |
 | `release` | `build/release/` | `build/release/compile_commands.json` |
 
-The asymmetric paths are intentional. Both presets inherit
+Both presets share the `build/` root and inherit
+`binaryDir: "${sourceDir}/build/${presetName}"` and
 `CMAKE_EXPORT_COMPILE_COMMANDS=ON`; the demo CMakeLists also forces it ON for
 manual configuration. The Unix Makefiles generator avoids an extra Ninja
 dependency and supports compiler database export.

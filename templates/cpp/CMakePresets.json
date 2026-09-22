@@ -12,12 +12,12 @@
       "generator": "Unix Makefiles",
       "cacheVariables": {
         "CMAKE_EXPORT_COMPILE_COMMANDS": true
-      }
+      },
+      "binaryDir": "${sourceDir}/build/${presetName}"
     },
     {
       "name": "debug",
       "inherits": "base",
-      "binaryDir": "${sourceDir}/builds/debug",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
@@ -25,7 +25,6 @@
     {
       "name": "release",
       "inherits": "base",
-      "binaryDir": "${sourceDir}/build/release",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
