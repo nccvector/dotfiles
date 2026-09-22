@@ -1,5 +1,6 @@
-# All available checks, including style checks; no automatic fixes.
-Checks: '*'
+# Broad checks, including style checks; no automatic fixes.
+# Exclude rules for implementing LLVM libc itself.
+Checks: '*,-llvmlibc-*'
 WarningsAsErrors: ''
 HeaderFilterRegex: '.*'
 FormatStyle: file

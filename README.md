@@ -92,9 +92,10 @@ Unlike the older manual template below, generated projects enable **warnings as
 errors**: Clang gets `-Weverything -Werror`; GCC gets
 `-Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror`. This includes Clang's
 old-standard compatibility diagnostics: modern C++ syntax can need a deliberate
-policy adjustment. clang-tidy keeps all checks enabled and treats its warnings
-as errors in `make lint`. Some style checks compete, so this separate review
-command can reject even the starter; it is not part of `make check`.
+policy adjustment. clang-tidy enables all checks except `llvmlibc-*` and treats
+its warnings as errors in `make lint`. LLVM libc implementation rules do not
+apply to applications using system headers. Some style checks compete, so this
+separate review command can reject even the starter; it is not part of `make check`.
 clangd runs the same check set, though it may still display tidy advice as warnings.
 
 ### Install globally later
@@ -168,13 +169,14 @@ want a narrower wrapper. For parallel compilation, set
 - Clang builds and clangd use `-Weverything`, not just `-Wall`. GCC has no
   equivalent universal switch; its template fallback enables `-Wall -Wextra
   -Wpedantic -Wconversion -Wshadow`.
-- `home/.clang-tidy` and clangd enable `*`: every available clang-tidy check,
+- `home/.clang-tidy` and clangd enable `*` except `llvmlibc-*`,
   including const-correctness, unused code, nodiscard, bugprone, performance,
   readability, analyzer, portability, and modernization checks. Pointer const
-  diagnostics are explicitly enabled too. No check families are excluded.
-- This literal all-checks policy includes C++98 compatibility warnings and
-  mutually competing or library-specific style advice (such as LLVM libc
-  namespaces). Review suggestions individually; no automatic fixes are run.
+  diagnostics are explicitly enabled too. LLVM libc implementation checks are
+  excluded because ordinary applications should be allowed to use system headers.
+- The broad diagnostic policy still includes C++98 compatibility warnings and
+  mutually competing or other library-specific style advice. Review suggestions
+  individually; no automatic fixes are run.
   Warnings stay warnings, so they remain visible without blocking compilation.
 - `FastCheckFilter: None` enables slower checks supported by clangd. clangd does
   not support every standalone clang-tidy check; use `make lint` for the full

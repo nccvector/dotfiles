@@ -12,6 +12,8 @@ Diagnostics:
     # Include slower checks such as const-correctness.
     FastCheckFilter: None
     Add: ["*"]
+    # LLVM libc implementation rules do not apply to application code.
+    Remove: ["llvmlibc-*"]
 
 InlayHints:
   Enabled: true
