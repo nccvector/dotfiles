@@ -16,4 +16,5 @@ BinPackParameters: true
 BreakBeforeBraces: Attach
 AlignAfterOpenBracket: BlockIndent
 BracedInitializerIndentWidth: 2
+# Put value/pointee qualifiers left: const T*. Pointer const stays T* const.
 QualifierAlignment: Left
