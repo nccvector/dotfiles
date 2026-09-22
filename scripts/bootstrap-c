@@ -47,7 +47,7 @@ while [[ $# -gt 0 ]]; do
     --name) need_value "$@"; project_name=$2; shift 2 ;;
     --no-configure) configure=false; shift ;;
     -h|--help) usage; exit 0 ;;
-    --version) printf 'bootstrap-c 1.0.1\n'; exit 0 ;;
+    --version) printf 'bootstrap-c 1.0.2\n'; exit 0 ;;
     --) shift; break ;;
     -*) die "unknown option: $1 (see --help)" ;;
     *) [[ -z $destination ]] || die 'only one destination is allowed'
@@ -277,6 +277,8 @@ Diagnostics:
   ClangTidy:
     FastCheckFilter: None
     Add: ["*"]
+    # LLVM libc implementation rules do not apply to application code.
+    Remove: ["llvmlibc-*"]
 
 InlayHints:
   Enabled: true
@@ -310,8 +312,9 @@ QualifierAlignment: Left
 FORMAT
 
 cat > .clang-tidy <<'TIDY'
-# All available checks, including competing style advice; no automatic fixes.
-Checks: '*'
+# Broad checks, including competing style advice; no automatic fixes.
+# Exclude rules for implementing LLVM libc itself.
+Checks: '*,-llvmlibc-*'
 WarningsAsErrors: '*'
 HeaderFilterRegex: '.*'
 FormatStyle: file
@@ -359,7 +362,7 @@ Run \`make run\`; build Release with \`make release\` or run it with
 
 - \`make check\`: build and verify formatting.
 - \`make format\`: format source/header files in src/ and include/.
-- \`make lint\`: run all clang-tidy checks, treating their warnings as errors.
+- \`make lint\`: run configured clang-tidy checks, treating their warnings as errors.
 - \`make clean\`: clean the selected preset's compiled outputs.
 - Override tools with \`CLANG_FORMAT=/path/to/clang-format\` and
   \`CLANG_TIDY=/path/to/clang-tidy\` when invoking Make.
@@ -373,8 +376,9 @@ Select a compiler on the first configure via CC (C) or CXX (C++).
 Clang uses -Weverything -Werror, including older-standard compatibility warnings;
 modern C++ syntax may therefore require deliberate adjustments to the warning
 policy. GCC uses -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Werror.
-All clang-tidy checks are enabled, including competing style rules; lint is a
-separate, deliberately noisy review command and can reject even the starter.
+All clang-tidy checks except llvmlibc-* are enabled. LLVM libc implementation
+rules do not apply to applications using system headers. Competing style rules
+remain enabled; lint is a separate, noisy review command and can reject the starter.
 The editor enables the same checks, but clangd can display tidy advice as warnings.
 
 The inherited **/build* ignore rule also matches names such as builder.cpp.
