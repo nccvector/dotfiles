@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Internal shell lifecycle helper; install.sh is the sole install entry point.
+set -euo pipefail
+umask 077
+session=$(mktemp -d "${TMPDIR:-/tmp}/dotfiles-session.XXXXXXXX")
+cleanup() { rm -rf -- "$session"; }
+trap cleanup EXIT
+trap 'exit 130' INT
+trap 'exit 143' TERM
+export DOTFILES_SESSION="$session"
+export XDG_CONFIG_HOME="$session/config" XDG_CACHE_HOME="$session/cache"
+export XDG_DATA_HOME="$session/data" XDG_STATE_HOME="$session/state"
+export ZDOTDIR="$session/zsh" _ZO_DATA_DIR="$session/data/zoxide"
+export HISTFILE="$session/zsh/history"
+export EDITOR=hx VISUAL=hx
+unset HELIX_RUNTIME
+mkdir -p "$XDG_CONFIG_HOME" "$XDG_CACHE_HOME" "$XDG_DATA_HOME" "$XDG_STATE_HOME" "$ZDOTDIR" "$_ZO_DATA_DIR"
+for tool in helix lazygit yazi; do
+    cp -R "$DOTFILES_ROOT/home/.config/$tool" "$XDG_CONFIG_HOME/$tool"
+done
+# Only session copies change: portable clangd, packaged rustfmt, current Yazi key.
+sed 's|/opt/homebrew/opt/llvm/bin/clangd|clangd|; s/args = \["+nightly"\]/args = []/' \
+    "$XDG_CONFIG_HOME/helix/languages.toml" > "$session/languages.toml"
+mv "$session/languages.toml" "$XDG_CONFIG_HOME/helix/languages.toml"
+sed 's/^\[manager\]/[mgr]/' "$XDG_CONFIG_HOME/yazi/yazi.toml" > "$session/yazi.toml"
+mv "$session/yazi.toml" "$XDG_CONFIG_HOME/yazi/yazi.toml"
+export YAZI_CONFIG_HOME="$XDG_CONFIG_HOME/yazi"
+export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml"
+# Lazygit's macOS default ignores XDG, so explicitly redirect its entire directory.
+export CONFIG_DIR="$XDG_CONFIG_HOME/lazygit"
+cat > "$ZDOTDIR/.zshrc" <<'RC'
+setopt NO_GLOBAL_RCS
+export PS1='[dotfiles] %n@%m:%~ %# '
+eval "$(zoxide init zsh)"
+if [[ -t 0 && -t 1 ]]; then source <(fzf --zsh); fi
+precmd() { printf '\033[2 q' }
+preexec() { printf '\033[2 q' }
+RC
+if [[ -n ${DOTFILES_COMMAND:-} ]]; then
+    zsh -d -i -c "$DOTFILES_COMMAND"
+else
+    printf '%s\n' 'Temporary dotfiles shell ready. Type exit or Ctrl-D to leave.'
+    zsh -d -i
+fi
