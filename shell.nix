@@ -66,7 +66,7 @@ let
 in pkgs.mkShell {
   passthru.bootstrapShell = pkgs.bashInteractive;
   packages = with pkgs; [
-    bashInteractive zsh git ripgrep btop helix lazygit yazi zoxide
+    bashInteractive zsh ncurses git ripgrep btop helix lazygit yazi zoxide
     fzf fd jq file unzip zip p7zip poppler ffmpeg imagemagick chafa
     clang-tools llvmPackages.clang cmake gnumake pkg-config
     python typos-lsp rust-analyzer rustc cargo rustfmt clippy
