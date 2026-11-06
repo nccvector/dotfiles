@@ -33,10 +33,10 @@ Pasted installs otherwise follow `main`; local installs use your checkout.
 | Platform | Bootstrap path | Verification / limits |
 | --- | --- | --- |
 | Ubuntu 24.04 x86_64 | Existing Nix, or rootless nix-portable + PRoot | Tested directly on fvalien; see PR evidence for exact checks |
-| Other x86_64/aarch64 Linux distributions | Same rootless Linux path | Designed for these architectures; individual distros and ARM hardware have not all been tested |
+| Other x86_64/aarch64 Linux distributions | Same rootless Linux path | ARM package expression evaluates; individual distros and ARM hardware builds remain unverified |
 | Windows WSL2 Linux distribution | Run from the Linux terminal; same Linux path | No systemd requirement in rootless mode; WSL2 not available for verification here |
-| Apple Silicon macOS | Existing Nix, or community Nix installer | Shell/config lifecycle tested on the Mac; actual Nix installation/build needs administrator authentication and remains unverified |
-| Intel macOS | Existing, working Nix required | Pinned community installer has no Intel macOS binary; separate compatible Nixpkgs 26.05 pin, hardware builds unverified |
+| Apple Silicon macOS | Existing Nix, or community Nix installer | Package expression evaluates; shell/config lifecycle tested on the Mac; actual Nix installation/build needs administrator authentication |
+| Intel macOS | Existing, working Nix required | Pinned installer has no Intel macOS binary; Nixpkgs 26.05 expression evaluates, hardware builds unverified |
 | Native Windows / WSL1 / 32-bit / other CPUs | No supported bootstrap | Use a supported Linux environment; universal Linux compatibility is not claimed |
 
 On Windows, install a WSL2 Linux distribution first and run this from its Linux
@@ -72,7 +72,9 @@ volume/mount setup. `--no-modify-profile` preserves existing shell startup files
 No force or unattended-confirmation option is used. You may decline and stop.
 Nix must exist before it can provide a shell; installing it inside that very
 shell is not possible. Existing Nix on either OS is reused without changing
-its configuration, channels, or global package profiles.
+its configuration, channels, or global package profiles. Existing Nix must provide
+`nix-shell` and `nix-build` and be version 2.18 or newer for these pins; this script
+does not upgrade an existing installation.
 
 ### Packages and configs: what changes?
 
