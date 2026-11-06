@@ -26,7 +26,11 @@ def tui(args, quit_keys):
     import struct
     import termios
     fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 40, 140, 0, 0))
-    child = subprocess.Popen(args, stdin=slave, stdout=slave, stderr=slave)
+    def controlling_terminal():
+        os.setsid()
+        fcntl.ioctl(0, termios.TIOCSCTTY, 0)
+    child = subprocess.Popen(args, stdin=slave, stdout=slave, stderr=slave,
+                             preexec_fn=controlling_terminal)
     os.close(slave)
     output = bytearray()
     start = time.monotonic()
@@ -43,7 +47,11 @@ def tui(args, quit_keys):
                 sent = True
             if child.poll() is not None:
                 break
-        assert child.wait(timeout=3) == 0, bytes(output).decode(errors="replace")
+        try:
+            code = child.wait(timeout=3)
+        except subprocess.TimeoutExpired:
+            raise AssertionError("TUI did not quit: " + bytes(output).decode(errors="replace"))
+        assert code == 0, bytes(output).decode(errors="replace")
         text = bytes(output).decode(errors="replace").lower()
         for error in ("failed to parse", "invalid configuration", "unknown field", "unknown command"):
             assert error not in text, text
@@ -55,7 +63,7 @@ def tui(args, quit_keys):
         os.close(master)
 
 
-tui(["hx", str(session / "scratch.txt")], b"\x1b:quit!\r")
+tui(["hx", str(session / "scratch.txt")], b":quit!\r")
 tui(["yazi", str(session)], b"q")
 # Lazygit versions report their resolved config directory without a TUI.
 config_dir = subprocess.check_output(["lazygit", "--print-config-dir"], text=True).strip()
