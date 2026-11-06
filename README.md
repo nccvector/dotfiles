@@ -56,7 +56,15 @@ space and a large first download.
 
 The Linux path uses checksum-verified
 [nix-portable v012](https://github.com/DavHau/nix-portable/tree/v012), which bundles
-Nix and PRoot. It works without root, systemd, a daemon, or creating host `/nix`.
+Nix and PRoot. On x86_64 Linux, the script downloads and verifies a separate
+[upstream PRoot 5.5.0 binary](https://github.com/proot-me/proot/releases/tag/v5.5.0)
+in the same private cache. It fixes the older bundled runtime's stale-`errno`
+`PTRACE_PEEKDATA` bug, which can cause `Bad address` errors while Nix evaluates
+packages. This overrides only this launch's backend, not a system installation.
+The upstream binary is x86_64-only; ARM Linux still uses the bundled backend and
+has not received this runtime fix or hardware verification.
+
+It works without root, systemd, a daemon, or creating host `/nix`.
 PRoot gives the shell a virtual `/nix`; it can add noticeable overhead. No host
 namespace, AppArmor, ptrace-policy, or service settings are changed. If host
 policy blocks it, the script fails rather than altering that policy. The same
@@ -263,6 +271,22 @@ chosen `dotfiles-nix` directory; the next run downloads again. Do not delete an
 active shell's store. Exiting never uninstalls system Nix or garbage-collects
 anyone's environments. See [Nix garbage collection](https://nix.dev/manual/nix/stable/command-ref/nix-collect-garbage)
 before managing a system installation's shared store.
+
+### Troubleshooting `ptrace(PEEKDATA): Bad address`
+
+For x86_64 Linux, update this checkout to a revision containing the PRoot 5.5.0
+fix, then run the same entry script again:
+
+```sh
+git pull --ff-only
+sh ./install.sh
+```
+
+The script obtains the fixed runtime automatically and reuses your package
+cache. Do not delete the checkout/store or change AppArmor, ptrace, or namespace
+settings to work around this error. If it still fails with the fixed runtime,
+keep the exact error and report the host architecture/kernel; other causes can
+also produce an address error.
 
 ### Manual review
 

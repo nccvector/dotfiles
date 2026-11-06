@@ -89,6 +89,22 @@ if ! command -v nix-shell >/dev/null 2>&1; then
         fi
         verify "$portable" "$portable_hash"
         export NP_LOCATION="$cache" NP_RUNTIME=proot
+        # v012 bundles PRoot 5.4.0, whose stale errno can turn valid PEEKDATA
+        # reads into EFAULT ("Bad address"). Upstream 5.5.0 fixes that bug.
+        # The upstream release provides a static x86_64 binary only.
+        if [ "$arch" = x86_64 ]; then
+            proot="$cache/proot-v5.5.0-x86_64"
+            proot_hash=db185300a9daabbce86aca7632d8c7fdc4249f6f153171954013b70c5f491ec0
+            if [ ! -e "$proot" ]; then
+                fetch "https://github.com/proot-me/proot/releases/download/v5.5.0/proot" "$work/proot"
+                verify "$work/proot" "$proot_hash"
+                chmod 700 "$work/proot"
+                cp "$work/proot" "$cache/.proot-$$"
+                mv "$cache/.proot-$$" "$proot"
+            fi
+            verify "$proot" "$proot_hash"
+            export NP_PROOT="$proot"
+        fi
         # Bundled Git avoids host-version assumptions and shared tmpbin symlink races.
         unset NP_GIT
         mkdir "$work/bin"
