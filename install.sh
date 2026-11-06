@@ -14,6 +14,17 @@ fetch() {
         fail 'Install curl or wget first (macOS already includes curl).'
     fi
 }
+verify() {
+    if command -v sha256sum >/dev/null 2>&1; then
+        actual=$(sha256sum "$1" | cut -d ' ' -f 1)
+    elif command -v shasum >/dev/null 2>&1; then
+        actual=$(shasum -a 256 "$1" | cut -d ' ' -f 1)
+    else
+        fail 'A SHA-256 verifier (sha256sum or shasum) is required.'
+    fi
+    [ "$actual" = "$2" ] || fail 'Nix bootstrap checksum mismatch; refusing to execute it.'
+}
+nix_bin=
 command_text=
 case "${1:-}" in
     '') ;;
@@ -30,7 +41,7 @@ trap 'exit 143' TERM
 repo=
 if [ -f "$0" ] && [ "$(basename -- "$0")" = install.sh ]; then
     candidate=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
-    if [ -f "$candidate/shell.nix" ] && [ -f "$candidate/nix/session" ]; then
+    if [ -f "$candidate/shell.nix" ]; then
         repo=$candidate
     fi
 fi
@@ -43,7 +54,7 @@ if [ -z "$repo" ]; then
     tar -xzf "$work/repo.tar.gz" -C "$work/repo" --strip-components=1
     repo=$work/repo
 fi
-[ -f "$repo/shell.nix" ] && [ -f "$repo/nix/session" ] || fail 'Incomplete dotfiles checkout.'
+[ -f "$repo/shell.nix" ] || fail 'Incomplete dotfiles checkout.'
 # Discover an existing Nix without editing or sourcing any shell profile.
 if ! command -v nix-shell >/dev/null 2>&1; then
     for bin in /nix/var/nix/profiles/default/bin "$HOME/.nix-profile/bin"; do
@@ -51,37 +62,77 @@ if ! command -v nix-shell >/dev/null 2>&1; then
     done
 fi
 if ! command -v nix-shell >/dev/null 2>&1; then
-    # NixOS community installer: this flag REALLY skips shell profile changes.
-    # The older nixos.org/nix/install daemon installer does not honor that flag.
     case "$(uname -s):$(uname -m)" in
-        Darwin:arm64|Darwin:aarch64) platform=aarch64-darwin; expected=42cb8b257ace0bce5a5ee0d5bc36af47a6887004c00e8801940112c6e37beca3 ;;
-        Linux:x86_64) platform=x86_64-linux; expected=60f39200fc2690bcf4da7ba3f8b2e4dee0118f487bc9f41cd4e153d1a02dce77 ;;
-        Linux:aarch64|Linux:arm64) platform=aarch64-linux; expected=4f02039533e0912cb5e6f819a2abcac87d78e19b76e377c2ee98e5ec10402341 ;;
-        *) fail 'Automatic Nix installation supports Apple Silicon macOS and x86_64/aarch64 Linux. Install Nix separately on this platform, then rerun.' ;;
+        Linux:x86_64) arch=x86_64; portable_hash=b409c55904c909ac3aeda3fb1253319f86a89ddd1ba31a5dec33d4a06414c72a ;;
+        Linux:aarch64|Linux:arm64) arch=aarch64; portable_hash=af41d8defdb9fa17ee361220ee05a0c758d3e6231384a3f969a314f9133744ea ;;
+        Linux:*) fail 'Rootless Linux bootstrap requires x86_64 or aarch64.' ;;
+        Darwin:*) arch= ;;
+        *) fail 'Supported hosts are Linux and macOS; Windows requires WSL2.' ;;
     esac
-    printf '%s\n' 'Nix is missing. Its installer will show a plan and ask for confirmation.' \
-        'This creates /nix, build users, and a system daemon (and an APFS volume on macOS).' \
-        'Existing shell profiles will not be modified. Administrator authentication may be required.'
-    [ -t 0 ] || [ -r /dev/tty ] || fail 'Nix installation needs an interactive terminal.'
-    fetch "https://github.com/NixOS/nix-installer/releases/download/2.35.4/nix-installer-$platform" "$work/nix-installer"
-    if command -v sha256sum >/dev/null 2>&1; then
-        actual=$(sha256sum "$work/nix-installer" | cut -d ' ' -f 1)
-    elif command -v shasum >/dev/null 2>&1; then
-        actual=$(shasum -a 256 "$work/nix-installer" | cut -d ' ' -f 1)
+    if [ -n "$arch" ]; then
+        # Linux: a private user cache, no root, daemon, systemd, or /nix changes.
+        for utility in bash date readlink realpath base64 chmod ln find head; do
+            command -v "$utility" >/dev/null 2>&1 || fail "Rootless Linux bootstrap needs $utility."
+        done
+        cache=${DOTFILES_CACHE_HOME:-${XDG_CACHE_HOME:-$HOME/.cache}/dotfiles-nix}
+        case "$cache" in /*) ;; *) fail 'DOTFILES_CACHE_HOME must be an absolute path.' ;; esac
+        case "$cache:$HOME" in *[[:space:]]*) fail 'nix-portable requires cache and HOME paths without whitespace.' ;; esac
+        mkdir -p "$cache"
+        portable="$cache/nix-portable-v012-$arch"
+        if [ ! -e "$portable" ]; then
+            fetch "https://github.com/DavHau/nix-portable/releases/download/v012/nix-portable-$arch" "$work/nix-portable"
+            verify "$work/nix-portable" "$portable_hash"
+            chmod 700 "$work/nix-portable"
+            # Publish only a fully downloaded, verified executable.
+            cp "$work/nix-portable" "$cache/.nix-portable-$$"
+            mv "$cache/.nix-portable-$$" "$portable"
+        fi
+        verify "$portable" "$portable_hash"
+        export NP_LOCATION="$cache" NP_RUNTIME=proot
+        # Bundled Git avoids host-version assumptions and shared tmpbin symlink races.
+        unset NP_GIT
+        mkdir "$work/bin"
+        ln -s "$portable" "$work/bin/nix-shell"
+        ln -s "$portable" "$work/bin/nix-build"
+        PATH="$work/bin:$PATH"; export PATH
+        printf '%s\n' 'Using rootless Nix in the user cache (PRoot; no sudo or system changes).'
+        # Initialize once, then expose this same Nix inside the virtual store.
+        # Mixing a newer Nix into the portable store could change its DB format.
+        nix-shell --version >/dev/null
+        native_nix=$(find "$cache/.nix-portable/nix/store" -maxdepth 1 -type d -name '*-nix-2.20.6' | head -n 1)
+        [ -n "$native_nix" ] || fail 'Cannot locate the bundled Nix runtime.'
+        nix_bin="/nix/store/$(basename -- "$native_nix")/bin"
     else
-        fail 'A SHA-256 verifier (sha256sum or shasum) is required.'
+        # NixOS community installer: this flag REALLY skips shell profile changes.
+        # The older nixos.org/nix/install daemon installer does not honor that flag.
+        case "$(uname -s):$(uname -m)" in
+            Darwin:arm64|Darwin:aarch64) platform=aarch64-darwin; expected=42cb8b257ace0bce5a5ee0d5bc36af47a6887004c00e8801940112c6e37beca3 ;;
+            *) fail 'Automatic macOS installation requires Apple Silicon. On Intel macOS install Nix separately, then rerun.' ;;
+        esac
+        printf '%s\n' 'Nix is missing. Its installer will show a plan and ask for confirmation.' \
+            'This creates /nix, build users, a system daemon, and an APFS volume/mount setup.' \
+            'Existing shell profiles will not be modified. Administrator authentication may be required.'
+        ( : </dev/tty ) 2>/dev/null || fail 'Nix installation needs an interactive terminal.'
+        fetch "https://github.com/NixOS/nix-installer/releases/download/2.35.4/nix-installer-$platform" "$work/nix-installer"
+        verify "$work/nix-installer" "$expected"
+        chmod 700 "$work/nix-installer"
+        unset NIX_INSTALLER_NO_CONFIRM NIX_INSTALLER_FORCE
+        "$work/nix-installer" install --no-modify-profile </dev/tty
+        PATH="/nix/var/nix/profiles/default/bin:$PATH"; export PATH
     fi
-    [ "$actual" = "$expected" ] || fail 'Nix installer checksum mismatch; nothing was installed.'
-    chmod 700 "$work/nix-installer"
-    "$work/nix-installer" install --no-modify-profile </dev/tty
-    PATH="/nix/var/nix/profiles/default/bin:$PATH"; export PATH
 fi
 command -v nix-shell >/dev/null 2>&1 || fail 'Nix installation did not provide nix-shell.'
-export DOTFILES_ROOT="$repo" DOTFILES_COMMAND="$command_text"
+[ -n "$nix_bin" ] || nix_bin=$(dirname -- "$(command -v nix-shell)")
+export DOTFILES_NIX_BIN="$nix_bin" DOTFILES_ROOT="$repo" DOTFILES_COMMAND="$command_text"
+# Pin the entry Bash too: no channels, NIX_PATH, or host-Bash version assumption.
+command -v nix-build >/dev/null 2>&1 || fail 'Existing Nix must also provide nix-build.'
+NIX_BUILD_SHELL="$(nix-build "$repo/shell.nix" -A bootstrapShell --no-out-link)/bin/bash"
+export NIX_BUILD_SHELL
 # Keep the original working directory. No profile install or channel update.
 # Purity here controls environment variables; this is NOT a filesystem sandbox.
 nix-shell "$repo/shell.nix" --pure \
     --keep HOME --keep TERM --keep COLORTERM --keep SSH_AUTH_SOCK \
-    --keep DOTFILES_ROOT --keep DOTFILES_COMMAND --keep TMPDIR \
-    --run 'bash "$DOTFILES_ROOT/nix/session"'
+    --keep DOTFILES_ROOT --keep DOTFILES_COMMAND --keep DOTFILES_NIX_BIN --keep TMPDIR \
+    --keep NIX_BUILD_SHELL --keep NIX_CONF_DIR --keep NIX_SSL_CERT_FILE --keep SSL_CERT_FILE \
+    --run '"$DOTFILES_RUNNER"'
 )

@@ -12,15 +12,9 @@ Run `install.sh` to enter the tools shell; individual home files are never insta
 
 ## One-step tools shell
 
-On **Apple Silicon macOS** or **x86_64/aarch64 Linux**, open `install.sh` on GitHub,
-copy the **whole file**, paste it into a terminal, and press Enter. You do not need
-Git for this path: it downloads a temporary repository snapshot. The computer
-needs internet access, a normal Unix terminal, and curl or wget (macOS has curl).
-Use Linux through WSL2 on Windows. Automatic Nix bootstrapping on Intel macOS is
-not currently supported by the pinned installer; an existing Nix installation
-can still be used there, subject to package availability.
-
-Alternatively, with Git already installed:
+Open `install.sh` on GitHub, copy the **whole file**, paste it into your Unix
+terminal, and press Enter. This path downloads a temporary snapshot and does
+not require Git. Or, with Git installed:
 
 ```sh
 git clone https://github.com/nccvector/dotfiles.git
@@ -28,130 +22,165 @@ cd dotfiles
 sh ./install.sh
 ```
 
-`install.sh` is the **only root `.sh` install script**. Both methods automatically
-install Nix if it is missing, obtain the pinned tools, and open a configured Zsh
-shell. Run the same script every time you want to enter again. A checkout keeps
-your local config edits; pasted installs use a fresh snapshot of `main`. The
-online instructions work after this change is merged. During PR review, use the
-clone path and check out the PR branch.
+Run this same script every time you want your tools. It opens a Zsh shell in
+your current directory; type `exit` or Ctrl-D to return. The `[dotfiles]` prompt
+identifies it. Before this PR is merged, use the PR branch in your clone, or
+export `DOTFILES_REF=ali/portable-nix-shell` before pasting the reviewed script.
+Pasted installs otherwise follow `main`; local installs use your checkout.
 
-**First-time Nix installation makes system changes.** The pinned
-[NixOS community installer](https://github.com/NixOS/nix-installer/tree/2.35.4)
-shows its plan and asks for confirmation and, if needed, your administrator
-password. Expect `/nix`, dedicated build users, a daemon, Nix configuration, and
-on macOS an APFS volume/mount setup. This cannot happen inside a Nix shell:
-Nix must exist before it can provide one. No command bypasses these prompts or
-uses `--force`. If you decline, installation stops. Existing shell profiles are
-preserved using this installer's `--no-modify-profile`; the wrapper finds Nix by
-its explicit path on later runs. Existing Nix installations are reused without
-updating their configuration, channels, or globally installed packages.
+### Platforms and prerequisites
 
-### What is in the shell?
+| Platform | Bootstrap path | Verification / limits |
+| --- | --- | --- |
+| Ubuntu 24.04 x86_64 | Existing Nix, or rootless nix-portable + PRoot | Tested on an Ubuntu host; see PR evidence for exact checks |
+| Other x86_64/aarch64 Linux distributions | Same rootless Linux path | Designed for these architectures; individual distros and ARM hardware have not all been tested |
+| Windows WSL2 Linux distribution | Run from the Linux terminal; same Linux path | No systemd requirement in rootless mode; WSL2 not available for verification here |
+| Apple Silicon macOS | Existing Nix, or community Nix installer | Shell/config lifecycle tested on the Mac; actual Nix installation/build needs administrator authentication and remains unverified |
+| Intel macOS | Existing, working Nix required | Pinned community installer has no Intel macOS binary; separate compatible Nixpkgs 26.05 pin, hardware builds unverified |
+| Native Windows / WSL1 / 32-bit / other CPUs | No supported bootstrap | Use a supported Linux environment; universal Linux compatibility is not claimed |
 
-`rg`, `btop`, `hx`, `lazygit`, `yazi`, and `zoxide` are available, plus Git, fzf,
-file/preview/archive helpers, LLVM tools, CMake/Make, Python LSP/format/debug tools,
-and Rust compiler/LSP/format/lint tools required by the included editor config.
-The first download can be several gigabytes. `shell.nix` fixes one Nixpkgs
-revision, so entering a shell does not silently upgrade your tools. Helix uses
-the Nix package's bundled runtime and grammars.
+On Windows, install a WSL2 Linux distribution first and run this from its Linux
+terminal, preferably with checkout/cache in the Linux home directory. The script
+does not install WSL and cannot run in PowerShell or Command Prompt.
 
-The shell copies the repository's Helix, Lazygit, and Yazi configs into a private
-temporary directory. Only those copies receive portability fixes: clangd comes
-from PATH, rustfmt uses the packaged stable tool, and Yazi uses its current
-`[mgr]` setting. The prompt, cursor shape, and fzf integration are adapted from
-`.zshrc`; its machine-specific paths, external hooks, and `cd ~` are omitted.
-The original `.zshrc` is not sourced. Desktop/terminal/IDE configs, Claude hooks,
-and old Neovim/Emacs setups remain reference files; this shell does not install
-or launch those applications. Existing global Git credentials/settings remain
-available via your real HOME. The global home clang-format/clang-tidy/clangd
-files are not installed; project-specific configuration continues to work.
+You need internet access, a writable home/cache and temporary directory, a
+Unix shell, curl or wget, tar with gzip support, and `sha256sum` or `shasum`.
+The Linux rootless bootstrap also needs Bash, standard utilities including
+`date`, `readlink -f`, `realpath`, `base64`, `chmod`, `ln`, `find`, and `head`, an executable cache
+filesystem, and permission for PRoot's process tracing. Minimal containers or
+locked-down hosts may lack these prerequisites. Normal Ubuntu installations
+already supply them. HTTPS downloads require a working certificate trust setup.
+The rootless backend requires HOME and its cache path to contain no whitespace;
+checkout/project paths may contain spaces. Expect several gigabytes of disk
+space and a large first download.
 
-### Everyday use, multiple shells, and leaving
+The Linux path uses checksum-verified
+[nix-portable v012](https://github.com/DavHau/nix-portable/tree/v012), which bundles
+Nix and PRoot. It works without root, systemd, a daemon, or creating host `/nix`.
+PRoot gives the shell a virtual `/nix`; it can add noticeable overhead. No host
+namespace, AppArmor, ptrace-policy, or service settings are changed. If host
+policy blocks it, the script fails rather than altering that policy. The same
+route is intended for non-systemd distributions and WSL2. It is a tools
+environment, not a security sandbox. The backend is a separate community project,
+not the system Nix installer.
 
-The `[dotfiles]` prompt identifies this shell. It starts in the same directory
-you ran the script from. Try:
+On Apple Silicon macOS only, missing Nix is handled by the checksum-verified
+[NixOS community installer 2.35.4](https://github.com/NixOS/nix-installer/tree/2.35.4).
+It shows a plan and asks for confirmation/admin authentication. This creates
+system resources: `/nix`, build users, a daemon, Nix configuration, and an APFS
+volume/mount setup. `--no-modify-profile` preserves existing shell startup files.
+No force or unattended-confirmation option is used. You may decline and stop.
+Nix must exist before it can provide a shell; installing it inside that very
+shell is not possible. Existing Nix on either OS is reused without changing
+its configuration, channels, or global package profiles.
+
+### Packages and configs: what changes?
+
+**Nix handles both the package set and the shell's config setup.** `shell.nix`
+declares the tools, builds a config bundle from this repository, and generates
+the session launcher. `install.sh` obtains/reuses Nix, locates the repository,
+and invokes that environment. There is no second install script or helper file.
+
+The same Nix CLI is also available inside the shell, including for nested entry.
+Entry Bash is built from the pinned package set, so no host Bash version or
+global Nix channel is assumed.
+
+The tools are `rg`, `btop`, `hx`, `lazygit`, `yazi`, and `zoxide` with working
+`z`, plus Git, fzf, file/preview/archive helpers, LLVM/CMake/Make, Python
+LSP/format/debug tools, and Rust compiler/LSP/format/lint tools required by the
+editor config. Fixed Nixpkgs revisions and source hashes prevent silent package upgrades.
+Helix uses its packaged runtime and grammars. Intel macOS selects a separate
+26.05 pin because the newer Nixpkgs line dropped that platform. That stable line
+is maintained upstream only through the end of 2026; it needs a future support
+decision rather than an assumption of permanent Intel support.
+
+Nix builds copies of the repository's Helix, Lazygit and Yazi configs, adapting
+clangd to PATH, rustfmt to its packaged version, and Yazi's section to `[mgr]`.
+At shell entry, those configs are copied again into a **writable private temporary
+directory**. XDG paths, Lazygit's explicit config directory, Yazi's config path,
+and Zsh's startup directory point there. Nothing is copied or symlinked over
+`~/.config`, `~/Library`, `.zshrc`, or system configs. Original home startup files
+are not sourced. Config changes in this shell disappear when it exits; edit the
+source in your checkout and re-enter to keep a change.
+
+The prompt, cursor shape and fzf integration are adapted from `.zshrc`; its
+machine-specific paths, external hooks and `cd ~` are omitted. Desktop, terminal,
+IDE, Claude, Neovim and Emacs setups remain reference files. Global home
+clang-format/clang-tidy/clangd files are not installed; project-specific configs
+continue to work. This shell does not launch or configure those desktop apps.
+
+Your real HOME remains accessible, including your normal Git credentials/config.
+**Intentional project edits and any writes made by commands you run can persist.**
+This is environment isolation, not filesystem isolation. Tools launched from
+another terminal or GUI do not inherit this shell's PATH/config variables.
+
+### Daily use, multiple shells, and cache
 
 ```sh
 rg --version
 hx README.md
-lazygit
+lazygit                    # inside a Git repository
 yazi
 btop
-cd /path/to/a/project
-z /path/to/a/project    # learns and visits it
+cd /path/to/my-project
+z /path/to/my-project       # learns and visits it
 cd /tmp
-z project              # fuzzy jump after that directory has been learned
-exit                   # or Ctrl-D; returns to your previous shell
+z my-project               # jumps to a learned directory
+exit                       # or Ctrl-D
 ```
 
-You can open as many shells as you like in separate terminal tabs. Each has its
-own temporary configs, history, caches, and zoxide database; packages in `/nix`
-are shared. A nested invocation also works, but separate tabs are easier to
-understand. Every shell exit discards its config changes, history and learned
-`z` destinations. To keep a config change, edit its source in your checkout and
-start a new shell. Ctrl-C interrupts the current command; it does not normally
-leave the interactive shell. Closing normally cleans temporary files. A forced
-kill or power loss can leave a `dotfiles-session.*` or `dotfiles-bootstrap.*`
-directory under your system temporary directory; remove it only after its shell
-has ended.
+Open as many shells as you like in separate tabs. Their configs, history, tool
+state and zoxide databases are separate; the Nix package cache is shared. A
+nested shell also works, reusing the same Nix runtime and store. Let the first
+rootless bootstrap finish before opening more shells, since the bundled backend
+initializes its cache on first use.
+Ctrl-C interrupts a foreground command; it normally leaves the shell running.
+On normal exit, its temporary directory is removed. A force kill or power loss
+can leave `dotfiles-session.*` or `dotfiles-bootstrap.*` under your temporary
+directory; remove only directories belonging to sessions that have ended.
 
-**This is a tools environment, not a filesystem or security sandbox.** Your real
-HOME and project files remain accessible. Intentional edits, Git commits,
-programs you launch, and commands you run can persist changes. Tool selection
-and config environment variables apply only to the shell and its children;
-your parent shell and existing home configs are not rewritten by this wrapper.
-GUI applications launched elsewhere do not inherit the tools shell.
+Caches intentionally persist. System Nix uses its normal `/nix` store/cache.
+Rootless Linux defaults to `${XDG_CACHE_HOME:-$HOME/.cache}/dotfiles-nix`, including
+its versioned executable and `.nix-portable` store. Set an absolute
+`DOTFILES_CACHE_HOME` before running to choose another rootless cache location.
+The backend/Nix may also use their standard user download caches. Existing
+config files and the parent shell's PATH are not rewritten. To remove the
+rootless cache, first exit **all** its shells, then deliberately delete only the
+chosen `dotfiles-nix` directory; the next run downloads again. Do not delete an
+active shell's store. Exiting never uninstalls system Nix or garbage-collects
+anyone's environments. See [Nix garbage collection](https://nix.dev/manual/nix/stable/command-ref/nix-collect-garbage)
+before managing a system installation's shared store.
 
-Nix keeps downloaded sources and packages in its persistent store/cache for
-reuse. Leaving does not uninstall Nix or erase that cache. Avoid garbage
-collection during active shells. If you later want to reclaim unused packages,
-read [Nix garbage collection](https://nix.dev/manual/nix/stable/command-ref/nix-collect-garbage)
-first: it can affect other Nix environments and future sessions may download
-again. Full Nix removal is a separate, deliberate operation using the
-community installer's `/nix/nix-installer uninstall` plan; exiting a shell does
-not perform it. Neither cleanup nor uninstall is run automatically.
+### Manual review
 
-### Review and manual testing
-
-For a command without staying in the interactive shell:
+No CI or new test files are included in this PR. Validation evidence and remaining
+platform gaps are recorded in its description. To test a command and return:
 
 ```sh
 sh ./install.sh --command 'rg --version; hx --version; type z'
 ```
 
-1. Before starting, note `command -v hx`, your PATH, and checksums of any existing
-   `~/.zshrc`, Helix, Lazygit, and Yazi config files. Run the installer in a clone
-   whose path contains spaces, from a project directory outside the repo.
-2. On a fresh supported machine, review and accept the Nix installation plan
-   yourself. Verify existing shell profiles are preserved. On a machine with
-   Nix already installed, confirm no installer is invoked.
-3. Run `python3 "$DOTFILES_ROOT/tests/check-nix-tools"` inside the shell. It checks
-   real Nix binary paths, starts/exits Helix and Yazi in terminals with the copied
-   configs, and checks Lazygit's config directory. Open `lazygit` in a Git repo
-   and `btop` manually too. In Helix, `:health cpp` should find the Nix clangd.
-4. Try the `z` example above. Open another tools shell and confirm it works
-   independently. In one shell, run `sleep 30`, press Ctrl-C, then type `exit`.
-   Your other shell should still work. Exit it with Ctrl-D.
-5. Check the recorded host PATH, tool selection, and home config checksums are
-   unchanged. Confirm temporary config directories are gone, while deliberate
-   project edits and the Nix cache remain.
-6. For the online path during PR review, export `DOTFILES_REF=ali/portable-nix-shell`
-   in a terminal, then paste the whole reviewed `install.sh` file. After merging,
-   unset `DOTFILES_REF` and repeat to test `main` without cloning or Git.
+1. Record your host PATH/tool locations and checksums of existing `.zshrc`, Helix,
+   Lazygit and Yazi configs. Run from a project outside your checkout, ideally
+   with spaces in its path. On Linux without Nix, confirm rootless startup asks
+   for no sudo and creates no host `/nix`. On Mac, review/authenticate the Nix
+   installation plan yourself if needed.
+2. In the shell run `command -v rg hx lazygit yazi zoxide`, open each tool, and try
+   `z` after learning a project. `hx --health cpp` should find packaged clangd.
+   Run `lazygit --print-config-dir`; it should point inside `$DOTFILES_SESSION`.
+3. Inspect `$XDG_CONFIG_HOME/helix/config.toml`. Edit the temporary copy, exit,
+   and re-enter; your repo and original home config should be unchanged.
+4. Open another shell/tab. Interrupt `sleep 30` using Ctrl-C, then leave with
+   `exit` or Ctrl-D. The other shell should still work. Compare the host paths
+   and checksums recorded earlier; temporary configs should disappear while
+   intentional project edits and package caches remain.
+5. Test both the cloned entry and pasted full script. During PR review set
+   `DOTFILES_REF=ali/portable-nix-shell`; after merge unset it to test `main`.
 
-`python3 tests/test-nix-shell.py` exercises launcher and lifecycle behavior with
-**mocked Nix** and real host Zsh/zoxide/fzf. It does not prove package evaluation,
-builds, or fresh-machine Nix installation. The GitHub Actions workflow separately
-builds the real Nix shell and smoke-tests both entry paths on a disposable Linux
-runner. Check the PR's current CI result; a queued or failed run is not a pass.
-macOS administrator-authenticated installation remains a manual check when the
-agent cannot obtain your password. No automated test is a claim of fresh-machine
-macOS verification.
-
-For background, [Nix development environments](https://nix.dev/tutorials/first-steps/declarative-shell.html)
-explains how declared packages become available together without replacing the
-operating system's tools. Keep project dependencies in each project's own Nix
-file when appropriate; this repository supplies your general-purpose tools.
+For background, see [Nix development environments](https://nix.dev/tutorials/first-steps/declarative-shell.html).
+For distro-managed Nix or WSL setup alternatives, consult the
+[official installation guide](https://nix.dev/install-nix.html). Keep each project's
+own dependencies in its own Nix file when useful; this is your general tools shell.
 
 ## Home configuration
 
