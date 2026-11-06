@@ -135,7 +135,7 @@ ls -1 ~/nix-shells
 This clone command is for the merged repository. Before merge, use
 `git clone --branch ali/portable-nix-shell` with the same URL and destination.
 If you already have this checkout, skip cloning it again. On your own machine,
-skip the SSH step; on another remote machine, use its SSH hostname.
+skip the SSH step. Replace `dev-server` with your own SSH hostname or alias.
 
 List saved definitions and enter one:
 
@@ -484,6 +484,15 @@ want a narrower wrapper. For parallel compilation, set
 
 Reference: [clangd configuration](https://clangd.llvm.org/config) and
 [CMake presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html).
+
+## Public repository privacy
+
+Use generic hostnames, paths, and project names in public examples and review
+notes. Keep internal repository URLs, company project data, private keys,
+licenses, IDE workspace/task archives, and machine-generated state out of Git.
+Review staged changes and run a local secret scanner before publishing; ignore
+rules do not protect files that are already tracked. Deleting a file in a new
+commit does not remove older copies from Git history or hosting caches.
 
 ## Repository hygiene
 
