@@ -174,8 +174,8 @@ sh ~/nix-shells/dotfiles/install.sh
 ```
 
 Both sessions can use the same definition. Their processes, temporary configs,
-history, tool state, and zoxide databases are separate; the downloaded Nix
-packages/cache are shared. Exiting one leaves the other running. Let the
+history and temporary tool state are separate. Learned zoxide directories and
+the downloaded Nix packages/cache are shared by your dotfiles shells. Exiting one leaves the other running. Let the
 first-ever rootless bootstrap finish before starting more sessions.
 
 You can also run the same script from inside an existing tools shell to nest
@@ -222,17 +222,34 @@ the prompt hook. You can also register a directory explicitly. For example:
 zoxide add ~/workspaces/demo-project
 z workspaces demo-project
 pwd
-zoxide query -l # list directories learned in this session
+zoxide query -l # list remembered directories
 ```
 
 The jump matches a learned path containing both `workspaces` and `demo-project`. For a generic
 project, replace the example path with the directory you actually want.
 If you see `zoxide: no match found`, visit/register the directory first.
 
-**The current setup intentionally keeps the zoxide database temporary.** A new
-session or another terminal starts with its own empty database; learned
-locations disappear when you exit. The persistent package cache does not save
-this navigation history. Teach the directory again in each new session.
+Learned directories now **persist across exits, new terminals, and nested
+shells**. The dedicated database lives at
+`${XDG_STATE_HOME:-$HOME/.local/state}/dotfiles/zoxide`, resolved before the shell
+sets temporary XDG paths. It is shared by this user's dotfiles environments and
+does not modify/import an existing host zoxide database. Set an absolute
+`DOTFILES_STATE_HOME` before entry to choose a different parent state directory.
+
+For example, teach a directory, exit, and jump to it after re-entering:
+
+```sh
+zoxide add ~/workspaces/demo-project
+exit
+sh ~/nix-shells/dotfiles/install.sh
+z workspaces demo-project
+```
+
+Older releases removed their session databases on exit, so records from already
+closed old sessions cannot be recovered by this update. Register those paths
+once more. If you want to forget navigation history later, exit your dotfiles
+shells and remove only the dedicated `dotfiles/zoxide` state directory; deleting
+the package cache alone no longer forgets it.
 
 #### Zsh, tools, and leaving safely
 
@@ -253,8 +270,8 @@ exit           # or Ctrl-D: leave this tools shell
 ```
 
 Ctrl-C normally interrupts the foreground command and leaves the tools shell
-running. On normal exit, temporary configs/state are removed; original configs
-remain unchanged. Intentional edits to real project files persist. A force kill
+running. On normal exit, temporary configs/state are removed; persistent zoxide learning
+and original configs remain unchanged. Intentional edits to real project files persist. A force kill
 or power loss can leave `dotfiles-session.*` or `dotfiles-bootstrap.*` under
 your temporary directory; remove only directories belonging to ended sessions.
 
@@ -288,6 +305,26 @@ settings to work around this error. If it still fails with the fixed runtime,
 keep the exact error and report the host architecture/kernel; other causes can
 also produce an address error.
 
+### File-save or `touch` permission errors
+
+The tools shell runs as your normal account and does not grant write access to
+files owned by another account or on a read-only mount. If Helix `:w` and
+`touch` both fail outside the shell too, inspect the actual target and parent
+permissions rather than changing editor settings:
+
+```sh
+id
+pwd -P
+ls -ld .
+ls -l path/to/file
+```
+
+Symlinked workspaces may resolve into another user's home. Use an appropriate
+user-owned working copy or ask the workspace administrator for the intended
+access. This installer never changes project ownership or permissions. Helix
+can save in writable user-owned directories; temporary config copies are also
+writable. Saving an intentional project edit persists beyond the shell.
+
 ### Manual review
 
 No CI or new test files are included in this PR. Validation evidence and remaining
@@ -310,7 +347,7 @@ sh ./install.sh --command 'rg --version; hx --version; type z'
 4. Open another shell/tab. Interrupt `sleep 30` using Ctrl-C, then leave with
    `exit` or Ctrl-D. The other shell should still work. Compare the host paths
    and checksums recorded earlier; temporary configs should disappear while
-   intentional project edits and package caches remain.
+   intentional project edits, learned zoxide paths and package caches remain.
 5. Test both the cloned entry and pasted full script. During PR review set
    `DOTFILES_REF=ali/portable-nix-shell`; after merge unset it to test `main`.
 

@@ -32,7 +32,9 @@ let
     export DOTFILES_SESSION="$session"
     export XDG_CONFIG_HOME="$session/config" XDG_CACHE_HOME="$session/cache"
     export XDG_DATA_HOME="$session/data" XDG_STATE_HOME="$session/state"
-    export ZDOTDIR="$session/zsh" _ZO_DATA_DIR="$session/data/zoxide"
+    export ZDOTDIR="$session/zsh"
+    # Share only navigation learning across launches; leave host zoxide data alone.
+    export _ZO_DATA_DIR="$DOTFILES_STATE_HOME/zoxide"
     export HISTFILE="$session/zsh/history"
     export EDITOR=hx VISUAL=hx
     # Make the same Nix available for nested shells without changing tool precedence.

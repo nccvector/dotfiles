@@ -32,6 +32,18 @@ case "${1:-}" in
     --help) printf '%s\n' 'Usage: sh install.sh [--command "commands"]' 'Installs Nix if needed, then opens a temporary configured tools shell.'; exit 0 ;;
     *) fail 'Usage: sh install.sh [--command "commands"]' ;;
 esac
+# Resolve persistent navigation state before session XDG directories replace it.
+if [ -z "${DOTFILES_STATE_HOME:-}" ]; then
+    state_base=${XDG_STATE_HOME:-$HOME/.local/state}
+    # An older dotfiles shell set XDG_STATE_HOME to a temporary session path.
+    # Re-entering from there must not put the new persistent DB inside that path.
+    if [ -n "${DOTFILES_SESSION:-}" ] && [ "$state_base" = "$DOTFILES_SESSION/state" ]; then
+        state_base="$HOME/.local/state"
+    fi
+    DOTFILES_STATE_HOME="$state_base/dotfiles"
+fi
+case "$DOTFILES_STATE_HOME" in /*) ;; *) fail 'DOTFILES_STATE_HOME must be an absolute path.' ;; esac
+export DOTFILES_STATE_HOME
 work=$(mktemp -d "${TMPDIR:-/tmp}/dotfiles-bootstrap.XXXXXXXX")
 cleanup() { rm -rf -- "$work"; }
 trap cleanup EXIT
@@ -148,7 +160,7 @@ export NIX_BUILD_SHELL
 # Purity here controls environment variables; this is NOT a filesystem sandbox.
 nix-shell "$repo/shell.nix" --pure \
     --keep HOME --keep TERM --keep COLORTERM --keep SSH_AUTH_SOCK \
-    --keep DOTFILES_ROOT --keep DOTFILES_COMMAND --keep DOTFILES_NIX_BIN --keep TMPDIR \
+    --keep DOTFILES_ROOT --keep DOTFILES_COMMAND --keep DOTFILES_NIX_BIN --keep DOTFILES_STATE_HOME --keep TMPDIR \
     --keep NIX_BUILD_SHELL --keep NIX_CONF_DIR --keep NIX_SSL_CERT_FILE --keep SSL_CERT_FILE \
     --run '"$DOTFILES_RUNNER"'
 )
