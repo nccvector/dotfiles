@@ -9,6 +9,8 @@ import hashlib
 import os
 from pathlib import Path
 import shutil
+import signal
+import time
 import subprocess
 import tarfile
 import tempfile
@@ -120,6 +122,64 @@ echo REAL_Z_PASSED
         self.assertNotEqual(*paths)
         self.assertEqual(self.before, self.snapshot())
         self.assertEqual(list(self.tmp.iterdir()), [])
+
+    def test_interactive_ctrl_c_then_exit(self):
+        import fcntl
+        import pty
+        import select
+        import struct
+        import termios
+        pid, fd = pty.fork()
+        if pid == 0:
+            os.chdir(self.root)
+            os.execve("/bin/sh", ["sh", str(REPO / "install.sh")], self.env)
+        fcntl.ioctl(fd, termios.TIOCSWINSZ, struct.pack("HHHH", 40, 140, 0, 0))
+        output = bytearray()
+        reaped = False
+
+        def read_until(token):
+            end = time.monotonic() + 10
+            while time.monotonic() < end:
+                if select.select([fd], [], [], 0.1)[0]:
+                    try:
+                        output.extend(os.read(fd, 65536))
+                    except OSError:
+                        break
+                if token in output:
+                    return
+            self.fail(bytes(output).decode(errors="replace"))
+
+        try:
+            read_until(b"[dotfiles]")
+            time.sleep(0.5)
+            os.write(fd, b"sleep 30\n")
+            time.sleep(0.5)
+            os.write(fd, b"\x03")
+            time.sleep(0.3)
+            os.write(fd, b"echo CTRL_C_PASSED\n")
+            read_until(b"\x1b[2 qCTRL_C_PASSED\r\n")
+            time.sleep(0.3)
+            os.write(fd, b"exit\n")
+            end = time.monotonic() + 10
+            while time.monotonic() < end:
+                if select.select([fd], [], [], 0.1)[0]:
+                    try:
+                        output.extend(os.read(fd, 65536))
+                    except OSError:
+                        pass
+                got, status = os.waitpid(pid, os.WNOHANG)
+                if got:
+                    reaped = True
+                    self.assertEqual(os.waitstatus_to_exitcode(status), 0)
+                    break
+            self.assertTrue(reaped, bytes(output).decode(errors="replace"))
+            self.assertEqual(self.before, self.snapshot())
+            self.assertEqual(list(self.tmp.iterdir()), [])
+        finally:
+            if not reaped:
+                os.kill(pid, signal.SIGKILL)
+                os.waitpid(pid, 0)
+            os.close(fd)
 
     def test_exactly_one_root_install_script(self):
         self.assertEqual([p.name for p in REPO.glob("*.sh")], ["install.sh"])
