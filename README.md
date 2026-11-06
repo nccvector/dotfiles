@@ -116,30 +116,141 @@ Your real HOME remains accessible, including your normal Git credentials/config.
 This is environment isolation, not filesystem isolation. Tools launched from
 another terminal or GUI do not inherit this shell's PATH/config variables.
 
-### Daily use, multiple shells, and cache
+### Daily examples: save, list, enter, and add environments
+
+A shell definition is a recipe in `shell.nix`, not a permanently running shell.
+Nix has no registry of "installed shells" to list. You can keep named checkouts
+under `~/nix-shells`; this is a folder convention for finding your definitions.
+The packages they use remain cached between sessions.
+
+For example, SSH into fvalien yourself and save this environment there:
+
+```sh
+ssh fvalien
+mkdir -p ~/nix-shells
+git clone https://github.com/nccvector/dotfiles.git ~/nix-shells/dotfiles
+ls -1 ~/nix-shells
+```
+
+This clone command is for the merged repository. Before merge, use
+`git clone --branch ali/portable-nix-shell` with the same URL and destination.
+If you already have this checkout, skip cloning it again. On your own machine,
+skip the SSH step; on another remote machine, use its SSH hostname.
+
+List saved definitions and enter one:
+
+```sh
+find ~/nix-shells -mindepth 2 -maxdepth 2 -name shell.nix -print
+sh ~/nix-shells/dotfiles/install.sh
+```
+
+`install.sh` is also the **re-entry command**, despite its name. After quitting,
+run it again to open a fresh session using cached packages:
+
+```sh
+exit                              # or Ctrl-D: leave the tools shell
+sh ~/nix-shells/dotfiles/install.sh # enter it again
+```
+
+The example assumes you are still SSHed into fvalien. If you also exited SSH,
+connect again first. Every entry starts in the directory you ran the script
+from. Look for `[dotfiles]` in the prompt.
+
+#### Two terminals, or a nested shell
+
+In **each of two separate terminals**, run:
+
+```sh
+ssh fvalien
+sh ~/nix-shells/dotfiles/install.sh
+```
+
+Both sessions can use the same definition. Their processes, temporary configs,
+history, tool state, and zoxide databases are separate; the downloaded Nix
+packages/cache are shared. Exiting one leaves the other running. Let the
+first-ever rootless bootstrap finish before starting more sessions.
+
+You can also run the same script from inside an existing tools shell to nest
+another session. It reuses the same Nix runtime/store. `exit` then returns to
+the enclosing shell; a second `exit` leaves that outer tools shell.
+
+#### Add a second environment with different tools
+
+Make another checkout with its own editable `shell.nix`:
+
+```sh
+git clone https://github.com/nccvector/dotfiles.git ~/nix-shells/experiment
+```
+
+Use the PR branch option above when testing before merge. From your existing
+tools shell, open its definition:
+
+```sh
+hx ~/nix-shells/experiment/shell.nix
+```
+
+For example, add `nodejs_24` as another entry in its existing
+`packages = with pkgs; [ ... ];` list, **keeping the existing entries**. Then
+enter the second environment and check the added tool:
+
+```sh
+sh ~/nix-shells/experiment/install.sh
+node --version
+exit
+```
+
+`ls -1 ~/nix-shells` now shows `dotfiles` and `experiment`. Their definitions
+can evolve independently while shared package versions reuse the cache. Future
+entries use the matching checkout's `install.sh`; no global tool installation
+or shell-registration command is needed.
+
+#### Teach zoxide your project directories
+
+`z` searches directories learned from your visits; it does not search your
+filesystem for an unfamiliar project. Visiting with `cd` teaches it through
+the prompt hook. You can also register a directory explicitly. On fvalien:
+
+```sh
+zoxide add ~/okazu-ws/src_noros/fvm
+z okazu fvm
+pwd
+zoxide query -l # list directories learned in this session
+```
+
+The jump matches a learned path containing both `okazu` and `fvm`. For a generic
+project, replace the example path with the directory you actually want.
+If you see `zoxide: no match found`, visit/register the directory first.
+
+**The current setup intentionally keeps the zoxide database temporary.** A new
+session or another terminal starts with its own empty database; learned
+locations disappear when you exit. The persistent package cache does not save
+this navigation history. Teach the directory again in each new session.
+
+#### Zsh, tools, and leaving safely
+
+This environment explicitly starts Zsh on both Ubuntu and macOS for the shared
+prompt, cursor settings, fzf integration, and `z` function. Nix itself does not
+require Zsh. Your machine's default login shell and existing startup files are
+not changed.
 
 ```sh
 rg --version
 hx README.md
-lazygit                    # inside a Git repository
+lazygit        # inside a Git repository
 yazi
 btop
-cd /path/to/my-project
-z /path/to/my-project       # learns and visits it
-cd /tmp
-z my-project               # jumps to a learned directory
-exit                       # or Ctrl-D
+clear          # supplied by ncurses; Ctrl-L also clears the prompt display
+sleep 30       # press Ctrl-C to interrupt this command
+exit           # or Ctrl-D: leave this tools shell
 ```
 
-Open as many shells as you like in separate tabs. Their configs, history, tool
-state and zoxide databases are separate; the Nix package cache is shared. A
-nested shell also works, reusing the same Nix runtime and store. Let the first
-rootless bootstrap finish before opening more shells, since the bundled backend
-initializes its cache on first use.
-Ctrl-C interrupts a foreground command; it normally leaves the shell running.
-On normal exit, its temporary directory is removed. A force kill or power loss
-can leave `dotfiles-session.*` or `dotfiles-bootstrap.*` under your temporary
-directory; remove only directories belonging to sessions that have ended.
+Ctrl-C normally interrupts the foreground command and leaves the tools shell
+running. On normal exit, temporary configs/state are removed; original configs
+remain unchanged. Intentional edits to real project files persist. A force kill
+or power loss can leave `dotfiles-session.*` or `dotfiles-bootstrap.*` under
+your temporary directory; remove only directories belonging to ended sessions.
+
+### Package cache
 
 Caches intentionally persist. System Nix uses its normal `/nix` store/cache.
 Rootless Linux defaults to `${XDG_CACHE_HOME:-$HOME/.cache}/dotfiles-nix`, including
