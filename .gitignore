@@ -29,3 +29,20 @@
 **/session-costs.jsonl
 home/.config/lazygit/state.yml
 home/.config/nvim/plugin/packer_compiled.lua
+
+# Machine-local IDE data and private material must stay out of Git.
+**/JetBrains/
+**/.local/state/
+**/.nix-portable/
+*.contexts.zip
+*.tasks.zip
+*.key
+*.license
+*.pem
+.ssh/
+.aws/
+.netrc
+.env
+.env.*
+!.env.example
+!.env.sample
