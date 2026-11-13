@@ -161,6 +161,7 @@ export NIX_BUILD_SHELL
 nix-shell "$repo/shell.nix" --pure \
     --keep HOME --keep TERM --keep COLORTERM --keep SSH_AUTH_SOCK \
     --keep DOTFILES_ROOT --keep DOTFILES_COMMAND --keep DOTFILES_NIX_BIN --keep DOTFILES_STATE_HOME --keep TMPDIR \
+    --keep DOTFILES_ZOXIDE_ROOT --keep DOTFILES_ZOXIDE_DEPTH \
     --keep NIX_BUILD_SHELL --keep NIX_CONF_DIR --keep NIX_SSL_CERT_FILE --keep SSL_CERT_FILE \
     --run '"$DOTFILES_RUNNER"'
 )
