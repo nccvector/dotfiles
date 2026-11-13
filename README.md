@@ -99,8 +99,10 @@ The tools are `rg`, `btop`, `hx`, `lazygit`, `yazi`, and `zoxide` with working
 `z`, plus Git, fzf, file/preview/archive helpers, LLVM/CMake/Make, Python
 LSP/format/debug tools, and Rust compiler/LSP/format/lint tools required by the
 editor config. Fixed Nixpkgs revisions and source hashes prevent silent package upgrades.
-Helix uses its packaged runtime and grammars. Intel macOS selects a separate
-26.05 pin because the newer Nixpkgs line dropped that platform. That stable line
+Helix uses its matching packaged grammars and source runtime. Every session gets a
+real copy at `$XDG_CONFIG_HOME/helix/runtime`, including themes, queries and
+compiled grammars. Nothing is taken from the host Helix installation. Intel macOS
+selects a separate 26.05 pin because the newer Nixpkgs line dropped that platform. That stable line
 is maintained upstream only through the end of 2026; it needs a future support
 decision rather than an assumption of permanent Intel support.
 
@@ -327,11 +329,12 @@ writable. Saving an intentional project edit persists beyond the shell.
 
 ### Manual review
 
-No CI or new test files are included in this PR. Validation evidence and remaining
-platform gaps are recorded in its description. To test a command and return:
+To test a command and return:
 
 ```sh
 sh ./install.sh --command 'rg --version; hx --version; type z'
+# Regression check: copied runtime and actual theme rendering in a pseudo-terminal.
+sh ./install.sh --command 'python3 "$DOTFILES_ROOT/tests/test-helix-session.py"'
 ```
 
 1. Record your host PATH/tool locations and checksums of existing `.zshrc`, Helix,
@@ -362,10 +365,13 @@ Review and copy individual files from `home/` to the corresponding location in
 your home directory. Back up any existing destination first. Do not copy the
 entire tree blindly: it includes Linux desktop configs as well as macOS tooling.
 
-Helix retains the GitHub keybindings and UI customization, with all-severity
-inline diagnostics and an explicit Homebrew clangd server for C/C++. It has not
-been replaced wholesale with the different live `~/.config/helix` files. Ghostty now lives
-at the standard `home/.config/ghostty/` location. The former root `helix/` variant
+Helix UI settings match the current Mac config: `gruvbox_dark_hard`, default
+whitespace rendering (no space/tab markers), underline selection cursor,
+Space-`=` formatting, and inline diagnostics on the cursor line only. True color
+is explicitly enabled so SSH/tmux sessions without `COLORTERM` use the theme
+instead of falling back to a 16-color theme. Language tooling remains configured
+separately, including the Homebrew clangd path adapted to PATH by Nix. Ghostty
+now lives at the standard `home/.config/ghostty/` location. The former root `helix/` variant
 is kept in `archive/helix-alternative/`.
 
 ### External dependencies
@@ -532,16 +538,18 @@ want a narrower wrapper. For parallel compilation, set
   `home/Library/Preferences/clangd/config.yaml` links to it for macOS. Copy with
   symlink dereferencing when installing individual files. Global configuration
   has no hardcoded build directory; the template `.clangd` selects Debug.
-- Helix displays hints and higher severities on both current and other lines;
-  C/C++ explicitly use Homebrew clangd with clang-tidy enabled. Inlay hints are
-  enabled as well. The archived Helix variant also shows all severities.
+- Helix displays hints and higher severities inline on the cursor line; other
+  lines use the default gutter diagnostics. C/C++ explicitly use Homebrew clangd
+  with clang-tidy enabled. The archived Helix variant shows all severities on
+  both current and other lines.
 - clang-format is a formatter, not a linter: it has no warning-level switch.
   Its existing layout preferences are retained. Use
   `clang-format --dry-run --Werror src/*.cpp` to check formatting without edits.
 - Validated with Homebrew clangd/clang-tidy 22.1.2. An LSP test verified both
   `-Wunused-variable` and `misc-const-correctness` diagnostics; Helix's health
-  check confirmed the configured Homebrew server. Runtime grammars are external
-  and must already be installed for syntax highlighting.
+  check confirmed the configured Homebrew server. The Nix shell copies a complete
+  matching runtime automatically; manual home installs need their own matching
+  runtime for syntax highlighting.
 
 Reference: [clangd configuration](https://clangd.llvm.org/config) and
 [CMake presets](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html).

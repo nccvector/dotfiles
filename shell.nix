@@ -13,6 +13,18 @@ let
   python = pkgs.python3.withPackages (p: with p; [
     python-lsp-server python-lsp-ruff python-lsp-black pylsp-mypy black debugpy
   ]);
+  # Nixpkgs splits themes/defaults from the compiled queries/grammars runtime.
+  # Assemble both from the same pinned Helix, never from the host or latest Git.
+  helixRuntime = pkgs.runCommand "dotfiles-helix-runtime" {} ''
+    mkdir -p "$out"
+    cp -RL ${pkgs.helix-unwrapped.src}/runtime/. "$out/"
+    chmod -R u+w "$out"
+    rm -rf "$out/grammars"
+    cp -RL ${pkgs.helix.runtime}/. "$out/"
+    test -f "$out/themes/gruvbox_dark_hard.toml"
+    test -d "$out/queries"
+    test -d "$out/grammars"
+  '';
   configs = pkgs.runCommand "dotfiles-tool-configs" {} ''
     mkdir -p "$out/helix" "$out/lazygit" "$out/yazi"
     cat ${./home/.config/helix/config.toml} > "$out/helix/config.toml"
@@ -45,6 +57,9 @@ let
     for config in helix/config.toml helix/languages.toml lazygit/config.yml yazi/yazi.toml; do
         cat "${configs}/$config" > "$XDG_CONFIG_HOME/$config"
     done
+    # A real, self-contained runtime directory for every launch, including themes.
+    cp -RL ${helixRuntime} "$XDG_CONFIG_HOME/helix/runtime"
+    chmod -R u+w "$XDG_CONFIG_HOME/helix/runtime"
     export YAZI_CONFIG_HOME="$XDG_CONFIG_HOME/yazi"
     export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml"
     # Lazygit's macOS default ignores XDG, so explicitly redirect its entire directory.
