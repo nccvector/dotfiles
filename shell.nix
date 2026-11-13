@@ -13,6 +13,10 @@ let
   python = pkgs.python3.withPackages (p: with p; [
     python-lsp-server python-lsp-ruff python-lsp-black pylsp-mypy black debugpy
   ]);
+  zoxideSeed = pkgs.writeShellScriptBin "dotfiles-zoxide-seed" ''
+    export PATH=${pkgs.lib.makeBinPath [ pkgs.fd pkgs.zoxide ]}:"$PATH"
+    exec ${pkgs.python3}/bin/python3 ${./scripts/seed-zoxide.py} "$@"
+  '';
   # Nixpkgs splits themes/defaults from the compiled queries/grammars runtime.
   # Assemble both from the same pinned Helix, never from the host or latest Git.
   helixRuntime = pkgs.runCommand "dotfiles-helix-runtime" {} ''
@@ -49,6 +53,8 @@ let
     export _ZO_DATA_DIR="$DOTFILES_STATE_HOME/zoxide"
     export HISTFILE="$session/zsh/history"
     export EDITOR=hx VISUAL=hx
+    # New tmux servers should open the same configured Zsh in their panes.
+    export SHELL=${pkgs.zsh}/bin/zsh
     # Make the same Nix available for nested shells without changing tool precedence.
     export PATH="$PATH:$DOTFILES_NIX_BIN"
     unset HELIX_RUNTIME
@@ -64,6 +70,8 @@ let
     export LG_CONFIG_FILE="$XDG_CONFIG_HOME/lazygit/config.yml"
     # Lazygit's macOS default ignores XDG, so explicitly redirect its entire directory.
     export CONFIG_DIR="$XDG_CONFIG_HOME/lazygit"
+    # Seed only once per root/depth; indexing failure must not prevent shell entry.
+    dotfiles-zoxide-seed || printf '%s\n' 'zoxide: seed failed; retry with dotfiles-zoxide-seed --refresh.' >&2
     cat > "$ZDOTDIR/.zshrc" <<'RC'
     setopt NO_GLOBAL_RCS
     export PS1='[dotfiles] %n@%m:%~ %# '
@@ -83,7 +91,7 @@ let
 in pkgs.mkShell {
   passthru.bootstrapShell = pkgs.bashInteractive;
   packages = with pkgs; [
-    bashInteractive zsh ncurses git ripgrep btop helix lazygit yazi zoxide
+    bashInteractive zsh ncurses git ripgrep btop helix lazygit yazi zoxide tmux zoxideSeed
     fzf fd jq file unzip zip p7zip poppler ffmpeg imagemagick chafa
     clang-tools llvmPackages.clang cmake gnumake pkg-config
     python typos-lsp rust-analyzer rustc cargo rustfmt clippy

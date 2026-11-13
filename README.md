@@ -89,13 +89,14 @@ does not upgrade an existing installation.
 **Nix handles both the package set and the shell's config setup.** `shell.nix`
 declares the tools, builds a config bundle from this repository, and generates
 the session launcher. `install.sh` obtains/reuses Nix, locates the repository,
-and invokes that environment. There is no second install script or helper file.
+and invokes that environment. The zoxide seeding helper is packaged by Nix;
+`install.sh` remains the entry point.
 
 The same Nix CLI is also available inside the shell, including for nested entry.
 Entry Bash is built from the pinned package set, so no host Bash version or
 global Nix channel is assumed.
 
-The tools are `rg`, `btop`, `hx`, `lazygit`, `yazi`, and `zoxide` with working
+The tools are `rg`, `btop`, `hx`, `lazygit`, `yazi`, `tmux`, and `zoxide` with working
 `z`, plus Git, fzf, file/preview/archive helpers, LLVM/CMake/Make, Python
 LSP/format/debug tools, and Rust compiler/LSP/format/lint tools required by the
 editor config. Fixed Nixpkgs revisions and source hashes prevent silent package upgrades.
@@ -214,11 +215,48 @@ can evolve independently while shared package versions reuse the cache. Future
 entries use the matching checkout's `install.sh`; no global tool installation
 or shell-registration command is needed.
 
+#### Use tmux inside the tools shell
+
+Start a dedicated tmux server so it inherits this shell's tools and config:
+
+```sh
+tmux -L dotfiles new-session -A -s work
+```
+
+New servers open the configured Zsh with `z` available. Existing tmux servers
+retain their own environment. Finish the tmux sessions before exiting the outer
+tools shell, which removes their temporary config directory.
+
 #### Teach zoxide your project directories
 
-`z` searches directories learned from your visits; it does not search your
-filesystem for an unfamiliar project. Visiting with `cd` teaches it through
-the prompt hook. You can also register a directory explicitly. For example:
+On the first launch, the shell seeds zoxide with directories **up to five levels
+below your home directory**. A direct child is depth 1. It skips hidden folders,
+symlinks, other filesystems, ignored directories, and common caches/dependency
+or build trees (`Library`, `node_modules`, `vendor`, `target`, `venv`, `build`,
+`cmake-build*`, `CMakeFiles`, `__pycache__`, `cache`, `Cache`).
+
+This is an initial index, not a limit on where you can jump. Normal visits keep
+teaching zoxide, including directories deeper than five levels. Seed entries
+start with a low rank; existing learned entries keep their scores. Later
+launches reuse the persistent database without rescanning or boosting ranks.
+
+Choose a different root/depth before entry, or disable automatic seeding:
+
+```sh
+DOTFILES_ZOXIDE_ROOT="$HOME/projects" sh ./install.sh
+DOTFILES_ZOXIDE_DEPTH=3 sh ./install.sh
+DOTFILES_ZOXIDE_DEPTH=0 sh ./install.sh # no automatic index
+```
+
+Changing the root or depth triggers a new seed. To pick up directories created
+since the first scan, run `dotfiles-zoxide-seed --refresh` inside the shell.
+It adds only directories missing from the database. The first scan runs at
+startup and can take longer for a large directory tree. Indexing errors are
+reported without blocking shell entry; the next launch retries.
+
+`z` searches this index and directories learned from your visits. Visiting with
+`cd` teaches it through the prompt hook. You can also register a directory
+explicitly. For example:
 
 ```sh
 zoxide add ~/workspaces/demo-project
@@ -229,7 +267,7 @@ zoxide query -l # list remembered directories
 
 The jump matches a learned path containing both `workspaces` and `demo-project`. For a generic
 project, replace the example path with the directory you actually want.
-If you see `zoxide: no match found`, visit/register the directory first.
+If you see `zoxide: no match found`, visit/register the directory or refresh the index.
 
 Learned directories now **persist across exits, new terminals, and nested
 shells**. The dedicated database lives at
@@ -335,6 +373,7 @@ To test a command and return:
 sh ./install.sh --command 'rg --version; hx --version; type z'
 # Regression check: copied runtime and actual theme rendering in a pseudo-terminal.
 sh ./install.sh --command 'python3 "$DOTFILES_ROOT/tests/test-helix-session.py"'
+sh ./install.sh --command 'python3 "$DOTFILES_ROOT/tests/test-zoxide-seed.py"'
 ```
 
 1. Record your host PATH/tool locations and checksums of existing `.zshrc`, Helix,
@@ -345,6 +384,7 @@ sh ./install.sh --command 'python3 "$DOTFILES_ROOT/tests/test-helix-session.py"'
 2. In the shell run `command -v rg hx lazygit yazi zoxide`, open each tool, and try
    `z` after learning a project. `hx --health cpp` should find packaged clangd.
    Run `lazygit --print-config-dir`; it should point inside `$DOTFILES_SESSION`.
+   `tmux -V` should work; new tmux servers use the configured Zsh for their panes.
 3. Inspect `$XDG_CONFIG_HOME/helix/config.toml`. Edit the temporary copy, exit,
    and re-enter; your repo and original home config should be unchanged.
 4. Open another shell/tab. Interrupt `sleep 30` using Ctrl-C, then leave with
